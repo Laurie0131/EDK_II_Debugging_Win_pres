@@ -398,7 +398,7 @@ Note:
 
 ---
 @title[Other Debug Related Libraries  ]
-<p align="right"><span class="gold" >Other Debug Related Libraries </span></p>
+<p align="right"><span class="gold" ><b>Other Debug Related Libraries </b></span></p>
 
 @snap[north-west span-90 fragment]
 <br>
@@ -461,19 +461,6 @@ Note:
 	- gEfiMdePkgTokenSpaceGuid.PcdPerformanceLibraryPropertyMask
 
 
----?image=/assets/images/slides/Slide12.JPG
-@title[Other Debug Related Libraries  ]
-<p align="right"><span class="gold" >Other Debug Related Libraries </span></p>
-
-Note:
-
-- ReportStatusCodeLib –Progress codes
-	- gEfiMdePkgTokenSpaceGuid.PcdReportStatusCodePropertyMask
-- PostCodeLib – Enable Post codes
-	- gEfiMdePkgTokenSpaceGuid.PcdPostCodePropertyMask
-- PerformanceLib – Enable Measurement
-	- gEfiMdePkgTokenSpaceGuid.PcdPerformanceLibraryPropertyMask
-
 ---?image=/assets/images/slides/Slide_LabSec.JPG
 @title[Lab 1: Adding Debug Statements]
 <br>
@@ -494,9 +481,9 @@ This lab uses code from a previous exercise as a starting point (refer to  Writi
 ---
 @title[Lab 1: Catch Up SampleApp]
 <p align="right"><span class="gold" >Lab 1: Catch up from previous lab</span></p>
-<span style="font-size:0.8em" >Skip if Lab <a href="https://gitpitch.com/Laurie0131/Writing_UEFI_App_Win_Lab/master#/">Writing UEFI App Lab</a> completed</span>
-<ul>
-   <li><span style="font-size:0.8em" >Perform <a href="https://gitpitch.com/Laurie0131/Platform_Build_Win_LAB/master#/">Lab Setup</a> from previous Labs  </span></li>
+<span style="font-size:0.8em" >Skip if Lab <a href="https://gitpitch.com/tianocore-training/Writing_UEFI_App_Win_Lab/master#/">Writing UEFI App Lab</a> completed</span>
+<ul style="list-style-type:disc; line-height:0.7;">
+   <li><span style="font-size:0.8em" >Perform <a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_LAB/master#/2">Lab Setup</a> from previous Labs  </span></li>
    <li><span style="font-size:0.8em" >Create a Directory under the workspace `C:/FW/edk2  ` : "`SampleApp`"</span></li>
    <li><span style="font-size:0.8em" >Copy contents of `C:/../FW/LabSampleCode/SampleAppDebug` to `C:/FW/edk2/SampleApp`</span></li>
    <li><span style="font-size:0.8em" >Open `C:/FW/edk2/Nt32Pkg/Nt32Pkg.dsc`</span></li>
