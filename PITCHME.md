@@ -384,7 +384,7 @@ Note:
 
 
 
-@snap[south span-90 fragment]
+@snap[south span-100 fragment]
 
 @box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" > Minimize message output and minimize size increase<br>&nbsp;</span></p>)
 
@@ -395,27 +395,70 @@ Note:
 - Minimize message output and minimize size increase
 
 
----?image=/assets/images/slides/Slide10.JPG
-<!-- .slide: data-transition="none" -->
-@title[Changing PCD Values ]
-<p align="right"><span class="gold" >Changing PCD Values</span></p>
+
+---
+@title[Other Debug Related Libraries  ]
+<p align="right"><span class="gold" >Other Debug Related Libraries </span></p>
+
+@snap[north-west span-90 fragment]
+<br>
+<br>
+<br>
+@box[bg-gold2 text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`ReportStatusCodeLib` –Progress codes<br>&nbsp;</span></p>)
+<pre>
+```
+  gEfiMdePkgTokenSpaceGuid.PcdReportStatusCodePropertyMask
+```
+</pre>
+<br>
+@snapend
+
+
+@snap[north-east span-90 fragment]
+<br>
+<br>
+<br>
+<p style="line-height:50%" ><br><br><br><br>&nbsp;</p>
+@box[bg-green-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`PostCodeLib` – Enable Post codes<br>&nbsp;</span></p>)
+<pre>
+```
+  gEfiMdePkgTokenSpaceGuid.PcdPostCodePropertyMask
+
+```
+</pre>
+<br>
+@snapend
+
+
+@snap[north-west span-90 fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:50%" ><br><br><br><br><br>&nbsp;</p>
+@box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`PerformanceLib` – Enable Measurement <br>&nbsp;</span></p>)
+<pre>
+```
+  gEfiMdePkgTokenSpaceGuid.PcdPerformanceLibraryPropertyMask
+
+```
+</pre>
+<br>
+@snapend
+
+
 
 
 Note:
-- Use different PCD values only on the module being debugged
-- Minimize message output and minimize size increase
 
-+++?image=/assets/images/slides/Slide11.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Changing PCD Values 02 ]
-<p align="right"><span class="gold" >Changing PCD Values</span></p>
-
-
-Note:
-- Use different PCD values only on the module being debugged
-- Minimize message output and minimize size increase
-
+- ReportStatusCodeLib –Progress codes
+	- gEfiMdePkgTokenSpaceGuid.PcdReportStatusCodePropertyMask
+- PostCodeLib – Enable Post codes
+	- gEfiMdePkgTokenSpaceGuid.PcdPostCodePropertyMask
+- PerformanceLib – Enable Measurement
+	- gEfiMdePkgTokenSpaceGuid.PcdPerformanceLibraryPropertyMask
 
 
 ---?image=/assets/images/slides/Slide12.JPG
