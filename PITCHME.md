@@ -167,14 +167,16 @@ Note:
 
 @snap[west span-100 ]
 <br>
-@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " ><br><br><br><br><br><br>&nbsp;&nbsp;</span></p>)
+@box[bg-grey-05 text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " ><br><br><br><br><br><br>&nbsp;&nbsp;</span></p>)
 @snapend
 
 @snap[north-west span-100 ]
 <br>
 <br>
-<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" ><font color="#87E2A9">`MdePkg` Debug Library Class </font></span></p>
-<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >
+<br>
+<br>
+<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" ><font color="#87E2A9">`MdePkg` Debug Library Class </font><br></span></p>
+<p style="line-height:40%" align="left"><span style="font-size:0.550em; font-family:Consolas; " >
 &nbsp;&nbsp;
 [PcdsFixedAtBuild. PcdsPatchableInModule]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;  gEfiMdePkgTokenSpaceGuid.@color[red](PcdDebugPropertyMask)|0x1f<br>
