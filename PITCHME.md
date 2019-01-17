@@ -224,11 +224,10 @@ Note:
 
 ---
 @title[PcdDebugPropertyMask Values]
-<p align="right"><span class="gold" ><b>`PcdDebugPropertyMask` Values</b></span></p>
+<p align="right"><span class="gold" ><b>@color[white](`PcdDebugPropertyMask`) Values</b></span></p>
 
 
 @snap[north-west span-100 ]
-<br>
 <br>
 <br>
 <p style="line-height:30%" align="left"><br>&nbsp;</p>
@@ -238,8 +237,8 @@ Note:
 @snap[north-west span-100 ]
 <br>
 <br>
-<p style="line-height:70%" ><span style="font-size:01.0em; font-weight: bold;" ><font color="#87E2A9">Debugging Features Enabled </font><br></span></p>
-<p style="line-height:60%" align="left"><span style="font-size:0.60em; font-family:Consolas; " >
+<p style="line-height:70%" ><span style="font-size:01.0em;" ><font color="#87E2A9"><b>Debugging Features Enabled </b></font><br></span></p>
+<p style="line-height:60%" align="left"><span style="font-size:0.550em; font-family:Consolas; " >
 &nbsp;&nbsp;
  &num;define DEBUG_PROPERTY_DEBUG_ASSERT_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            0x01<br>&nbsp;&nbsp;
  &num;define DEBUG_PROPERTY_DEBUG_PRINT_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;       0x02<br>&nbsp;&nbsp;
@@ -250,11 +249,7 @@ Note:
 </span></p>
 <br>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:0.50em;> <font color="yellow">
-Default value in `OvmfPkg` is `0x2f`<br>
-Default value in `Nt32Pkg` is `0x1f`
-</font></span></p>
-
+<p style="line-height:60%" align="left"><span style="font-size:0.50em;> <font color="yellow">Default value in `OvmfPkg` is `0x2f`<br>Default value in `Nt32Pkg` is `0x1f`</font></span></p>
 @snapend
 
 
