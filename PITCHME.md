@@ -465,7 +465,7 @@ Note:
 @title[Lab 1: Adding Debug Statements]
 <br>
 <br>
-<p align="Left"><span class="gold" >Lab 1: Adding Debug Statements</span></p>
+<p align="Left"><span class="gold" ><b>Lab 1: Adding Debug Statements</b></span></p>
 <br>
 <div class="left1">
 <span style="font-size:0.8em" >In this lab, you’ll add debug statements to the previous lab's SampleApp UEFI Shell application</span>
@@ -480,7 +480,7 @@ This lab uses code from a previous exercise as a starting point (refer to  Writi
 
 ---
 @title[Lab 1: Catch Up SampleApp]
-<p align="right"><span class="gold" >Lab 1: Catch up from previous lab</span></p>
+<p align="right"><span class="gold" ><b>Lab 1: Catch up from previous lab</b></span></p>
 <span style="font-size:0.8em" >Skip if Lab <a href="https://gitpitch.com/tianocore-training/Writing_UEFI_App_Win_Lab/master#/">Writing UEFI App Lab</a> completed</span>
 <ul style="list-style-type:disc; line-height:0.8;">
    <li><span style="font-size:0.8em" >Perform <a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_LAB/master#/2">Lab Setup</a> from previous Labs  </span></li>
@@ -501,7 +501,7 @@ Note:
 
 ---
 @title[Lab 1: Add debug statements SampleApp]
-<p align="right"><span class="gold" >Lab 1: Add debug statments to SampleApp</span></p>
+<p align="right"><span class="gold" ><b>Lab 1: Add debug statments to SampleApp</b></span></p>
 <br>
 <ul>
   <li><span style="font-size:0.8em" >Open a VS Command Prompt and type `cd C:/FW/edk2` then <br></span>&nbsp;&nbsp;&nbsp;<span style="font-size:0.6em" ><span style="background-color: #101010">&nbsp;` C:/FW/edk2> edksetup `&nbsp;</span> </span></li><br>
@@ -518,8 +518,9 @@ Note:
 
 ---
 @title[Lab 1: Add debug statements SampleApp 02]
-<p align="right"><span class="gold" >Lab 1: Add debug statements to SampleApp</span></p>
-<p style="line-height:90%"><span style="font-size:0.7em" >Locate the `UefiMain` function. Then copy and paste the following code after the <span style="background-color: #101010">&nbsp;“`EFI_INPUT_KEY  KEY;`”</span> statement: and before the first <span style="background-color: #101010">&nbsp;`Print()` </span>statement </span></p>
+<p align="right"><span class="gold" ><b>Lab 1: Add debug statements to SampleApp</b></span></p>
+<p style="line-height:85%"><span style="font-size:0.7em" >Locate the `UefiMain` function. Then copy and paste the following code after the <span style="background-color: #101010">&nbsp;“`EFI_INPUT_KEY  KEY;`”</span> statement: and before the first <span style="background-color: #101010">&nbsp;`Print()` </span>statement </span></p>
+
 ```c
 DEBUG ((0xffffffff, "\n\nUEFI Base Training DEBUG DEMO\n") );
 DEBUG ((0xffffffff, "0xffffffff USING DEBUG ALL Mask Bits Set\n") );
