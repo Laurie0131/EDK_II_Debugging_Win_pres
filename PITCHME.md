@@ -111,7 +111,7 @@ Note:
 @snapend
 
 
-@snap[north-east span-65 fragment]
+@snap[north-east span-80 fragment]
 <br>
 <br>
 <br>
@@ -121,7 +121,7 @@ Note:
 @snapend
 
 
-@snap[north-west span-70 fragment]
+@snap[north-west span-75 fragment]
 <br>
 <br>
 <br>
