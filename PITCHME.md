@@ -242,7 +242,7 @@ Note:
 &nbsp;&nbsp;
 &nbsp;&nbsp;&num;define DEBUG_PROPERTY_DEBUG_ASSERT_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            0x01<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&num;define DEBUG_PROPERTY_DEBUG_PRINT_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;       0x02<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&num;define DEBUG_PROPERTY_DEBUG_CODE_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       0x04<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&num;define DEBUG_PROPERTY_DEBUG_CODE_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       0x04<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&num;define DEBUG_PROPERTY_CLEAR_MEMORY_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            0x08<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&num;define DEBUG_PROPERTY_ASSERT_BREAKPOINT_ENABLED &nbsp;                   0x10<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&num;define DEBUG_PROPERTY_ASSERT_DEADLOOP_ENABLED &nbsp;&nbsp;&nbsp;              0x20
@@ -299,44 +299,64 @@ Note:
 
 
 
----?image=/assets/images/slides/Slide8.JPG
-@title[PcdDebugPropertyMask Values]
-<p align="right"><span class="gold" >`PcdDebugPropertyMask` Values</span></p>
+---
+@title[PcdDebugPrintErrorLevel Values]
+<p align="right"><span class="gold" >@color[white](`PcdDebugPrintErrorLevel`) Values</span></p>
+<p style="line-height:70%" ><span style="font-size:01.0em;" ><font color="#87E2A9"><b>Debugging Messages Displayed</b></font><br></span></p>
+
+```
+ #define DEBUG_INIT      0x00000001  // Initialization
+ #define DEBUG_WARN      0x00000002  // Warnings
+ #define DEBUG_LOAD      0x00000004  // Load events
+ #define DEBUG_FS        0x00000008  // EFI File system
+ #define DEBUG_POOL      0x00000010  // Alloc & Free's  Pool
+ #define DEBUG_PAGE      0x00000020  // Alloc & Free's  Page
+ #define DEBUG_INFO      0x00000040  // Verbose
+ #define DEBUG_DISPATCH  0x00000080  // PEI/DXE Dispatchers
+ #define DEBUG_VARIABLE  0x00000100  // Variable
+ #define DEBUG_BM        0x00000400  // Boot Manager
+ #define DEBUG_BLKIO     0x00001000  // BlkIo Driver
+ #define DEBUG_NET       0x00004000  // SNI Driver
+ #define DEBUG_UNDI      0x00010000  // UNDI Driver
+ #define DEBUG_LOADFILE  0x00020000  // Load File 
+ #define DEBUG_EVENT     0x00080000  // Event messages
+ #define DEBUG_ERROR     0x80000000  // Error
+
+    Aliases EFI_D_INIT == DEBUG_INIT, etc...
+ 
+```
+
+<p style="line-height:60%" align="left"><span style="font-size:0.50em;"> <font color="yellow">
+Default value in `OvmfPkg` is `0x8000004f`<br>Default value in `Nt32Pkg` is `0x80000040`</font></span></p>
+
+
+
+
+@snap[south span-90 fragment]
+
+@box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" > Determines which messages we want to print<br>&nbsp;</span></p>)
+<br>
+@snapend
+
+
+
+
+
+
 
 Note:
-- Enables debugging features
-- What kinds of outputs are produced?
-- What kind of debugging is being done?
+- Determines if each print message is displayed
+- Use Binary-AND setting to set parameter TRUE
+- Note that Aliases EFI_D_INIT == DEBUG_INIT, etc..
+- DebugPrintErrorLevel Values
 
-<pre>
- #define DEBUG_PROPERTY_DEBUG_ASSERT_ENABLED       0x01
- #define DEBUG_PROPERTY_DEBUG_PRINT_ENABLED        0x02
- #define DEBUG_PROPERTY_DEBUG_CODE_ENABLED         0x04
- #define DEBUG_PROPERTY_CLEAR_MEMORY_ENABLED       0x08
- #define DEBUG_PROPERTY_ASSERT_BREAKPOINT_ENABLED  0x10
- #define DEBUG_PROPERTY_ASSERT_DEADLOOP_ENABLED    0x20
-</pre>
-- another Note: Default value in Nt32 is 0x1f
+- This has to do with what messages we want to come out
 
-- Determines which debugging features are enabled.
+- Let’s say you have a debug print enabled as in the previous slide. 
+   - You must state what message type you want to print out
 
-- What kinds of output are produced.
-- What kind of debugging is being done.
-
-- Default in Ntr32 is 0x1f
-
-- So what does that mean?
- 
-- for DebugPropertyMask, 1F turns on:
- 	- debug assert, 
-	- debug print, 
-	- debug code enabled, 
-	- clear memory, 
-	- assert breakpoint
-- It does not turn on assert dead loop.
-
-- This turns on the debug features for the property mask one at a time. The property mask tells the debug command what we really want to have happen.
-
+- You can assign your own values to this debug print error level.  
+- However, these are the guideline values that these drivers use in terms of what their debug output messaging will be.
 
 
 
