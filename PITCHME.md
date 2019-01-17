@@ -176,9 +176,9 @@ Note:
 <br>
 <br>
 <br>
-<p style="line-height:70%" ><span style="font-size:01.0em; font-weight: bold;" ><font color="lt_green">MdePkg Debug Library Class </font><br></span></p>
+<p style="line-height:70%" ><span style="font-size:01.0em; font-weight: bold;" ><font color="#87E2A9">MdePkg Debug Library Class </font><br></span></p>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:0.550em; font-family:Consolas; " >
+<p style="line-height:60%" align="left"><span style="font-size:0.60em; font-family:Consolas; " >
 &nbsp;&nbsp;
 [PcdsFixedAtBuild. PcdsPatchableInModule]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;  gEfiMdePkgTokenSpaceGuid.@color[red](PcdDebugPropertyMask)|0x1f<br>
@@ -191,6 +191,7 @@ Note:
 
 @snap[south span-90 fragment]
 @box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" > PCDs set which drivers report errors and change what messages get printed<br>&nbsp;</span></p>)
+<br>
 @snapend
 
 
