@@ -327,7 +327,7 @@ Note:
 ```
 
 <p style="line-height:60%" align="left"><span style="font-size:0.50em;"> <font color="yellow">
-Default value in `OvmfPkg` is `0x8000004f`  &nbsp;&nbsp;&nbsp;&nbsp; Default value in `Nt32Pkg` is `0x80000040`</font></span></p>
+Default value in `OvmfPkg` is `0x8000004f`  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Default value in `Nt32Pkg` is `0x80000040`</font></span></p>
 
 
 
@@ -343,26 +343,6 @@ Default value in `OvmfPkg` is `0x8000004f`  &nbsp;&nbsp;&nbsp;&nbsp; Default val
 
 
 
-
-Note:
-- Determines if each print message is displayed
-- Use Binary-AND setting to set parameter TRUE
-- Note that Aliases EFI_D_INIT == DEBUG_INIT, etc..
-- DebugPrintErrorLevel Values
-
-- This has to do with what messages we want to come out
-
-- Let’s say you have a debug print enabled as in the previous slide. 
-   - You must state what message type you want to print out
-
-- You can assign your own values to this debug print error level.  
-- However, these are the guideline values that these drivers use in terms of what their debug output messaging will be.
-
-
-
----?image=/assets/images/slides/Slide9.JPG
-@title[PcdDebugPrintErrorLevel Values]
-<p align="right"><span class="gold" >`PcdDebugPrintErrorLevel` Values</span></p>
 
 Note:
 - Determines if each print message is displayed
