@@ -1,6 +1,8 @@
 ---?image=assets/images/gitpitch-audience.jpg
 @title[EDK II Debugging]
-<br><br><br><br><br>
+<br><br><br>
+<span style="font-size:0.75em" >This slide deck has moved to:  https://gitpitch.com/tianocore-training/EDK_II_Debugging_Win_pres/master#/
+<br><br>
 ## <span class="gold"   >UEFI & EDK II Training</span>
 
 #### EDK II Debugging w/ Windows Lab
@@ -94,6 +96,60 @@ Note:
 - You could use a software debugger, and there is a hardware debugger but if they are not available EDK II debug macro might be a good place to start.
 
 - We believe the debug lib is the simplest and cleanest way to get it all working
+
+
+---
+@title[EDK II DebugLib Library]
+<p align="center"><span style="font-size:01.1em" ><font color="#e49436" ><b>EDK II `DebugLib` Library</b></font></span></p>
+
+@snap[north-west span-60 fragment]
+<br>
+<br>
+<br>
+@box[bg-gold2 text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >Debug and Assert macros in code<br>&nbsp;</span></p>)
+<br>
+@snapend
+
+
+@snap[north-east span-65 fragment]
+<br>
+<br>
+<br>
+<p style="line-height:50%" ><br><br><br>&nbsp;</p>
+@box[bg-green-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >Enable/disable when compiled &lpar;"target.txt"&rpar;<br>&nbsp;</span></p>)
+<br>
+@snapend
+
+
+@snap[north-west span-70 fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:50%" ><br><br><br>&nbsp;</p>
+@box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" > Connects a Host to capture debug messages <br>&nbsp;</span></p>)
+<br>
+@snapend
+
+
+
+
+
+
+Note:
+- DebugLib library is clean & very portable
+- Using DEBUG and ASSERT macros in code
+- Enable/disable when compiled (target.txt)
+- Can connect a 2nd PC to capture debug messages 
+
+- The main message-- the debug lib library is portable, it’s clean, it’s very easy to use, and we believe it’s the easiest way to do debugging on a UEFI platform.
+
+- The debug lib library has the debug and assert macros. 
+- There are library instances that allow you to use a second PC to capture all messages coming out
+
+
 
 ---
 @title[EDK II DebugLib Library]
