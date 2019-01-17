@@ -151,27 +151,6 @@ Note:
 
 
 
----
-@title[EDK II DebugLib Library]
-<p align="center"><span style="font-size:01.1em" ><font color="#e49436" ><b>EDK II `DebugLib` Library</b></font></span></p>
-<br>
-@ul[no-bullet]
-- <span style="font-size:01.0em" >&nbsp;<span style="background-color: #fdb819"><b>&nbsp;&nbsp;`Debug` and `Assert` macros in code &nbsp;&nbsp;</b></span></span></p><br><br>
-- <span style="font-size:01.0em" >&nbsp;<span style="background-color: #92d050">&nbsp;&nbsp;<b>Enable/disable when compiled ("target.txt")</b>&nbsp;&nbsp;</span></span><br><br><br>
-- <span style="font-size:01.0em" >&nbsp;<span style="background-color: #7030a0">&nbsp;&nbsp;<b>Connects a Host to capture debug messages &nbsp;</b>&nbsp;&nbsp;</span></span>
-@ulend
-
-Note:
-- DebugLib library is clean & very portable
-- Using DEBUG and ASSERT macros in code
-- Enable/disable when compiled (target.txt)
-- Can connect a 2nd PC to capture debug messages 
-
-- The main message-- the debug lib library is portable, it’s clean, it’s very easy to use, and we believe it’s the easiest way to do debugging on a UEFI platform.
-
-- The debug lib library has the debug and assert macros. 
-- There are library instances that allow you to use a second PC to capture all messages coming out
-
 
 
 ---?image=assets/images/binary-strings-black2.jpg
@@ -181,6 +160,54 @@ Note:
 <span style="font-size:0.9em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
 Note:
+
+---
+@title[Using PCDs to Configure DebugLib]
+<p align="right"><span class="gold" ><b>Using PCDs to Configure `DebugLib`</b></span></p>
+
+@snap[west span-100 ]
+<br>
+@box[bg-black text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " ><br><br><br><br><br><br>&nbsp;&nbsp;</span></p>)
+@snapend
+
+@snap[north-west span-100 ]
+<br>
+<br>
+<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" ><font color="#87E2A9">`MdePkg` Debug Library Class </font></span></p>
+<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >
+&nbsp;&nbsp;
+[PcdsFixedAtBuild. PcdsPatchableInModule]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;  gEfiMdePkgTokenSpaceGuid.@color[red](PcdDebugPropertyMask)|0x1f<br>
+&nbsp;&nbsp;&nbsp;&nbsp;  gEfiMdePkgTokenSpaceGuid.@color[red](PcdDebugPrintErrorLevel)|0x80000040<br>
+</span></p>
+
+@snapend
+
+Note:
+
+- MdePkg Debug Library Class
+   - PcdDebugPropertyMask  
+- Bit mask to determine which features are on/off
+   - PcdDebugPrintErrorLevel 
+    - Types of messages produced
+	
+- PCDs set which drivers report errors and change what messages get printed
+- Example from Nt32Pkg.dsc:
+  - [PcdsFixedAtBuild.IA32]
+    - EfiMdePkgTokenSpaceGuid.PcdDebugPropertyMask|0x1f
+    - gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x80000040
+
+- How do you configure the debug lib?
+
+- It is configured through PCD entries and some platform configuration database entries.
+- This is part of the MDE package, where is the debug library class is defined.
+ 
+- Remember, the library instance can be anywhere, but the library class is defined in the MDE package. This is where the PCDs are defined. 
+
+- It is required for the debug Lib instance to use these PCDs for control.
+
+- PcdDebugPropertyMask and PcdDebugPrintErrorLevel can change sets of driver report errors, and they can also change the error messages that print out.
+- Per the example at the bottom of the slide, the assignment for PcdDebugPropertyMask is 0x1f and PcdDebugPrintErrorLevel is 0x80000040 . These are the values for these two PCDs. 
 
 
 ---?image=/assets/images/slides/Slide7.JPG
