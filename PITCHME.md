@@ -240,15 +240,14 @@ Note:
 <p style="line-height:70%" ><span style="font-size:01.0em;" ><font color="#87E2A9"><b>Debugging Features Enabled </b></font><br></span></p>
 <p style="line-height:60%" align="left"><span style="font-size:0.550em; font-family:Consolas; " >
 &nbsp;&nbsp;
-&nbsp;&nbsp;&num;define DEBUG_PROPERTY_DEBUG_ASSERT_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            0x01<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&num;define DEBUG_PROPERTY_DEBUG_ASSERT_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            0x01<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&num;define DEBUG_PROPERTY_DEBUG_PRINT_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;       0x02<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&num;define DEBUG_PROPERTY_DEBUG_CODE_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;       0x04<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&num;define DEBUG_PROPERTY_CLEAR_MEMORY_ENABLED &nbsp;&nbsp;&nbsp;            0x08<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&num;define DEBUG_PROPERTY_DEBUG_CODE_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       0x04<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&num;define DEBUG_PROPERTY_CLEAR_MEMORY_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            0x08<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&num;define DEBUG_PROPERTY_ASSERT_BREAKPOINT_ENABLED &nbsp;                   0x10<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&num;define DEBUG_PROPERTY_ASSERT_DEADLOOP_ENABLED &nbsp;&nbsp;&nbsp;              0x20
 </span></p>
-<br>
-<br>
+
 <p style="line-height:60%" align="left"><span style="font-size:0.50em;"> <font color="yellow">Default value in `OvmfPkg` is `0x2f`<br>Default value in `Nt32Pkg` is `0x1f`</font></span></p>
 @snapend
 
