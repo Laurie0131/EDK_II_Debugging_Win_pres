@@ -358,6 +358,38 @@ Note:
 - You can assign your own values to this debug print error level.  
 - However, these are the guideline values that these drivers use in terms of what their debug output messaging will be.
 
+---
+@title[Changing PCD Values ]
+<p align="right"><span class="gold" ><b>Changing PCD Values</b></span></p>
+@snap[north-west span-100 fragment]
+<br>
+<br>
+<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">@color[yellow](Change all instances of a PCD in platform DSC)</span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[PcdFixedAtBuild]<br>&nbsp;&nbsp;gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x00000000<br>&nbsp;&nbsp;</span></p>)
+<br>
+@snapend
+
+@snap[north-east span-90 rounded fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">@color[yellow](Change a single module's PCD values in the DSC)</span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;MyPath/MyModule.inf{<br>&nbsp;&nbsp;&lt;PcdFixedAtBuild&gt;<br>&nbsp;&nbsp;gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x00000000<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;</span></p>)
+<br>
+@snapend
+
+
+
+
+
+Note:
+- Use different PCD values only on the module being debugged
+- Minimize message output and minimize size increase
 
 
 ---?image=/assets/images/slides/Slide10.JPG
