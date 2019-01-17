@@ -403,8 +403,7 @@ Note:
 @snap[north-west span-90 fragment]
 <br>
 <br>
-<br>
-@box[bg-gold2 text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`ReportStatusCodeLib` –Progress codes<br>&nbsp;</span></p>)
+@box[bg-green-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`ReportStatusCodeLib` –Progress codes<br>&nbsp;</span></p>)
 <pre>
 ```
   gEfiMdePkgTokenSpaceGuid.PcdReportStatusCodePropertyMask
@@ -414,12 +413,12 @@ Note:
 @snapend
 
 
-@snap[north-east span-90 fragment]
+@snap[north-west span-90 fragment]
 <br>
 <br>
 <br>
 <p style="line-height:50%" ><br><br><br><br>&nbsp;</p>
-@box[bg-green-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`PostCodeLib` – Enable Post codes<br>&nbsp;</span></p>)
+@box[bg-royal text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`PostCodeLib` – Enable Post codes<br>&nbsp;</span></p>)
 <pre>
 ```
   gEfiMdePkgTokenSpaceGuid.PcdPostCodePropertyMask
@@ -437,8 +436,9 @@ Note:
 <br>
 <br>
 <br>
+<br>
 <p style="line-height:50%" ><br><br><br><br><br>&nbsp;</p>
-@box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`PerformanceLib` – Enable Measurement <br>&nbsp;</span></p>)
+@box[bg-gold2 text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`PerformanceLib` – Enable Measurement <br>&nbsp;</span></p>)
 <pre>
 ```
   gEfiMdePkgTokenSpaceGuid.PcdPerformanceLibraryPropertyMask
