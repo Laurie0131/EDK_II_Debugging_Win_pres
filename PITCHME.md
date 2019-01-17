@@ -301,7 +301,7 @@ Note:
 
 ---
 @title[PcdDebugPrintErrorLevel Values]
-<p align="right"><span class="gold" >@color[white](`PcdDebugPrintErrorLevel`) Values</span></p>
+<p align="right"><span class="gold" ><b>@color[white](`PcdDebugPrintErrorLevel`) Values</b></span></p>
 <p style="line-height:70%" ><span style="font-size:01.0em;" ><font color="#87E2A9"><b>Debugging Messages Displayed</b></font><br></span></p>
 
 ```
@@ -327,7 +327,7 @@ Note:
 ```
 
 <p style="line-height:60%" align="left"><span style="font-size:0.50em;"> <font color="yellow">
-Default value in `OvmfPkg` is `0x8000004f`<br>Default value in `Nt32Pkg` is `0x80000040`</font></span></p>
+Default value in `OvmfPkg` is `0x8000004f`  &nbsp;&nbsp;&nbsp;&nbsp; Default value in `Nt32Pkg` is `0x80000040`</font></span></p>
 
 
 
@@ -335,7 +335,7 @@ Default value in `OvmfPkg` is `0x8000004f`<br>Default value in `Nt32Pkg` is `0x8
 @snap[south span-90 fragment]
 
 @box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" > Determines which messages we want to print<br>&nbsp;</span></p>)
-<br>
+
 @snapend
 
 
