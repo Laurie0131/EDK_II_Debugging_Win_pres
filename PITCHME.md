@@ -231,32 +231,26 @@ Note:
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
 <p style="line-height:30%" align="left"><br>&nbsp;</p>
-@box[bg-grey-05 text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " ><b><b><b><br><br><br><br><br><br>&nbsp;&nbsp;</span></p>)
+@box[bg-grey-05 text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " ><br><b><b><b><br><br><br><br><br><br>&nbsp;&nbsp;</span></p>)
 @snapend
 
 @snap[north-west span-100 ]
 <br>
 <br>
-<br>
-<br>
 <p style="line-height:70%" ><span style="font-size:01.0em; font-weight: bold;" ><font color="#87E2A9">Debugging Features Enabled </font><br></span></p>
-<br>
 <p style="line-height:60%" align="left"><span style="font-size:0.60em; font-family:Consolas; " >
 &nbsp;&nbsp;
-#define DEBUG_PROPERTY_DEBUG_ASSERT_ENABLED &nbsp;&nbsp;&nbsp;            0x01<br>&nbsp;&nbsp;
-#define DEBUG_PROPERTY_DEBUG_PRINT_ENABLED  &nbsp;&nbsp;&nbsp;&nbsp;      0x02<br>&nbsp;&nbsp;
-#define DEBUG_PROPERTY_DEBUG_CODE_ENABLED   &nbsp;&nbsp;&nbsp;&nbsp;      0x04<br>&nbsp;&nbsp;
-#define DEBUG_PROPERTY_CLEAR_MEMORY_ENABLED &nbsp;                        0x08<br>&nbsp;&nbsp;
-#define DEBUG_PROPERTY_ASSERT_BREAKPOINT_ENABLED &nbsp;                   0x10<br>&nbsp;&nbsp;
-#define DEBUG_PROPERTY_ASSERT_DEADLOOP_ENABLED   &nbsp;&nbsp;             0x20
+ &num;define DEBUG_PROPERTY_DEBUG_ASSERT_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            0x01<br>&nbsp;&nbsp;
+ &num;define DEBUG_PROPERTY_DEBUG_PRINT_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;       0x02<br>&nbsp;&nbsp;
+ &num;define DEBUG_PROPERTY_DEBUG_CODE_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;       0x04<br>&nbsp;&nbsp;
+ &num;define DEBUG_PROPERTY_CLEAR_MEMORY_ENABLED &nbsp;&nbsp;&nbsp;            0x08<br>&nbsp;&nbsp;
+ &num;define DEBUG_PROPERTY_ASSERT_BREAKPOINT_ENABLED &nbsp;                   0x10<br>&nbsp;&nbsp;
+ &num;define DEBUG_PROPERTY_ASSERT_DEADLOOP_ENABLED &nbsp;&nbsp;&nbsp;              0x20
 </span></p>
 <br>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:0.60em;> <font color="yellow">
+<p style="line-height:60%" align="left"><span style="font-size:0.50em;> <font color="yellow">
 Default value in `OvmfPkg` is `0x2f`<br>
 Default value in `Nt32Pkg` is `0x1f`
 </font></span></p>
