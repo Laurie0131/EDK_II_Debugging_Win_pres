@@ -222,35 +222,93 @@ Note:
 - Per the example at the bottom of the slide, the assignment for PcdDebugPropertyMask is 0x1f and PcdDebugPrintErrorLevel is 0x80000040 . These are the values for these two PCDs. 
 
 
----?image=/assets/images/slides/Slide7.JPG
-@title[Using PCDs to Configure DebugLib]
-<p align="right"><span class="gold" >Using PCDs to Configure `DebugLib`</span></p>
+---
+@title[PcdDebugPropertyMask Values]
+<p align="right"><span class="gold" ><b>`PcdDebugPropertyMask` Values</b></span></p>
+
+
+@snap[north-west span-100 ]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:30%" align="left"><br>&nbsp;</p>
+@box[bg-grey-05 text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " ><b><b><b><br><br><br><br><br><br>&nbsp;&nbsp;</span></p>)
+@snapend
+
+@snap[north-west span-100 ]
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:70%" ><span style="font-size:01.0em; font-weight: bold;" ><font color="#87E2A9">Debugging Features Enabled </font><br></span></p>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.60em; font-family:Consolas; " >
+&nbsp;&nbsp;
+#define DEBUG_PROPERTY_DEBUG_ASSERT_ENABLED &nbsp;&nbsp;&nbsp;            0x01<br>&nbsp;&nbsp;
+#define DEBUG_PROPERTY_DEBUG_PRINT_ENABLED  &nbsp;&nbsp;&nbsp;&nbsp;      0x02<br>&nbsp;&nbsp;
+#define DEBUG_PROPERTY_DEBUG_CODE_ENABLED   &nbsp;&nbsp;&nbsp;&nbsp;      0x04<br>&nbsp;&nbsp;
+#define DEBUG_PROPERTY_CLEAR_MEMORY_ENABLED &nbsp;                        0x08<br>&nbsp;&nbsp;
+#define DEBUG_PROPERTY_ASSERT_BREAKPOINT_ENABLED &nbsp;                   0x10<br>&nbsp;&nbsp;
+#define DEBUG_PROPERTY_ASSERT_DEADLOOP_ENABLED   &nbsp;&nbsp;             0x20
+</span></p>
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.60em;> <font color="yellow">
+Default value in `OvmfPkg` is `0x2f`<br>
+Default value in `Nt32Pkg` is `0x1f`
+</font></span></p>
+
+@snapend
+
+
+
+
+@snap[south span-90 fragment]
+
+@box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" > Determines which debugging features are enabled.<br>&nbsp;</span></p>)
+<br>
+@snapend
+
+
+
 
 Note:
+- Enables debugging features
+- What kinds of outputs are produced?
+- What kind of debugging is being done?
 
-- MdePkg Debug Library Class
-   - PcdDebugPropertyMask  
-- Bit mask to determine which features are on/off
-   - PcdDebugPrintErrorLevel 
-    - Types of messages produced
-	
-- PCDs set which drivers report errors and change what messages get printed
-- Example from Nt32Pkg.dsc:
-  - [PcdsFixedAtBuild.IA32]
-    - EfiMdePkgTokenSpaceGuid.PcdDebugPropertyMask|0x1f
-    - gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x80000040
+<pre>
+ #define DEBUG_PROPERTY_DEBUG_ASSERT_ENABLED       0x01
+ #define DEBUG_PROPERTY_DEBUG_PRINT_ENABLED        0x02
+ #define DEBUG_PROPERTY_DEBUG_CODE_ENABLED         0x04
+ #define DEBUG_PROPERTY_CLEAR_MEMORY_ENABLED       0x08
+ #define DEBUG_PROPERTY_ASSERT_BREAKPOINT_ENABLED  0x10
+ #define DEBUG_PROPERTY_ASSERT_DEADLOOP_ENABLED    0x20
+</pre>
+- another Note: Default value in Nt32 is 0x1f
 
-- How do you configure the debug lib?
+- Determines which debugging features are enabled.
 
-- It is configured through PCD entries and some platform configuration database entries.
-- This is part of the MDE package, where is the debug library class is defined.
+- What kinds of output are produced.
+- What kind of debugging is being done.
+
+- Default in Ntr32 is 0x1f
+
+- So what does that mean?
  
-- Remember, the library instance can be anywhere, but the library class is defined in the MDE package. This is where the PCDs are defined. 
+- for DebugPropertyMask, 1F turns on:
+ 	- debug assert, 
+	- debug print, 
+	- debug code enabled, 
+	- clear memory, 
+	- assert breakpoint
+- It does not turn on assert dead loop.
 
-- It is required for the debug Lib instance to use these PCDs for control.
+- This turns on the debug features for the property mask one at a time. The property mask tells the debug command what we really want to have happen.
 
-- PcdDebugPropertyMask and PcdDebugPrintErrorLevel can change sets of driver report errors, and they can also change the error messages that print out.
-- Per the example at the bottom of the slide, the assignment for PcdDebugPropertyMask is 0x1f and PcdDebugPrintErrorLevel is 0x80000040 . These are the values for these two PCDs. 
 
 
 ---?image=/assets/images/slides/Slide8.JPG
