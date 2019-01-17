@@ -128,7 +128,7 @@ Note:
 <br>
 <br>
 <br>
-<p style="line-height:50%" ><br><br><br><br>&nbsp;</p>
+<p style="line-height:50%" ><br><br><br><br><br>&nbsp;</p>
 @box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" > Connects a Host to capture debug messages <br>&nbsp;</span></p>)
 <br>
 @snapend
