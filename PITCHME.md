@@ -1,7 +1,8 @@
 ---?image=assets/images/gitpitch-audience.jpg
 @title[EDK II Debugging]
 <br><br><br>
-<span style="font-size:0.75em" >This slide deck has moved to:  https://gitpitch.com/tianocore-training/EDK_II_Debugging_Win_pres/master#/
+<span style="font-size:0.75em" >This slide deck has moved to:  https://gitpitch.com/tianocore-training/EDK_II_Debugging_Pres_Win_Lab/master#/
+</span>
 <br><br>
 ## <span class="gold"   >UEFI & EDK II Training</span>
 
@@ -175,9 +176,9 @@ Note:
 <br>
 <br>
 <br>
-<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" ><font color="#87E2A9">MdePkg Debug Library Class </font><br></span></p>
+<p style="line-height:70%" ><span style="font-size:01.0em; font-weight: bold;" ><font color="lt_green">MdePkg Debug Library Class </font><br></span></p>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:0.650em; font-family:Consolas; " >
+<p style="line-height:60%" align="left"><span style="font-size:0.550em; font-family:Consolas; " >
 &nbsp;&nbsp;
 [PcdsFixedAtBuild. PcdsPatchableInModule]<br>
 &nbsp;&nbsp;&nbsp;&nbsp;  gEfiMdePkgTokenSpaceGuid.@color[red](PcdDebugPropertyMask)|0x1f<br>
