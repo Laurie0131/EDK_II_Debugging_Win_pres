@@ -657,7 +657,7 @@ Note:
 @title[Precedence for Debug Flags Hierarchy]
 <p align="right"><span class="gold" ><b>Precedence for Debug Flags Hierarchy</b></span></p>
 
-@snap[north span-80 fragment]
+@snap[north span-85 fragment]
 <br>
 <br>
 @box[bg-green-pp text-white waved   ](<p style="line-height:90%" ><span style="font-size:01.0125em; font-weight: bold;" >Tools_def.txt<br><br>&nbsp;</span></p>)
@@ -671,7 +671,7 @@ Note:
 @box[bg-navy text-white waved   ](<p style="line-height:90%" ><span style="font-size:01.0125em; font-weight: bold;" >DSC `[BuildOptions]` section &lpar;platform scope&rpar;<br>&nbsp;</span></p>)
 @snapend
 
-@snap[north span-60 fragment]
+@snap[north-west span-55 fragment]
 <br>
 <br>
 <br>
@@ -682,9 +682,7 @@ Note:
 @snapend
 
 
-@snap[north span-50 fragment]
-<br>
-<br>
+@snap[north-east span-55 fragment]
 <br>
 <br>
 <br>
