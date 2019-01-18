@@ -660,7 +660,7 @@ Note:
 @snap[north span-80 fragment]
 <br>
 <br>
-@box[bg-green-pp text-white waved   ](<p style="line-height:70%" ><span style="font-size:01.125em; font-weight: bold;" >Tools_def.txt<br>&nbsp;</span></p>)
+@box[bg-green-pp text-white waved   ](<p style="line-height:90%" ><span style="font-size:01.0125em; font-weight: bold;" >Tools_def.txt<br><br>&nbsp;</span></p>)
 @snapend
 
 @snap[north span-70 fragment]
@@ -668,7 +668,7 @@ Note:
 <br>
 <br>
 <br>
-@box[bg-navy text-white waved   ](<p style="line-height:70%" ><span style="font-size:01.125em; font-weight: bold;" >DSC `[BuildOptions]` section &lpar;platform scope&rpar;<br>&nbsp;</span></p>)
+@box[bg-navy text-white waved   ](<p style="line-height:90%" ><span style="font-size:01.0125em; font-weight: bold;" >DSC `[BuildOptions]` section &lpar;platform scope&rpar;<br>&nbsp;</span></p>)
 @snapend
 
 @snap[north span-60 fragment]
@@ -678,7 +678,7 @@ Note:
 <br>
 <br>
 <br>
-@box[bg-gold2 text-white waved  ](<p style="line-height:70%" ><span style="font-size:01.125em; font-weight: bold;" >INF `[BuildOptions]` section <br>&nbsp;</span></p>)
+@box[bg-gold2 text-white waved  ](<p style="line-height:90%" ><span style="font-size:01.0125em; font-weight: bold;" >INF `[BuildOptions]` section <br>&nbsp;</span></p>)
 @snapend
 
 
@@ -691,7 +691,7 @@ Note:
 <br>
 <br>
 <br>
-@box[bg-lt-blue-pp text-white   ](<p style="line-height:70%" ><span style="font-size:01.125em; font-weight: bold;" >DSC  &lt;`BuildOptions`&gt; under a specific module <br>&nbsp;</span></p>)
+@box[bg-lt-blue-pp text-white waved  ](<p style="line-height:90%" ><span style="font-size:01.0125em; font-weight: bold;" >DSC  &lt;`BuildOptions`&gt; under a specific module <br>&nbsp;</span></p>)
 @snapend
 
 Note:
