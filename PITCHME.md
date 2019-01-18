@@ -852,7 +852,7 @@ Note:
 <p align="left"><span class="gold" ><b>`DebugLib` Instances (1)</b></span></p>
 
 @snap[north-west span-75]
-<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br>&nbsp;</span></p>
+<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br><br>&nbsp;</span></p>
 @box[bg-ubuntu text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.70em; font-family:Consolas; " >&nbsp;&nbsp;BaseDebugLibSerialPort<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
@@ -861,12 +861,14 @@ Note:
 <br>
 <br>
 <br>
+<br>
 <p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br>&nbsp;</span></p>
-@box[bg-royal text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.70em; font-family:Consolas; " >&nbsp;&nbsp;<br><br><br><br><br>&nbsp;&nbsp;</span></p>)
+@box[bg-royal text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.70em; font-family:Consolas; " >&nbsp;&nbsp;<br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
 
 @snap[north-west span-90]
+<br>
 <br>
 <br>
 <br>
@@ -877,6 +879,10 @@ Note:
   <li><span style="font-size:0.8em">Default for many platforms:  `BaseDebugLibNull`  </span></li>
   <li><span style="font-size:0.8em">OVMF uses it with Switch `DEBUG_ON_SERIAL_PORT`  </span></li>
 </ul>
+@snapend
+
+@snap[south-east span-20]
+![implementation](/assets/images/Implementation.png)
 @snapend
 
 Note:
