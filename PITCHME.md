@@ -770,65 +770,6 @@ Note:
 - Change optimizations, etc…
 
 
----?image=/assets/images/slides/Slide28.JPG
-<!-- .slide: data-transition="none" -->
-@title[Compiler / Linker Flags]
-<p align="right"><span class="gold" ><b>Compiler / Linker Flags</b></span></p>
-
-Note:
-- Change common flags in platform DSC
- - [BuildOptions]
-   - DEBUG_*_IA32_CC_FLAGS = /Od
-
-- Change a single module’s flags in DSC
- - MyPath/MyModule.inf {
-  - <BuildOptions>
-     - DEBUG_*_IA32_CC_FLAGS = /Od 
- - }
-
-- Change optimizations, etc…
-
-
-+++?image=/assets/images/slides/Slide29.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Compiler / Linker Flags 02]
-<p align="right"><span class="gold" >Compiler / Linker Flags</span></p>
-
-Note:
-- Change common flags in platform DSC
- - [BuildOptions]
-   - DEBUG_*_IA32_CC_FLAGS = /Od
-
-- Change a single module’s flags in DSC
- - MyPath/MyModule.inf {
-  - <BuildOptions>
-     - DEBUG_*_IA32_CC_FLAGS = /Od 
- - }
-
-- Change optimizations, etc…
-
-
-+++?image=/assets/images/slides/Slide30.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Compiler / Linker Flags 03]
-<p align="right"><span class="gold" >Compiler / Linker Flags</span></p>
-
-Note:
-- Change common flags in platform DSC
- - [BuildOptions]
-   - DEBUG_*_IA32_CC_FLAGS = /Od
-
-- Change a single module’s flags in DSC
- - MyPath/MyModule.inf {
-  - <BuildOptions>
-     - DEBUG_*_IA32_CC_FLAGS = /Od 
- - }
-
-- Change optimizations, etc…
-
-
 ---?image=assets/images/binary-strings-black2.jpg
 @title[DebugLib Usage Section]
 <br><br><br><br><br><br><br>
@@ -942,6 +883,57 @@ Note:
   also passed to the handler that displays the POST card value.  Some 
   implementations of this library function may perform I/O operations directly 
   to a POST card device.  Other implementations may send Value to ReportStatusCode(), 
+
+
+
+---
+@title[Changing Library Instances ]
+<p align="right"><span class="gold" ><b>Changing Library Instances </b></span></p>
+
+
+@snap[north-west span-90 rounded fragment]
+<br>
+<br>
+<br>
+<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">@color[yellow](Change common library instances in the platform DSC by Module type)</span></p>
+@box[bg-grey-05 text-white rounded my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[LibraryClasses.common.IA32]&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;DebugLib|MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf<br>&nbsp;&nbsp;</span></p>)
+<br>
+@snapend
+
+
+@snap[north-west span-90 rounded fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">@color[yellow](Change a single module's library instance in the platform DSC)</span></p>
+@box[bg-grey-05 text-white rounded my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;MyPath/MyModule.inf&nbsp;{<br>&nbsp;&nbsp;&lt;LibraryClasses&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;DebugLib|MdePkg/Library/BaseDebugLibSerialPort.inf<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;</span></p>)
+<br>
+@snapend
+
+
+
+
+
+
+Note:
+- Change common library instances in the platform DSC by module type
+<pre>
+  [LibraryClasses.common.IA32]
+    DebugLib|MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
+</pre>
+- Change a single module’s library instance in the platform DSC
+<pre>
+  MyPath/MyModule.inf {
+    <LibraryClasses>
+     DebugLib|MdePkg/Library/BaseDebugLibSerialPort.inf
+  }
+</pre>
+- another Note: Use a different debugging library instance only on the module in question (managing size changes)
+
 
 
 ---?image=/assets/images/slides/Slide36.JPG
