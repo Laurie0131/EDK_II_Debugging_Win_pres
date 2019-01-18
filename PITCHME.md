@@ -789,8 +789,8 @@ Note:
 <p align="center"><span class="gold" ><b>The `DebugLib` Class</b></span></p>
 
 @snap[north-west span-85]
-<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br>&nbsp;</span></p>
-@box[bg-u-term text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.70em; font-family:Consolas; " >&nbsp;&nbsp;MdePkg/Include/Library/DebugLib.h<br>&nbsp;&nbsp;</span></p>)
+<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br>&nbsp;</span></p>
+@box[bg-ubuntu text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.70em; font-family:Consolas; " >&nbsp;&nbsp;MdePkg/Include/Library/DebugLib.h<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
 
