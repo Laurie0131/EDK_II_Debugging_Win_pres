@@ -693,59 +693,29 @@ Note:
 @snapend
 
 
-@snap[south span-60 fragment]
-@box[bg-grey-05 text-white rounded my-box-pad2](<p style="line-height:60%" align="left" ><span style="font-size:0.65em; " >&nbsp;&nbsp; 1. Tools_def.txt<br>&nbsp;&nbsp; 2. DSC [BuildOptions] section  &lpar;platform scope&rpar;<br>&nbsp;&nbsp; 3. INF [BuildOptions] section &lpar;module scope&rpar;<br>&nbsp;&nbsp; 4. DSC &lt;BuildOptions&gt; under a specific module<br>&nbsp;&nbsp;</span></p>)
+@snap[south span-70 fragment]
+@box[bg-grey-05 text-white rounded my-box-pad2](<p style="line-height:60%" align="left" ><span style="font-size:0.7em; " >&nbsp;&nbsp; 1. Tools_def.txt<br>&nbsp;&nbsp; 2. DSC [BuildOptions] section  &lpar;platform scope&rpar;<br>&nbsp;&nbsp; 3. INF [BuildOptions] section &lpar;module scope&rpar;<br>&nbsp;&nbsp; 4. DSC &lt;BuildOptions&gt; under a specific module<br>&nbsp;&nbsp;</span></p>)
+<br>
+<br>
 @snapend
 
 Note:
-
-
----?image=/assets/images/slides/Slide23.JPG
-<!-- .slide: data-transition="none" -->
-@title[Precedence for Debug Flags Hierarchy]
-<p align="right"><span class="gold" ><b>Precedence for Debug Flags Hierarchy</b></span></p>
-
-Note:
-
-
-+++?image=/assets/images/slides/Slide24.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Precedence for Debug Flags Hierarchy 02]
-<p align="right"><span class="gold" ><b>Precedence for Debug Flags Hierarchy</b></span></p>
-
-Note:
-
 - think of the rules for compiler switches and options as a pyramid
- - Pyramid top overrides middle, middle overrides the bottom
+- Pyramid top overrides middle, middle overrides the bottom
 
 
 
-+++?image=/assets/images/slides/Slide25.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Precedence for Debug Flags Hierarchy 03]
-<p align="right"><span class="gold" ><b>Precedence for Debug Flags Hierarchy</b></span></p>
+- Tools_def.txt
+  - Baseline set of command line options for compiler and linker
+- INF [BuildOptions] section
+  - Append onto existing command line with ‘=‘
+  - Replace entire existing command line with ‘==‘
 
-Note:
+- DSC [BuildOptions] section (platform scope)
+  - Same usage
 
-
-+++?image=/assets/images/slides/Slide26.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Precedence for Debug Flags Hierarchy 04]
-<p align="right"><span class="gold" ><b>Precedence for Debug Flags Hierarchy</b></span></p>
-
-Note:
-
-
-+++?image=/assets/images/slides/Slide27.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Precedence for Debug Flags Hierarchy 05]
-<p align="right"><span class="gold" ><b>Precedence for Debug Flags Hierarchy</b></span></p>
-
-Note:
+- DSC <BuildOptions> under a specific module
+  - Same usage 
 
 
 
