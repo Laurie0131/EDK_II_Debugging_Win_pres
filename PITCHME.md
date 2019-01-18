@@ -898,30 +898,52 @@ Note:
 
 
 
----?image=/assets/images/slides/Slide33.JPG
-@title[DebugLib Instances (1)]
+---?image=/assets/images/slides/Slide26_1.JPG
+@title[DebugLib Instances (2)]
 <br>
-<p align="left"><span class="gold" ><b>`DebugLib` Instances (1)</b></span></p>
+<p align="left"><span class="gold" ><b>`DebugLib` Instances (2)</b></span></p>
+
+
+
+@snap[north-west span-80]
+<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br><br><br>&nbsp;</span></p>
+@box[bg-ubuntu text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.70em; font-family:Consolas; " >&nbsp;&nbsp;UefiDebugLibConOut  UefiDebugLibStdErr<br>&nbsp;&nbsp;</span></p>)
+<br>
+@snapend
+
+@snap[north-west span-100]
 <br>
 <br>
+<br>
+<br>
+<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br>&nbsp;</span></p>
+@box[bg-navy text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.70em; font-family:Consolas; " >&nbsp;&nbsp;<br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;&nbsp;</span></p>)
+<br>
+@snapend
+
+@snap[north-west span-90]
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br>&nbsp;</span></p>
 <ul>
-  <li><span style="font-size:0.9em">Instance of `DebugLib`   </span></li>
-  <li><span style="font-size:0.9em">Uses `SerialPortLib` class to send debug output to serial port</span></li>
-  <li><span style="font-size:0.9em">Default for many platforms:  `BaseDebugLibNull`  </span></li>
-  <li><span style="font-size:0.9em">OVMF uses it with Switch `DEBUG_ON_SERIAL_PORT`  </span></li>
+  <li><span style="font-size:0.9em">Instances of `DebugLib` (for apps and drivers)</span></li><br>
+  <li><span style="font-size:0.9em">Send all debug output to console/debug console</span></li>
 </ul>
+@snapend
+
+@snap[south-east span-20]
+![implementation](/assets/images/Implementation.png)
+@snapend
 
 
 Note:
-- debugLib library instances
-
-- The first debug Lib library instance is the BaseDebugLibSerialPort 
- this is a debug Lib that is good for PEI and DXE.
- It uses the serial Port Lib class and sends all the debug information out the serial port.
- 
-- Every time that you type DEBUG, it prints the information to the serial port such that if there is another PC capturing that information out the serial port, it allows easy viewing of the debug information. 
-- This is good because it works early on in the platform. You can run very early and get a lot of debug information. 
-- At this point the only serial port library instance that is in the public domain or open source is the DUET version 
+- UefiDebugLibConOut   UefiDebugLibStdErr
+- Instances of DebugLib (for Apps and Drivers)
+- Send all debug output out to console/debug console
+- This allows for viewing of debug information
+- Make sure that the console is visible
 
 
 ---?image=/assets/images/slides/Slide34.JPG
