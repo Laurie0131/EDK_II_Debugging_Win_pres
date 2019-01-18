@@ -392,6 +392,9 @@ table#recTable2{width:110%; border:1px solid gray;}
 .bg-grey-05  { background: #0d0d0d!important; }
 .bg-grey-00  { background: #000000!important; }
 
+.bg-u-term  { background: #300A24!important; }
+.bg-ubuntu  { background: #64205d!important; }
+
 
 .my-box-pad #boxed-text{ 
   padding-top: 0.05em;
