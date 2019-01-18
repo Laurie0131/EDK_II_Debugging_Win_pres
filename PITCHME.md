@@ -694,12 +694,16 @@ Note:
 
 
 @snap[south span-55 fragment]
+@box[bg-black text-white rounded ]( <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;)
+@snapend
 
-1. Tools_def.txt
-2. DSC [BuildOptions] section  (platform scope)
-3. INF [BuildOptions] section (module scope)
-4. DSC <BuildOptions>  under a specific module
-
+@snap[south span-50 fragment]
+<p style="line-height:80%" align="left" ><span style="font-size:0.70em; " ><br>&nbsp;&nbsp;
+ 1. Tools_def.txt<br>&nbsp;&nbsp;
+ 2. DSC [BuildOptions] section  &lpar;platform scope&rpar;<br>&nbsp;&nbsp;
+ 3. INF [BuildOptions] section &lpar;module scope&rpar;<br>&nbsp;&nbsp;
+ 4. DSC &lt;BuildOptions&gt; under a specific module<br>&nbsp;&nbsp;
+</span></p>
 @snapend
 
 Note:
