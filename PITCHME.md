@@ -846,20 +846,18 @@ Note:
 
 
 
----?image=/assets/images/slides/Slide26_3.JPG
+---?image=/assets/images/slides/Slide26_1.JPG
 @title[DebugLib Instances (1)]
+<br>
 <p align="left"><span class="gold" ><b>`DebugLib` Instances (1)</b></span></p>
 
 @snap[north-west span-75]
-<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br>&nbsp;</span></p>
+<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br>&nbsp;</span></p>
 @box[bg-ubuntu text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.70em; font-family:Consolas; " >&nbsp;&nbsp;BaseDebugLibSerialPort<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
 
-@snap[north-west span-85]
-<br>
-<br>
-<br>
+@snap[north-west span-90]
 <br>
 <br>
 <br>
@@ -868,19 +866,16 @@ Note:
 <br>
 @snapend
 
-@snap[north-west span-85]
+@snap[north-west span-90]
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br>&nbsp;</span></p>
+<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br>&nbsp;</span></p>
 <ul>
-  <li><span style="font-size:0.9em">Instance of `DebugLib`   </span></li>
-  <li><span style="font-size:0.9em">Uses `SerialPortLib` class to send debug output to serial port</span></li>
-  <li><span style="font-size:0.9em">Default for many platforms:  `BaseDebugLibNull`  </span></li>
-  <li><span style="font-size:0.9em">OVMF uses it with Switch `DEBUG_ON_SERIAL_PORT`  </span></li>
+  <li><span style="font-size:0.8em">Instance of `DebugLib`   </span></li>
+  <li><span style="font-size:0.8em">Uses `SerialPortLib` class to send debug output to serial port</span></li>
+  <li><span style="font-size:0.8em">Default for many platforms:  `BaseDebugLibNull`  </span></li>
+  <li><span style="font-size:0.8em">OVMF uses it with Switch `DEBUG_ON_SERIAL_PORT`  </span></li>
 </ul>
 @snapend
 
