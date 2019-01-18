@@ -935,56 +935,11 @@ Note:
 
 
 
----?image=/assets/images/slides/Slide36.JPG
-@title[Changing Library Instances ]
-<p align="right"><span class="gold" >Changing Library Instances </span></p>
-
-Note:
-- Change common library instances in the platform DSC by module type
-<pre>
-  [LibraryClasses.common.IA32]
-    DebugLib|MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
-</pre>
-- Change a single module’s library instance in the platform DSC
-<pre>
-  MyPath/MyModule.inf {
-    <LibraryClasses>
-     DebugLib|MdePkg/Library/BaseDebugLibSerialPort.inf
-  }
-</pre>
-- another Note: Use a different debugging library instance only on the module in question (managing size changes)
-
-
-
-
-+++?image=/assets/images/slides/Slide37.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Changing Library Instances 02 ]
-<p align="right"><span class="gold" >Changing Library Instances </span></p>
-
-
-
-Note:
-- Change common library instances in the platform DSC by module type
-<pre>
-  [LibraryClasses.common.IA32]
-    DebugLib|MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
-</pre>
-- Change a single module’s library instance in the platform DSC
-<pre>
-  MyPath/MyModule.inf {
-    <LibraryClasses>
-     DebugLib|MdePkg/Library/BaseDebugLibSerialPort.inf
-  }
-</pre>
-- another Note: Use a different debugging library instance only on the module in question (managing size changes)
-
 ---?image=/assets/images/slides/Slide_LabSec.JPG
 @title[Lab 3: Library Instances for Debugging]
 <br>
 <br>
-<p align="Left"><span class="gold" >Lab 3: Library Instances for Debugging</span></p>
+<p align="Left"><span class="gold" ><b>Lab 3: Library Instances for Debugging</b></span></p>
 <br>
 <div class="left1">
 <span style="font-size:0.8em" >In this lab,  you’ll learn how to add specific debug library instances. </span><br>
@@ -998,7 +953,7 @@ Note:
 
 ---
 @title[Lab 3: Using Library Instances for Debugging]
-<p align="right"><span class="gold" >Lab 3: Using Library Instances for Debugging</span></p>
+<p align="right"><span class="gold" ><b>Lab 3: Using Library Instances for Debugging</b></span></p>
 <br>
 <br>
 <span style="font-size:0.7em" >Open `C:/FW/edk2/Nt32Pkg/Nt32Pkg.dsc` </span><br>
@@ -1018,7 +973,7 @@ Lab 3 Changing Library
 
 ---?image=/assets/images/slides/Slide40.JPG
 @title[Lab 3: Build, Run and Test Result]
-<p align="right"><span class="gold" >Lab 3: Build, Run and Test Result</span></p>
+<p align="right"><span class="gold" ><b>Lab 3: Build, Run and Test Result</b></span></p>
 <div class="left">
 <span style="font-size:0.8em" >At the VS Command Prompt</span>
 <pre>
@@ -1045,7 +1000,7 @@ Notice the Debug messages output to the console
 @title[Lab 4: Serial port Instance of DebugLib]
 <br>
 <br>
-<p align="Left"><span class="gold" >Lab 4: Null Instance of `DebugLib`</span></p>
+<p align="Left"><span class="gold" ><b>Lab 4: Null Instance of `DebugLib`</b></span></p>
 <br>
 <div class="left1">
 <span style="font-size:0.8em" >In this lab,  you’ll change the `DebugLib` to the Null instance. </span>
@@ -1061,7 +1016,7 @@ The DEBUG output for SampleApp is no debug output
 
 ---
 @title[Lab 4: Using Serial port Library Instances]
-<p align="right"><span class="gold" >Lab 4: Using Serial port Library Instances</span></p>
+<p align="right"><span class="gold" ><b>Lab 4: Using Serial port Library Instances</b></span></p>
 <br>
 <span style="font-size:0.7em" >Open `C:/FW/edk2/Nt32Pkg/Nt32Pkg.dsc` </span><br>
 <span style="font-size:0.7em" >Replace `SampleApp/SampleApp.inf { . . .}` with the following:</span><br>
@@ -1079,7 +1034,7 @@ Lab 4
 
 ---?image=/assets/images/slides/Slide43.JPG
 @title[Lab 4: Build, Run and Test Result]
-<p align="right"><span class="gold" >Lab 4: Build, Run and Test Result</span></p>
+<p align="right"><span class="gold" ><b>Lab 4: Build, Run and Test Result</b></span></p>
 <br>
 <div class="left">
 <span style="font-size:0.8em" >At the VS Command Prompt</span>
@@ -1109,7 +1064,7 @@ Notice the Debug messages output to the console
 @title[Lab 5: Debugging EDK II with VS Debugger]
 <br>
 <br>
-<p align="Left"><span class="gold" >Lab 5: Debugging EDK II with VS Debugger</span></p>
+<p align="Left"><span class="gold" ><b>Lab 5: Debugging EDK II with VS Debugger</b></span></p>
 <br>
 <div class="left1">
 <span style="font-size:0.8em" >In this lab,  you’ll learn how setup the VS to debug the EDK II Nt32 emulation</span>
@@ -1123,7 +1078,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide45.JPG
 @title[Lab 5: Nt32 Debug with VS]
-<p align="right"><span class="gold" >Lab 5: Nt32 Debug with VS</span></p>
+<p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS</b></span></p>
 <br>
 <span style="font-size:0.7em" >Edit the `SampleApp.c`and add the “`ASSERT_EFI_ERROR`” Statement :  </span><br>
 ```c
@@ -1142,7 +1097,7 @@ Lab 5, add ASSERT
 
 ---?image=/assets/images/slides/Slide46.JPG
 @title[Lab 5: Nt32 Debug with VS ]
-<p align="right"><span class="gold" >Lab 5: Nt32 Debug with VS </span></p>
+<p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS </b></span></p>
 <br>
 <div class="left">
 <span style="font-size:0.8em" >At the VS Command Prompt</span>
@@ -1165,7 +1120,7 @@ Lab 5, add ASSERT
 
 ---?image=/assets/images/slides/Slide47.JPG
 @title[Lab 5: Nt32 Debug with VS 02]
-<p align="right"><span class="gold" >Lab 5: Nt32 Debug with VS </span></p>
+<p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS </b></span></p>
 
 
 Note:
@@ -1174,7 +1129,7 @@ Lab 5, add ASSERT
 
 ---?image=/assets/images/slides/Slide48.JPG
 @title[Lab 5: Nt32 Debug with VS- CPU bp]
-<p align="right"><span class="gold" >Lab 5: Nt32 Debug with VS</span></p>
+<p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS</b></span></p>
 <br>
 <p style="line-height:60%"><span style="font-size:0.7em" >Edit the `SampleApp.c` and add the “`CpuBreakpoint();`” Statement and comment out the “`ASSERT`”:  </span></p>
 ```c
@@ -1194,7 +1149,7 @@ Lab 5, add CpuBreakpoint();
 
 ---?image=/assets/images/slides/Slide49.JPG
 @title[Lab 5: Nt32 Debug with VS ]
-<p align="right"><span class="gold" >Lab 5: Nt32 Debug with VS </span></p>
+<p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS </b></span></p>
 <br>
 <div class="left">
 <span style="font-size:0.8em" >At the VS Command Prompt</span>
@@ -1218,7 +1173,7 @@ Lab 5  add CpuBreakpoint();
 
 ---?image=/assets/images/slides/Slide50.JPG
 @title[Invoke Windows Visual Studio Debugger ]
-<p align="right"><span class="gold" >Invoke Windows Visual Studio Debugger</span></p>
+<p align="right"><span class="gold" ><b>Invoke Windows Visual Studio Debugger</b></span></p>
 
 
 Note:
@@ -1229,7 +1184,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide51.JPG
 @title[Invoke Windows Visual Studio Debugger ]
-<p align="right"><span class="gold" >Invoke Windows Visual Studio Debugger</span></p>
+<p align="right"><span class="gold" ><b>Invoke Windows Visual Studio Debugger</b></span></p>
 
 Note:
 Now the visual studio debugger is debugging the sampleapp function and common debug tasks can be done:
