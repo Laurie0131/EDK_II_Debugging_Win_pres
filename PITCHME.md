@@ -693,12 +693,12 @@ Note:
 @snapend
 
 
-@snap[south span-55 fragment]
-@box[bg-black text-white rounded ]( <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;)
+@snap[south span-65 fragment]
+@box[bg-grey-05 text-white rounded ]( <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;&nbsp;<br>&nbsp;)
 @snapend
 
-@snap[south span-50 fragment]
-<p style="line-height:80%" align="left" ><span style="font-size:0.70em; " ><br>&nbsp;&nbsp;
+@snap[south span-55 fragment]
+<p style="line-height:60%" align="left" ><span style="font-size:0.60em; " ><br>&nbsp;&nbsp;
  1. Tools_def.txt<br>&nbsp;&nbsp;
  2. DSC [BuildOptions] section  &lpar;platform scope&rpar;<br>&nbsp;&nbsp;
  3. INF [BuildOptions] section &lpar;module scope&rpar;<br>&nbsp;&nbsp;
