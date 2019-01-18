@@ -657,10 +657,36 @@ Note:
 @title[Precedence for Debug Flags Hierarchy]
 <p align="right"><span class="gold" ><b>Precedence for Debug Flags Hierarchy</b></span></p>
 
+@snap[north span-80 fragment]
+<br>
+<br>
+@box[bg-green-pp text-white waved my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:01.5em; font-weight: bold;" >Tools_def.txt<br>&nbsp;</span></p>)
+@snapend
+
+@snap[north span-70 fragment]
+<br>
+<br>
+<br>
+@box[bg-navy text-white waved my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:01.5em; font-weight: bold;" >DSC `[BuildOptions]` section &lpar;platform scope&rpar;<br>&nbsp;</span></p>)
+@snapend
+
+@snap[north span-60 fragment]
+<br>
+<br>
+<br>
+<br>
+@box[bg-gold2 text-white waved my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:01.5em; font-weight: bold;" >INF `[BuildOptions]` section <br>&nbsp;</span></p>)
+@snapend
 
 
-
-
+@snap[north span-50 fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+@box[bg-lt-blue-pp text-white waved my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:01.5em; font-weight: bold;" >DSC  &lt;`BuildOptions`&gt; under a specific module <br>&nbsp;</span></p>)
+@snapend
 
 Note:
 
