@@ -549,13 +549,13 @@ Note:
 
 ---?image=/assets/images/slides/Slide17.JPG
 @title[Lab 1: Add debug statements SampleApp 03]
-<p align="right"><span class="gold" >Lab 1: Add debug statements to SampleApp</span></p>
+<p align="right"><span class="gold" ><b>Lab 1: Add debug statements to SampleApp</b></span></p>
 
 Note:
 
 ---?image=/assets/images/slides/Slide18.JPG
 @title[Lab 1: Build,Run and Test Result ]
-<p align="right"><span class="gold" >Lab 1: Build, Run and Test Result</span></p>
+<p align="right"><span class="gold" ><b>Lab 1: Build, Run and Test Result</b></span></p>
 <br>
 <div class="left">
 <span style="font-size:0.8em" >At the VS Command Prompt</span>
@@ -584,7 +584,7 @@ Notice the changes in DEBUG output for SampleApp in the Visual Studio Command Pr
 @title[Lab 2: Changing PCD Value]
 <br>
 <br>
-<p align="Left"><span class="gold" >Lab 2: Changing PCD Value</span></p>
+<p align="Left"><span class="gold" ><b>Lab 2: Changing PCD Value</b></span></p>
 <br>
 <div class="left1">
 <span style="font-size:0.8em" >In this lab, you’ll  learn how to use PCD values to change debugging capabilities. </span>
@@ -601,7 +601,7 @@ In this lab, you’ll learn how to use PCD values to change debugging capabiliti
 
 ---
 @title[Lab 2: Change PCDs for SampleApp]
-<p align="right"><span class="gold" >Lab 2: Change PCDs for SampleApp</span></p>
+<p align="right"><span class="gold" ><b>Lab 2: Change PCDs for SampleApp</b></span></p>
 <br>
 <br>
 <span style="font-size:0.7em" >Open `C:/FW/edk/Nt32Pkg/Nt32Pkg.dsc` </span><br>
@@ -621,7 +621,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide21.JPG
 @title[Lab 2: Build,Run and Test Result ]
-<p align="right"><span class="gold" >Lab 2: Build, Run and Test Result</span></p>
+<p align="right"><span class="gold" ><b>Lab 2: Build, Run and Test Result</b></span></p>
 <br>
 <div class="left">
 <span style="font-size:0.8em" >At the VS Command Prompt</span>
@@ -653,10 +653,22 @@ Notice the changes in DEBUG output for SampleApp in the Visual Studio Command Pr
 
 Note:
 
+---
+@title[Precedence for Debug Flags Hierarchy]
+<p align="right"><span class="gold" ><b>Precedence for Debug Flags Hierarchy</b></span></p>
+
+
+
+
+
+
+Note:
+
+
 ---?image=/assets/images/slides/Slide23.JPG
 <!-- .slide: data-transition="none" -->
 @title[Precedence for Debug Flags Hierarchy]
-<p align="right"><span class="gold" >Precedence for Debug Flags Hierarchy</span></p>
+<p align="right"><span class="gold" ><b>Precedence for Debug Flags Hierarchy</b></span></p>
 
 Note:
 
@@ -665,7 +677,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Precedence for Debug Flags Hierarchy 02]
-<p align="right"><span class="gold" >Precedence for Debug Flags Hierarchy</span></p>
+<p align="right"><span class="gold" ><b>Precedence for Debug Flags Hierarchy</b></span></p>
 
 Note:
 
@@ -678,7 +690,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Precedence for Debug Flags Hierarchy 03]
-<p align="right"><span class="gold" >Precedence for Debug Flags Hierarchy</span></p>
+<p align="right"><span class="gold" ><b>Precedence for Debug Flags Hierarchy</b></span></p>
 
 Note:
 
@@ -687,7 +699,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Precedence for Debug Flags Hierarchy 04]
-<p align="right"><span class="gold" >Precedence for Debug Flags Hierarchy</span></p>
+<p align="right"><span class="gold" ><b>Precedence for Debug Flags Hierarchy</b></span></p>
 
 Note:
 
@@ -696,15 +708,74 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Precedence for Debug Flags Hierarchy 05]
-<p align="right"><span class="gold" >Precedence for Debug Flags Hierarchy</span></p>
+<p align="right"><span class="gold" ><b>Precedence for Debug Flags Hierarchy</b></span></p>
 
 Note:
+
+
+
+---
+@title[Compiler / Linker Flags]
+<p align="right"><span class="gold" ><b>Compiler / Linker Flags</b></span></p>
+
+@snap[north-west span-100]
+<br>
+<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">@color[#87E2A9](Example from Microsoft* compiler to turn off optimization)</span></p>
+<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;"`/02` " to "`/01`" requires "`/0d /01`"</span></p>
+<br>
+@snapend
+
+@snap[north-west span-90 rounded fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">@color[yellow](Change common flags in platform DSC)</span></p>
+@box[bg-grey-15 text-white rounded my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[BuildOptions]&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;DEBUG_*_IA32_CC_FLAGS = /Od /Oy-<br>&nbsp;&nbsp;</span></p>)
+<br>
+@snapend
+
+
+@snap[north-west span-90 rounded fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">@color[yellow](Change a single module's flags in the DSC)</span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;MyPath/MyModule.inf&nbsp;{<br>&nbsp;&nbsp;&lt;BuildOptions&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;DEBUG_*_IA32_CC_FLAGS = /Od /Oy-<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;</span></p>)
+<br>
+@snapend
+
+
+
+
+Note:
+- Change common flags in platform DSC
+ - [BuildOptions]
+   - DEBUG_*_IA32_CC_FLAGS = /Od
+
+- Change a single module’s flags in DSC
+ - MyPath/MyModule.inf {
+  - <BuildOptions>
+     - DEBUG_*_IA32_CC_FLAGS = /Od 
+ - }
+
+- Change optimizations, etc…
 
 
 ---?image=/assets/images/slides/Slide28.JPG
 <!-- .slide: data-transition="none" -->
 @title[Compiler / Linker Flags]
-<p align="right"><span class="gold" >Compiler / Linker Flags</span></p>
+<p align="right"><span class="gold" ><b>Compiler / Linker Flags</b></span></p>
 
 Note:
 - Change common flags in platform DSC
