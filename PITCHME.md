@@ -671,7 +671,7 @@ Note:
 @box[bg-navy text-white waved   ](<p style="line-height:90%" ><span style="font-size:01.0125em; font-weight: bold;" >DSC `[BuildOptions]` section &lpar;platform scope&rpar;<br>&nbsp;</span></p>)
 @snapend
 
-@snap[north-west span-55 fragment]
+@snap[north-west span-45 fragment]
 <br>
 <br>
 <br>
@@ -682,7 +682,7 @@ Note:
 @snapend
 
 
-@snap[north-east span-55 fragment]
+@snap[north-east span-45 fragment]
 <br>
 <br>
 <br>
@@ -690,6 +690,19 @@ Note:
 <br>
 <br>
 @box[bg-lt-blue-pp text-white waved  ](<p style="line-height:90%" ><span style="font-size:01.0125em; font-weight: bold;" >DSC  &lt;`BuildOptions`&gt; under a specific module <br>&nbsp;</span></p>)
+@snapend
+
+
+@snap[south span-55 fragment]
+<pre>
+```
+1. Tools_def.txt
+2. DSC [BuildOptions] section  (platform scope)
+3. INF [BuildOptions] section (module scope)
+4. DSC <BuildOptions>  under a specific module
+
+```
+</pre>
 @snapend
 
 Note:
