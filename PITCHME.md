@@ -671,7 +671,7 @@ Note:
 @box[bg-navy text-white waved   ](<p style="line-height:90%" ><span style="font-size:01.0125em; font-weight: bold;" >DSC `[BuildOptions]` section &lpar;platform scope&rpar;<br>&nbsp;</span></p>)
 @snapend
 
-@snap[north-west span-45 fragment]
+@snap[north-west span-50 fragment]
 <br>
 <br>
 <br>
@@ -682,7 +682,7 @@ Note:
 @snapend
 
 
-@snap[north-east span-45 fragment]
+@snap[north-east span-50 fragment]
 <br>
 <br>
 <br>
