@@ -693,17 +693,8 @@ Note:
 @snapend
 
 
-@snap[south span-65 fragment]
-@box[bg-grey-05 text-white rounded my-box-pad2]( &nbsp;<br>&nbsp;<br>&nbsp;&nbsp;<br>&nbsp;)
-@snapend
-
 @snap[south span-55 fragment]
-<p style="line-height:60%" align="left" ><span style="font-size:0.60em; " ><br>&nbsp;&nbsp;
- 1. Tools_def.txt<br>&nbsp;&nbsp;
- 2. DSC [BuildOptions] section  &lpar;platform scope&rpar;<br>&nbsp;&nbsp;
- 3. INF [BuildOptions] section &lpar;module scope&rpar;<br>&nbsp;&nbsp;
- 4. DSC &lt;BuildOptions&gt; under a specific module<br>&nbsp;&nbsp;
-</span></p>
+@box[bg-grey-05 text-white rounded my-box-pad2](<p style="line-height:60%" align="left" ><span style="font-size:0.60em; " ><br>&nbsp;&nbsp; 1. Tools_def.txt<br>&nbsp;&nbsp; 2. DSC [BuildOptions] section  &lpar;platform scope&rpar;<br>&nbsp;&nbsp; 3. INF [BuildOptions] section &lpar;module scope&rpar;<br>&nbsp;&nbsp; 4. DSC &lt;BuildOptions&gt; under a specific module<br>&nbsp;&nbsp;</span></p>)
 @snapend
 
 Note:
