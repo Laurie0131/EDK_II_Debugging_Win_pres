@@ -720,27 +720,25 @@ Note:
 
 @snap[north-west span-100]
 <br>
+<br>
 <p align="left" style="line-height:80%"><span style="font-size:0.9em; ">@color[#87E2A9](Example from Microsoft* compiler to turn off optimization)</span></p>
-<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;"`/02` " to "`/01`" requires "`/0d /01`"</span></p>
+<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " >&nbsp;&nbsp;"`/02` " to "`/01`" requires "`/0d /01`"</span></p>
 <br>
 @snapend
 
 @snap[north-west span-90 rounded fragment]
-<br>
-<br>
 <br>
 <br>
 <br>
 <br>
 <br>
 <p align="left" style="line-height:80%"><span style="font-size:0.9em; ">@color[yellow](Change common flags in platform DSC)</span></p>
-@box[bg-grey-15 text-white rounded my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[BuildOptions]&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;DEBUG_*_IA32_CC_FLAGS = /Od /Oy-<br>&nbsp;&nbsp;</span></p>)
+@box[bg-grey-05 text-white rounded my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;[BuildOptions]&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;DEBUG_*_IA32_CC_FLAGS = /Od /Oy-<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
 
 
 @snap[north-west span-90 rounded fragment]
-<br>
 <br>
 <br>
 <br>
@@ -751,7 +749,7 @@ Note:
 <br>
 <br>
 <p align="left" style="line-height:80%"><span style="font-size:0.9em; ">@color[yellow](Change a single module's flags in the DSC)</span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;MyPath/MyModule.inf&nbsp;{<br>&nbsp;&nbsp;&lt;BuildOptions&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;DEBUG_*_IA32_CC_FLAGS = /Od /Oy-<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;</span></p>)
+@box[bg-grey-05 text-white rounded my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;MyPath/MyModule.inf&nbsp;{<br>&nbsp;&nbsp;&lt;BuildOptions&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;DEBUG_*_IA32_CC_FLAGS = /Od /Oy-<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
 
