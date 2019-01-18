@@ -852,12 +852,12 @@ Note:
 <p align="left"><span class="gold" ><b>`DebugLib` Instances (1)</b></span></p>
 
 @snap[north-west span-75]
-<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br><br>&nbsp;</span></p>
+<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br><br><br>&nbsp;</span></p>
 @box[bg-ubuntu text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.70em; font-family:Consolas; " >&nbsp;&nbsp;BaseDebugLibSerialPort<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
 
-@snap[north-west span-90]
+@snap[north-west span-100]
 <br>
 <br>
 <br>
@@ -881,8 +881,9 @@ Note:
 </ul>
 @snapend
 
-@snap[south-east span-20]
+@snap[south-east span-25]
 ![implementation](/assets/images/Implementation.png)
+<br>
 @snapend
 
 Note:
