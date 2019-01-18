@@ -788,15 +788,16 @@ Note:
 @title[DebugLib Class]
 <p align="center"><span class="gold" ><b>The `DebugLib` Class</b></span></p>
 
-@snap[north-west span-90]
+@snap[north-west span-85]
 <br>
 <p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br>&nbsp;</span></p>
-@box[bg-grey-05 text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.60em; font-family:Consolas; " >&nbsp;&nbsp;MdePkg/Include/Library/DebugLib.h<br>&nbsp;&nbsp;</span></p>)
+@box[bg-ubuntu text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.60em; font-family:Consolas; " >&nbsp;&nbsp;MdePkg/Include/Library/DebugLib.h<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
 
 
 @snap[north-west span-80 rounded fragment]
+<br>
 <br>
 <br>
 <br>
@@ -808,6 +809,8 @@ Note:
 
 
 @snap[north-west span-80 rounded fragment]
+<br>
+<br>
 <br>
 <br>
 <br>
