@@ -678,7 +678,7 @@ Note:
 <br>
 <br>
 <br>
-@box[bg-gold2 text-white waved  ](<p style="line-height:90%" ><span style="font-size:01.0em; font-weight: bold;" >INF `[BuildOptions]` section <br>&nbsp;</span></p>)
+@box[bg-purple-pp text-white waved  ](<p style="line-height:90%" ><span style="font-size:01.0em; font-weight: bold;" >INF `[BuildOptions]` section <br>&nbsp;</span></p>)
 @snapend
 
 
@@ -784,9 +784,53 @@ Note:
 Note:
 
 
----?image=/assets/images/slides/Slide32.JPG
+---?image=/assets/images/slides/Slide25_2.JPG
 @title[DebugLib Class]
 <p align="center"><span class="gold" ><b>The `DebugLib` Class</b></span></p>
+
+@snap[north-west span-90]
+<br>
+<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br>&nbsp;</span></p>
+@box[bg-grey-05 text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.50em; font-family:Consolas; " >&nbsp;&nbsp;MdePkg/Include/Library/DebugLib.h<br>&nbsp;&nbsp;</span></p>)
+<br>
+@snapend
+
+@snap[north-west span-100]
+<br>
+<br>
+<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">@color[#87E2A9](Example from Microsoft* compiler to turn off optimization)</span></p>
+<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " >&nbsp;&nbsp;"`/02` " to "`/01`" requires "`/0d /01`"</span></p>
+<br>
+@snapend
+
+@snap[north-west span-80 rounded fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<p align="left" style="line-height:80%"><span style="font-size:0.9em; "><font color="#87E2A9"><b>Macros</b><br>@size[0.5em](&lpar;where PCDs ard checked&rpar;)</font></span></p>
+@box[bg-grey-05 text-white rounded my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;ASSERT &lpar;Expression&rpar;<br>&nbsp;&nbsp;DEBUG &lpar;Expression&rpar;<br>&nbsp;&nbsp;ASSERT_EFI_ERROR &lpar;StatusParameter&rpar;<br>&nbsp;&nbsp;ASSERT_PROTOCOL_ALREADY_INSTALLED&lpar;. . .&rpar;<br>&nbsp;&nbsp;</span></p>)
+<br>
+@snapend
+
+
+
+@snap[north-west span-80 rounded fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p align="left" style="line-height:80%"><span style="font-size:0.9em; "><font color="#87E2A9"><b>Advanced Macros</b></font></span></p>
+@box[bg-grey-05 text-white rounded my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;DEBUG_CODE &lpar;Expression&rpar;<br>&nbsp;&nbsp;DEBUG_CODE_BEGIN&lpar;&rpar; & DEBUG_CODE_END&lpar;&rpar;<br>&nbsp;&nbsp;DEBUG_CLEAR_MEMORY&lpar;...&rpar;<br>&nbsp;&nbsp;</span></p>)
+<br>
+@snapend
+
+
 
 Note:
 
