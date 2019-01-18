@@ -881,9 +881,8 @@ Note:
 </ul>
 @snapend
 
-@snap[south-east span-25]
+@snap[south-east span-20]
 ![implementation](/assets/images/Implementation.png)
-<br>
 @snapend
 
 Note:
