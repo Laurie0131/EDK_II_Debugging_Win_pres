@@ -944,6 +944,12 @@ Note:
 @snapend
 
 
+
+@snap[south-east span-20]
+<p style="line-height:40%" align="left">@color[black](&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2)&nbsp;&nbsp;&nbsp;<br><br>&nbsp;</p>
+<br>
+@snapend
+
 Note:
 - UefiDebugLibConOut   UefiDebugLibStdErr
 - Instances of DebugLib (for Apps and Drivers)
@@ -993,6 +999,12 @@ Note:
 ![implementation](/assets/images/Implementation.png)
 @snapend
 
+
+
+@snap[south-east span-20]
+<p style="line-height:40%" align="left">@color[black](&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3)&nbsp;&nbsp;&nbsp;<br><br>&nbsp;</p>
+<br>
+@snapend
 
 
 Note:
