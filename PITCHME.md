@@ -863,7 +863,7 @@ Note:
 <br>
 <br>
 <p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br>&nbsp;</span></p>
-@box[bg-royal text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.70em; font-family:Consolas; " >&nbsp;&nbsp;<br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;&nbsp;</span></p>)
+@box[bg-blue-pp text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.70em; font-family:Consolas; " >&nbsp;&nbsp;<br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
 
@@ -979,54 +979,13 @@ Note:
   <li><span style="font-size:0.8em">`BaseDebugLibNull`  - Resolves references </span></li>
 </ul>
 <br>
-<p align="center"><span style="font-size:0.9em"><font color="yellow">Default for most platforms</font></span></p>
+<br>
+<p align="center"><span style="font-size:0.8em"><font color="yellow">Default for most platforms</font></span></p>
 @snapend
 
 @snap[south-east span-20]
 ![implementation](/assets/images/Implementation.png)
 @snapend
-
-
-
-
-
-
-
-
-Note:
-- So there are a total of 5 open source debug lib instances
-- The ones we did not cover are “DebugLibNull” – does nothing and 
-
-- “PeiDxeDebugLibReportStatusCode “  is a form of  “DebugLibReportStatusCode”  that wraps into the report status code library the same way that the serial port one does and may send ASCII String  specified by Description Value that is sent to ReportStatusCode() function
-
-
-
-- So there may be other instances in your workspace. It is easy to develop a new  library instance. There is no requirement that someone tell us that they’ve done it. 
-- So what you want to do is search for the library name equals in the INF file.
-- Example search the INF files inyour workspace for the string “LIBRARY_CLASS                  = DebugLib” 
-
-- the ASCII string specified by Description is 
-  also passed to the handler that displays the POST card value.  Some 
-  implementations of this library function may perform I/O operations directly 
-  to a POST card device.  Other implementations may send Value to ReportStatusCode(), 
-
-
-
-
-
----?image=/assets/images/slides/Slide35.JPG
-@title[DebugLib Instances (3)]
-<br>
-<p align="left"><span class="gold" ><b>`DebugLib` Instances (3)</b></span></p>
-<br>
-<br>
-<ul>
-  <li><span style="font-size:0.9em">Sends ASCII String  specified by  Description Value to the `ReportStatusCode()`  </span></li>
-  <li><span style="font-size:0.9em">May also use the `SerialPortLib` class to send debug output to serial port</span></li>
-  <li><span style="font-size:0.9em">`BaseDebugLibNull`  - Resolves references </span></li>
-</ul>
-<br>
-<p align="center"><span style="font-size:0.9em"><font color="blue">Default for most platforms</font></span></p>
 
 
 
