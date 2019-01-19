@@ -885,6 +885,12 @@ Note:
 ![implementation](/assets/images/Implementation.png)
 @snapend
 
+
+@snap[south-east span-20]
+<p style="line-height:40%" align="right">@color[red](1)&nbsp;&nbsp;&nbsp;<br>&nbsp;</p>
+<br>
+@snapend
+
 Note:
 - debugLib library instances
 
@@ -928,8 +934,8 @@ Note:
 <br>
 <p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br>&nbsp;</span></p>
 <ul>
-  <li><span style="font-size:0.9em">Instances of `DebugLib` (for apps and drivers)</span></li><br>
-  <li><span style="font-size:0.9em">Send all debug output to console/debug console</span></li>
+  <li><span style="font-size:0.8em">Instances of `DebugLib` (for apps and drivers)</span></li><br>
+  <li><span style="font-size:0.8em">Send all debug output to console/debug console</span></li>
 </ul>
 @snapend
 
