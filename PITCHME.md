@@ -907,7 +907,7 @@ Note:
 
 @snap[north-west span-80]
 <p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br><br><br>&nbsp;</span></p>
-@box[bg-ubuntu text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.70em; font-family:Consolas; " >&nbsp;&nbsp;UefiDebugLibConOut  UefiDebugLibStdErr<br>&nbsp;&nbsp;</span></p>)
+@box[bg-ubuntu text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.70em; font-family:Consolas; " >&nbsp;&nbsp;UefiDebugLibConOut&nbsp;&nbsp;  UefiDebugLibStdErr<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
 
@@ -946,25 +946,71 @@ Note:
 - Make sure that the console is visible
 
 
----?image=/assets/images/slides/Slide34.JPG
-@title[DebugLib Instances (2)]
+---?image=/assets/images/slides/Slide26_1.JPG
+@title[DebugLib Instances (3)]
 <br>
-<p align="left"><span class="gold" ><b>`DebugLib` Instances (2)</b></span></p>
+<p align="left"><span class="gold" ><b>`DebugLib` Instances (3)</b></span></p>
+
+@snap[north-west span-75]
+<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br><br><br>&nbsp;</span></p>
+@box[bg-ubuntu text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.70em; font-family:Consolas; " >&nbsp;&nbsp;PeiDxeDebugLibReportStatusCode<br>&nbsp;&nbsp;</span></p>)
+<br>
+@snapend
+
+@snap[north-west span-100]
 <br>
 <br>
 <br>
+<br>
+<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br>&nbsp;</span></p>
+@box[bg-green-pp text-white my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.70em; font-family:Consolas; " >&nbsp;&nbsp;<br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;&nbsp;</span></p>)
+<br>
+@snapend
+
+@snap[north-west span-90]
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br>&nbsp;</span></p>
 <ul>
-  <li><span style="font-size:0.9em">Instances of `DebugLib` (for apps and drivers)</span></li><br>
-  <li><span style="font-size:0.9em">Send all debug output to console/debug console</span></li>
+  <li><span style="font-size:0.9em">Sends ASCII String  specified by  Description Value to the `ReportStatusCode()`  </span></li>
+  <li><span style="font-size:0.9em">May also use the `SerialPortLib` class to send debug output to serial port</span></li>
+  <li><span style="font-size:0.9em">`BaseDebugLibNull`  - Resolves references </span></li>
 </ul>
+<p align="center"><span style="font-size:0.9em"><font color="blue">Default for most platforms</font></span></p>
+@snapend
+
+@snap[south-east span-20]
+![implementation](/assets/images/Implementation.png)
+@snapend
+
+
+
+
+
+
 
 
 Note:
-- UefiDebugLibConOut   UefiDebugLibStdErr
-- Instances of DebugLib (for Apps and Drivers)
-- Send all debug output out to console/debug console
-- This allows for viewing of debug information
-- Make sure that the console is visible
+- So there are a total of 5 open source debug lib instances
+- The ones we did not cover are “DebugLibNull” – does nothing and 
+
+- “PeiDxeDebugLibReportStatusCode “  is a form of  “DebugLibReportStatusCode”  that wraps into the report status code library the same way that the serial port one does and may send ASCII String  specified by Description Value that is sent to ReportStatusCode() function
+
+
+
+- So there may be other instances in your workspace. It is easy to develop a new  library instance. There is no requirement that someone tell us that they’ve done it. 
+- So what you want to do is search for the library name equals in the INF file.
+- Example search the INF files inyour workspace for the string “LIBRARY_CLASS                  = DebugLib” 
+
+- the ASCII string specified by Description is 
+  also passed to the handler that displays the POST card value.  Some 
+  implementations of this library function may perform I/O operations directly 
+  to a POST card device.  Other implementations may send Value to ReportStatusCode(), 
+
+
+
 
 
 ---?image=/assets/images/slides/Slide35.JPG
