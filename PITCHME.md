@@ -887,7 +887,7 @@ Note:
 
 
 @snap[south-east span-25]
-<p style="line-height:40%" align="right">@color[red](1)&nbsp;&nbsp;&nbsp;<br><br>&nbsp;</p>
+<p style="line-height:40%" align="left">@color[red](1)&nbsp;&nbsp;&nbsp;<br><br>&nbsp;</p>
 <br>
 @snapend
 
