@@ -974,11 +974,12 @@ Note:
 <br>
 <p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br>&nbsp;</span></p>
 <ul>
-  <li><span style="font-size:0.9em">Sends ASCII String  specified by  Description Value to the `ReportStatusCode()`  </span></li>
-  <li><span style="font-size:0.9em">May also use the `SerialPortLib` class to send debug output to serial port</span></li>
-  <li><span style="font-size:0.9em">`BaseDebugLibNull`  - Resolves references </span></li>
+  <li><span style="font-size:0.8em">Sends ASCII String  specified by  Description Value to the `ReportStatusCode()`  </span></li>
+  <li><span style="font-size:0.8em">May also use the `SerialPortLib` class to send debug output to serial port</span></li>
+  <li><span style="font-size:0.8em">`BaseDebugLibNull`  - Resolves references </span></li>
 </ul>
-<p align="center"><span style="font-size:0.9em"><font color="blue">Default for most platforms</font></span></p>
+<br>
+<p align="center"><span style="font-size:0.9em"><font color="yellow">Default for most platforms</font></span></p>
 @snapend
 
 @snap[south-east span-20]
