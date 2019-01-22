@@ -84,16 +84,16 @@ Note:
 </div>
 
 Note:
-- Ways to Debug…
+- Ways to Debug . . .
 - Use DEBUG instead of Print functions in code
 - Use a software debugger (COM/USB)
 - Use a hardware debugger (JTAG/XDB)
 - Soft loading driver through UEFI shell
 - Use shell commands to test capabilities
 
-- What are some alternatives if I don’t want to use the debug lib? 
+- What are some alternatives if I don't want to use the debug lib? 
 
-- You can use print statements and soft load my driver to the shell to see what is going on. The downside is that you then have print statements in your code.  This doesn’t work really well if you want to make a release to a customer.
+- You can use print statements and soft load my driver to the shell to see what is going on. The downside is that you then have print statements in your code.  This doesn't work really well if you want to make a release to a customer.
 - You could use a software debugger, and there is a hardware debugger but if they are not available EDK II debug macro might be a good place to start.
 
 - We believe the debug lib is the simplest and cleanest way to get it all working
@@ -145,7 +145,7 @@ Note:
 - Enable/disable when compiled (target.txt)
 - Can connect a 2nd PC to capture debug messages 
 
-- The main message-- the debug lib library is portable, it’s clean, it’s very easy to use, and we believe it’s the easiest way to do debugging on a UEFI platform.
+- The main message-- the debug lib library is portable, it's clean, it's very easy to use, and we believe it's the easiest way to do debugging on a UEFI platform.
 
 - The debug lib library has the debug and assert macros. 
 - There are library instances that allow you to use a second PC to capture all messages coming out
@@ -352,7 +352,7 @@ Note:
 
 - This has to do with what messages we want to come out
 
-- Let’s say you have a debug print enabled as in the previous slide. 
+- Let's say you have a debug print enabled as in the previous slide. 
    - You must state what message type you want to print out
 
 - You can assign your own values to this debug print error level.  
@@ -403,7 +403,7 @@ Note:
 @snap[north-west span-90 fragment]
 <br>
 <br>
-@box[bg-green-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`ReportStatusCodeLib` –Progress codes<br>&nbsp;</span></p>)
+@box[bg-green-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`ReportStatusCodeLib` - Progress codes<br>&nbsp;</span></p>)
 <pre>
 ```
   gEfiMdePkgTokenSpaceGuid.PcdReportStatusCodePropertyMask
@@ -418,7 +418,7 @@ Note:
 <br>
 <br>
 <p style="line-height:50%" ><br><br><br><br>&nbsp;</p>
-@box[bg-royal text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`PostCodeLib` – Enable Post codes<br>&nbsp;</span></p>)
+@box[bg-royal text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`PostCodeLib` - Enable Post codes<br>&nbsp;</span></p>)
 <pre>
 ```
   gEfiMdePkgTokenSpaceGuid.PcdPostCodePropertyMask
@@ -438,7 +438,7 @@ Note:
 <br>
 <br>
 <p style="line-height:50%" ><br><br><br><br><br>&nbsp;</p>
-@box[bg-gold2 text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`PerformanceLib` – Enable Measurement <br>&nbsp;</span></p>)
+@box[bg-gold2 text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`PerformanceLib` - Enable Measurement <br>&nbsp;</span></p>)
 <pre>
 ```
   gEfiMdePkgTokenSpaceGuid.PcdPerformanceLibraryPropertyMask
@@ -453,11 +453,11 @@ Note:
 
 Note:
 
-- ReportStatusCodeLib –Progress codes
+- ReportStatusCodeLib - Progress codes
 	- gEfiMdePkgTokenSpaceGuid.PcdReportStatusCodePropertyMask
-- PostCodeLib – Enable Post codes
+- PostCodeLib -  Enable Post codes
 	- gEfiMdePkgTokenSpaceGuid.PcdPostCodePropertyMask
-- PerformanceLib – Enable Measurement
+- PerformanceLib -  Enable Measurement
 	- gEfiMdePkgTokenSpaceGuid.PcdPerformanceLibraryPropertyMask
 
 
@@ -468,14 +468,14 @@ Note:
 <p align="Left"><span class="gold" ><b>Lab 1: Adding Debug Statements</b></span></p>
 <br>
 <div class="left1">
-<span style="font-size:0.8em" >In this lab, you’ll add debug statements to the previous lab's SampleApp UEFI Shell application</span>
+<span style="font-size:0.8em" >In this lab, you'll add debug statements to the previous lab's SampleApp UEFI Shell application</span>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
 </div>
 
 Note:
-In this lab, you’ll learn how to add debug statements.  
+In this lab, you'll learn how to add debug statements.  
 This lab uses code from a previous exercise as a starting point (refer to  Writing Simple UEFI Applications).  Before proceeding, verify that the SampleApp code is present in your workspace and that the code references the OvmfPkgX64.dsc file.
 
 ---
@@ -506,7 +506,7 @@ Note:
 <ul>
   <li><span style="font-size:0.8em" >Open a VS Command Prompt and type `cd C:/FW/edk2` then <br></span>&nbsp;&nbsp;&nbsp;<span style="font-size:0.6em" ><span style="background-color: #101010">&nbsp;` C:/FW/edk2> edksetup `&nbsp;</span> </span></li><br>
   <li><span style="font-size:0.8em" >Open `C:/FW/edk/SampleApp/SampleApp.c` </span></li><br>
-  <li><span style="font-size:0.8em" >Add the following to the include statements at the top of the file after below the last “`#include`” statement: </span></li>
+  <li><span style="font-size:0.8em" >Add the following to the include statements at the top of the file after below the last "`#include`" statement: </span></li>
 <pre>
 ```
  #include <Library/DebugLib.h>
@@ -519,7 +519,8 @@ Note:
 ---
 @title[Lab 1: Add debug statements SampleApp 02]
 <p align="right"><span class="gold" ><b>Lab 1: Add debug statements to SampleApp</b></span></p>
-<p style="line-height:85%"><span style="font-size:0.7em" >Locate the `UefiMain` function. Then copy and paste the following code after the <span style="background-color: #101010">&nbsp;“`EFI_INPUT_KEY  KEY;`”</span> statement: and before the first <span style="background-color: #101010">&nbsp;`Print()` </span>statement </span></p>
+<p style="line-height:85%"><span style="font-size:0.7em" >Locate the `UefiMain` function. Then copy and paste the following 
+code after the <span style="background-color: #101010">&nbsp;"`EFI_INPUT_KEY  KEY;`"</span> statement: and before the first <span style="background-color: #101010">&nbsp;`Print()` </span>statement </span></p>
 
 ```c
 DEBUG ((0xffffffff, "\n\nUEFI Base Training DEBUG DEMO\n") );
@@ -587,14 +588,14 @@ Notice the changes in DEBUG output for SampleApp in the Visual Studio Command Pr
 <p align="Left"><span class="gold" ><b>Lab 2: Changing PCD Value</b></span></p>
 <br>
 <div class="left1">
-<span style="font-size:0.8em" >In this lab, you’ll  learn how to use PCD values to change debugging capabilities. </span>
+<span style="font-size:0.8em" >In this lab, you'll  learn how to use PCD values to change debugging capabilities. </span>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
 </div>
 
 Note:
-In this lab, you’ll learn how to use PCD values to change debugging capabilities.  The previous lab,  Adding Debug Statements, did not display all the DEBUG messages added to SampleApp.c.  This lab shows how to change this behavior.
+In this lab, you'll learn how to use PCD values to change debugging capabilities.  The previous lab,  Adding Debug Statements, did not display all the DEBUG messages added to SampleApp.c.  This lab shows how to change this behavior.
 
 
 
@@ -708,8 +709,8 @@ Note:
 - Tools_def.txt
   - Baseline set of command line options for compiler and linker
 - INF [BuildOptions] section
-  - Append onto existing command line with ‘=‘
-  - Replace entire existing command line with ‘==‘
+  - Append onto existing command line with "="
+  - Replace entire existing command line with "=="
 
 - DSC [BuildOptions] section (platform scope)
   - Same usage
@@ -766,13 +767,13 @@ Note:
  - [BuildOptions]
    - DEBUG_*_IA32_CC_FLAGS = /Od
 
-- Change a single module’s flags in DSC
+- Change a single module's flags in DSC
  - MyPath/MyModule.inf {
   - <BuildOptions>
      - DEBUG_*_IA32_CC_FLAGS = /Od 
  - }
 
-- Change optimizations, etc…
+- Change optimizations, etc. . .
 
 
 ---?image=assets/images/binary-strings-black2.jpg
@@ -837,12 +838,12 @@ Note:
   - ASSERT (Expression)
   - DEBUG (Expression)
   - ASSERT_EFI_ERROR (StatusParameter)
-  - ASSERT_PROTOCOL_ALREADY_INSTALLED(…)
+  - ASSERT_PROTOCOL_ALREADY_INSTALLED(...)
 
   - Advanced Macros:
   - DEBUG_CODE (Expression)
   - DEBUG_CODE_BEGIN() & DEBUG_CODE_END()
-  - DEBUG_CLEAR_MEMORY(…)
+  - DEBUG_CLEAR_MEMORY(...)
 
 
 
@@ -1009,15 +1010,15 @@ Note:
 
 Note:
 - So there are a total of 5 open source debug lib instances
-- The ones we did not cover are “DebugLibNull” – does nothing and 
+- The ones we did not cover are "DebugLibNull" - does nothing and 
 
-- “PeiDxeDebugLibReportStatusCode “  is a form of  “DebugLibReportStatusCode”  that wraps into the report status code library the same way that the serial port one does and may send ASCII String  specified by Description Value that is sent to ReportStatusCode() function
+- "PeiDxeDebugLibReportStatusCode "  is a form of  'DebugLibReportStatusCode"  that wraps into the report status code library the same way that the serial port one does and may send ASCII String  specified by Description Value that is sent to ReportStatusCode() function
 
 
 
-- So there may be other instances in your workspace. It is easy to develop a new  library instance. There is no requirement that someone tell us that they’ve done it. 
+- So there may be other instances in your workspace. It is easy to develop a new  library instance. There is no requirement that someone tell us that they've done it. 
 - So what you want to do is search for the library name equals in the INF file.
-- Example search the INF files inyour workspace for the string “LIBRARY_CLASS                  = DebugLib” 
+- Example search the INF files in your workspace for the string "LIBRARY_CLASS                  = DebugLib"
 
 - the ASCII string specified by Description is 
   also passed to the handler that displays the POST card value.  Some 
@@ -1064,7 +1065,7 @@ Note:
   [LibraryClasses.common.IA32]
     DebugLib|MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
 </pre>
-- Change a single module’s library instance in the platform DSC
+- Change a single module's library instance in the platform DSC
 <pre>
   MyPath/MyModule.inf {
     <LibraryClasses>
@@ -1082,7 +1083,7 @@ Note:
 <p align="Left"><span class="gold" ><b>Lab 3: Library Instances for Debugging</b></span></p>
 <br>
 <div class="left1">
-<span style="font-size:0.8em" >In this lab,  you’ll learn how to add specific debug library instances. </span><br>
+<span style="font-size:0.8em" >In this lab,  you'll learn how to add specific debug library instances. </span><br>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -1143,7 +1144,7 @@ Notice the Debug messages output to the console
 <p align="Left"><span class="gold" ><b>Lab 4: Null Instance of `DebugLib`</b></span></p>
 <br>
 <div class="left1">
-<span style="font-size:0.8em" >In this lab,  you’ll change the `DebugLib` to the Null instance. </span>
+<span style="font-size:0.8em" >In this lab,  you'll change the `DebugLib` to the Null instance. </span>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -1207,7 +1208,7 @@ Notice the Debug messages output to the console
 <p align="Left"><span class="gold" ><b>Lab 5: Debugging EDK II with VS Debugger</b></span></p>
 <br>
 <div class="left1">
-<span style="font-size:0.8em" >In this lab,  you’ll learn how setup the VS to debug the EDK II Nt32 emulation</span>
+<span style="font-size:0.8em" >In this lab,  you'll learn how setup the VS to debug the EDK II Nt32 emulation</span>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -1220,7 +1221,7 @@ Note:
 @title[Lab 5: Nt32 Debug with VS]
 <p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS</b></span></p>
 <br>
-<span style="font-size:0.7em" >Edit the `SampleApp.c`and add the “`ASSERT_EFI_ERROR`” Statement :  </span><br>
+<span style="font-size:0.7em" >Edit the `SampleApp.c`and add the "`ASSERT_EFI_ERROR`" Statement :  </span><br>
 ```c
    ASSERT_EFI_ERROR(0x80000000);
 ```
@@ -1271,7 +1272,7 @@ Lab 5, add ASSERT
 @title[Lab 5: Nt32 Debug with VS- CPU bp]
 <p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS</b></span></p>
 <br>
-<p style="line-height:60%"><span style="font-size:0.7em" >Edit the `SampleApp.c` and add the “`CpuBreakpoint();`” Statement and comment out the “`ASSERT`”:  </span></p>
+<p style="line-height:60%"><span style="font-size:0.7em" >Edit the `SampleApp.c` and add the "`CpuBreakpoint();`" Statement and comment out the "`ASSERT`":  </span></p>
 ```c
     CpuBreakpoint();
 ```
@@ -1407,12 +1408,12 @@ Note:
 @title[Issue: Debugging in Nt32 Emulation with Windows 7 and VS]
 <p align="right"><span class="gold" >Issue:<br>Debugging in Nt32 Emulation with Windows 7 <br>and Visual Studio does not work?</span></p>
 
-<p style="line-height:90%"><span style="font-size:0.9em" >Symptom:  With Windows 7 a CpuBreakpoint() or ASSERT  just exits with an error from the “Build Run” command.  </span></p>
+<p style="line-height:90%"><span style="font-size:0.9em" >Symptom:  With Windows 7 a CpuBreakpoint() or ASSERT  just exits with an error from the "Build Run" command.  </span></p>
 <p style="line-height:60%"><span style="font-size:0.7em" >Link to fix this issue: <a href="https://github.com/tianocore/tianocore.github.io/wiki/NT32#Debugging_in_Nt32_Emulation_with_Windows_7_and_Visual_Studio_does_not_work">wiki- Issue Debugging Nt32 with Windows 7 and Visual Studio </a></span></p>
 <ul>
  <li> <span style="font-size:0.7em" >Run the `RegEdt32` </span> </li>
  <li> <span style="font-size:0.7em" >Navigate to the `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug` </span> </li>
- <li> <span style="font-size:0.7em" >Add a string value entry called "`Auto`" with a value of "`1`“ </span> </li>
+ <li> <span style="font-size:0.7em" >Add a string value entry called "`Auto`" with a value of "`1`" </span> </li>
 </ul>
 
 <span style="font-size:0.9em" >Windows 10  Visual Studio does not seem to have this issue </span>
