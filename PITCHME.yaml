@@ -1,9 +1,9 @@
 #
 # GitPitch Slideshow Custom Settings
 #
-# For further details, see https://gitpitch.com/docs/settings.
+# For details, visit Wiki:
+# https://github.com/gitpitch/gitpitch/wiki/Slideshow-Settings
 #
-
 theme : black
 theme-override : assets/css/PITCHME.css
 # theme-override : assets/css/PITCHME.codemax.css
@@ -15,4 +15,4 @@ transition : fade
 published : yes
 # footnote : "GitPitch [ Black Binary ] Presentation Template"
 footnote: "<a style='text-decoration:none; color: #e49436;' href='http://www.tianocore.org'>www.tianocore.org</a>"
-vertical-center : falseeager-loading : true
+vertical-center : false
