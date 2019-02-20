@@ -316,10 +316,14 @@ Note:
  #define DEBUG_VARIABLE  0x00000100  // Variable
  #define DEBUG_BM        0x00000400  // Boot Manager
  #define DEBUG_BLKIO     0x00001000  // BlkIo Driver
- #define DEBUG_NET       0x00004000  // SNI Driver
+ #define DEBUG_NET       0x00004000  // SNP / Network Io Driver
  #define DEBUG_UNDI      0x00010000  // UNDI Driver
  #define DEBUG_LOADFILE  0x00020000  // Load File 
  #define DEBUG_EVENT     0x00080000  // Event messages
+ #define DEBUG_GCD       0x00100000  // Global Coherency Database changes
+ #define DEBUG_CACHE     0x00200000  // Memory range cache-ability changes
+ #define DEBUG_VERBOSE   0x00400000  // Detailed debug messages that may
+                                     // significantly impact boot performance
  #define DEBUG_ERROR     0x80000000  // Error
 
     Aliases EFI_D_INIT == DEBUG_INIT, etc...
@@ -1353,6 +1357,23 @@ Now the visual studio debugger is debugging the sampleapp function and common de
 <br>
 ![Questions](/assets/images/questions.JPG) 
 
+---
+@title[return to main]
+<p align="center"><span class="gold"   >@size[1.2em](<b>Return to Main Training Page</b>)</span></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p align="center"><span style="font-size:0.9em">Return to Training Table of contents for next presentation <a href="https://github.com/tianocore-training/Tianocore_Training_Contents/wiki#schedule--outline">link</a></span></p>
+
+@snap[north span-30 ]
+<br>
+<br>
+<br>
+<a href="https://github.com/tianocore-training/Tianocore_Training_Contents/wiki#schedule--outline">
+![trainingLogo](/assets/images/returnTrainingLogo.png)</a>
+@snapend
 
 ---?image=assets/images/gitpitch-audience.jpg
 @title[Logo Slide]
