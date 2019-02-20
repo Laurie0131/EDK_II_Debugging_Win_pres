@@ -3,6 +3,7 @@
 #
 # For further details, see https://gitpitch.com/docs/settings.
 #
+
 theme : black
 theme-override : assets/css/PITCHME.css
 # theme-override : assets/css/PITCHME.codemax.css
