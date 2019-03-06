@@ -493,7 +493,7 @@ Note:
    <li><span style="font-size:0.67em" >In-Target Probe(ITP)</span></li>
    <li><span style="font-size:0.67em" >DCI Cable</span></li>
    <li><span style="font-size:0.67em" >DCI OOB</span></li>
-   <li><span style="font-size:0.67em" >other 3<sup>rd</sup> party Hardware &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+   <li><span style="font-size:0.67em" >other 3<sup>rd</sup> party Hardware &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
 </ul>
 <br>
 @snapend
