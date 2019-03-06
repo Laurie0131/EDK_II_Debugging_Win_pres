@@ -491,9 +491,10 @@ Note:
 <p align="Left" style="line-height:80%"><span style="font-size:0.8em" >When using a Hardware debugger: </span> </p>
 <ul style="list-style-type:disc; line-height:0.7;">
    <li><span style="font-size:0.67em" >In-Target Probe(ITP)</span></li>
-   <li><span style="font-size:0.67em" >DCI Cable</span></li>
-   <li><span style="font-size:0.67em" >DCI OOB</span></li>
-   <li><span style="font-size:0.67em" >other 3<sup>rd</sup> party Hardware &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+   <li><span style="font-size:0.67em" >Intel<sup>&reg;</sup> SVT DCI Cable</span></li>
+   <li><span style="font-size:0.67em" >Intel<sup>&reg;</sup> SVT Closed Chassis Adapter (CCA)</span></li>
+   <li><span style="font-size:0.67em" >other 3<sup>rd</sup> party Hardware (i.e. <a href="http://www.lauterbach.com">Lauterbach</a> w/ JTAG)
+</span></li>
 </ul>
 <br>
 @snapend
