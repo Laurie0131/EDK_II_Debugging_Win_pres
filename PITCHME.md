@@ -517,18 +517,40 @@ Note:
 ---
 @title[Lab 1: Add debug statements SampleApp]
 <p align="right"><span class="gold" ><b>Lab 1: Add debug statments to SampleApp</b></span></p>
+@snap[north-west span-60 ]
+<br>
+<br>
+<br>
+<br>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" ><br>&nbsp;</span></p>)
+<br>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" ><br>&nbsp;</span></p>)
+
+@snapend
+
 <br>
 <ul>
-  <li><span style="font-size:0.8em" >Open a VS Command Prompt and type <font face="Consolas">cd C:/FW/edk2-ws/</font> then <br></span>&nbsp;&nbsp;&nbsp;<span style="font-size:0.6em" >
-  <span style="background-color: #101010">&nbsp;<font face="Consolas"> C:/FW/edk2-ws/edk2> edksetup </font>&nbsp;</span> </span></li><br>
-  <li><span style="font-size:0.8em" >Open <font face="Consolas">C:/FW/edk/SampleApp/SampleApp.c</font> </span></li><br>
-  <li><span style="font-size:0.8em" >Add the following to the include statements at the top of the file after below the last "<font face="Consolas">#include</font>" statement: </span></li>
-<pre>
-```
- #include <Library/DebugLib.h>
-```
-</pre>
+  <li><span style="font-size:0.8em" >Open a VS Command Prompt and type <font face="Consolas">@size[.8em](cd C:/FW/edk2-ws/)</font></li><br><br><br>
+  <li><span style="font-size:0.78em" >Open <font face="Consolas">@size[.8em](C:/FW/edk/SampleApp/SampleApp.c)</font> </span></li><br>
+  <li><span style="font-size:0.78em" >Add the following to the include statements at the top of the file after below the last "<font face="Consolas">#include</font>" statement: </span></li>
 </ul>
+
+
+@snap[north-east span-98 ]
+<br>
+<br>
+<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br><br><br>
+C:/FW/edk2-ws &gt; setenv.bat<br>
+C:/FW/edk2-ws &gt; cd edk2 <br>
+C:/FW/edk2-ws/edk2 &gt; edksetup
+<br>
+<br>
+<br>
+<br>
+<br>
+&num;include &lt;Library/DebugLib.h&gt;
+</span></p>
+@snapend
 
 Note:
 
