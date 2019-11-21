@@ -1277,7 +1277,7 @@ Lab 3 Changing Library
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
 @snapend
 
-@snap[north-west span-70 ]
+@snap[north-west span-65 ]
 <br>
 <br>
 <p style="line-height:80%">
@@ -1289,9 +1289,9 @@ Lab 3 Changing Library
 <p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Run the application from the shell</span></p>
 
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
-<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
+<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;<br></span></span></p>
 
-<p style="line-height:80%"  align="left"><span style="font-size:0.78em" >See that the output from the Debug 
+<p style="line-height:70%"  align="left"><span style="font-size:0.75em" >See that the output from the Debug 
 statements now goes to the console  <br><br>
 Exit</span></p>
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" >&nbsp;&nbsp;
