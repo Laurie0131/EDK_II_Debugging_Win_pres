@@ -1272,12 +1272,12 @@ Lab 3 Changing Library
 
 <p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
-
+<br>
 <p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
 @snapend
 
-@snap[north-west span-50 ]
+@snap[north-west span-70 ]
 <br>
 <br>
 <p style="line-height:80%">
@@ -1291,10 +1291,10 @@ Lab 3 Changing Library
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
 <font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
 
-<p style="line-height:80%"  align="left"><span style="font-size:0.8em" >See that the output from the Debug 
+<p style="line-height:80%"  align="left"><span style="font-size:0.78em" >See that the output from the Debug 
 statements now goes to the console  <br><br>
-Exit <br></span></p>
-<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
+Exit</span></p>
+<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" >&nbsp;&nbsp;
 @color[yellow](Shell&gt;) &nbsp;Reset&nbsp;</font></span></span></p>
 @snapend
 
