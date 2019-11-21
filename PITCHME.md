@@ -637,7 +637,22 @@ Exit <br></span></p>
 Note:
 
 Notice the changes in DEBUG output for SampleApp in the Visual Studio Command Prompt.  Since the new PCD definitions were only applied to SampleApp, the DEBUG output properties are not changed for other parts of the NT32 project.
+At the VS Command Prompt
+```
+C:/FW/edk2-ws/edk2> Build
+   C:/FW/edk2-ws/edk2> RunEmulator
+```
+Run the application from the shell
+```
 
+   Shell>  SampleApp 
+```
+Check the VS Debug output
+Exit
+
+```
+   Shell>  Reset 
+```
 
 ---?image=/assets/images/slides/Slide_LabSec.JPG
 @title[Lab 2: Changing PCD Value]
@@ -744,19 +759,19 @@ Notice the changes in DEBUG output for SampleApp in the Visual Studio Command Pr
 
 At the VS Command Prompt
 ```
-$> Build
-$> RunEmulator.bat
+C:/FW/edk2-ws/edk2> Build
+   C:/FW/edk2-ws/edk2> RunEmulator
 ```
-
 Run the application from the shell
 ```
-Shell> SampleApp
+
+   Shell>  SampleApp 
 ```
 Check the VS Debug output
-
 Exit
-``` 
-Shell> Reset
+
+```
+   Shell>  Reset 
 ```
 
 ---?image=assets/images/binary-strings-black2.jpg
@@ -898,7 +913,7 @@ Note:
 Note:
 
 
----?image=/assets/images/slides/Slide25_2.JPG
+---?image=/assets/images/slides/Slide24.JPG
 @title[DebugLib Class]
 <p align="center"><span class="gold" ><b>The <font face="Consolas">DebugLib</font> Class</b></span></p>
 
@@ -960,7 +975,7 @@ Note:
 
 
 
----?image=/assets/images/slides/Slide26_1.JPG
+---?image=/assets/images/slides/Slide25.JPG
 @title[DebugLib Instances (1)]
 <br>
 <p align="left"><span class="gold" ><b><font face="Consolas">DebugLib</font> Instances (1)</b></span></p>
@@ -1018,7 +1033,7 @@ Note:
 
 
 
----?image=/assets/images/slides/Slide26_1.JPG
+---?image=/assets/images/slides/Slide25.JPG
 @title[DebugLib Instances (2)]
 <br>
 <p align="left"><span class="gold" ><b><font face="Consolas">DebugLib</font> Instances (2)</b></span></p>
@@ -1072,7 +1087,7 @@ Note:
 - Make sure that the console is visible
 
 
----?image=/assets/images/slides/Slide26_1.JPG
+---?image=/assets/images/slides/Slide25.JPG
 @title[DebugLib Instances (3)]
 <br>
 <p align="left"><span class="gold" ><b><font face="Consolas">DebugLib</font> Instances (3)</b></span></p>
@@ -1203,6 +1218,44 @@ Note:
 </div>
 
 Note:
+
+---
+@title[Lab 3: Using Library Instances for Debugging]
+<p align="right"><span class="gold" ><b>Lab 3: Using Library Instances for Debugging</b></span></p>
+@snap[north-west span-100 ]
+<br>
+<br>
+<p style="line-height:20%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br><br></span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" ><br><br><br><br><br>&nbsp;</span></p>)
+@snapend
+
+@snap[north-west span-100 ]
+<br>
+<br>
+<p style="line-height:55%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" >
+<font face="Arial">@size[1.15em](Open)</font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc <br><br>
+<font face="Arial">@size[1.15em](Replace)</font> SampleApp/SampleApp.inf { . . . }<font face="Arial">@size[1.15em](with the following:)</font><br>
+<br><br>&nbsp;&nbsp;
+  SampleApp/SampleApp.inf { <br>&nbsp;&nbsp;&nbsp;&nbsp;
+    &lt;LibraryClasses &gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      DebugLib|MdePkg/Library/UefiDebugLibConOut/UefiDebugLibConOut.inf<br>&nbsp;&nbsp;
+ }<br>
+<br><br><br><br>
+<font face="Arial">@size[1.15em](Save and close) </font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc
+</span></p><br>
+
+@snapend
+
+Note:
+- Open C:/FW/edk2-ws/edk2/EmulatorPkg/EmulatorPkg.dsc
+- Replace SampleApp/SampleApp.inf { . . .} with the following:
+```
+SampleApp/SampleApp.inf {
+   <LibraryClasses>
+    DebugLib|MdePkg/Library/UefiDebugLibConOut/UefiDebugLibConOut.inf
+ }
+```
+- Save and close EmulatorPkgPkg.dsc
 
 
 ---
