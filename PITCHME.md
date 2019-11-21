@@ -1431,13 +1431,13 @@ Note:
 
 
 ---?image=/assets/images/slides/Slide36.JPG
-@title[Lab 5: Nt32 Debug with VS]
+@title[Lab 5: Emulator Debug with VS]
 <p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS</b></span></p>
 <br>
 <span style="font-size:0.7em" >Edit the <font face="Consolas">SampleApp.c</font>and add the "<font face="Consolas">ASSERT_EFI_ERROR</font>" Statement :  </span><br>
 ```c
     EFI_STATUS      Status;
-	Status = EFI_NO_RESPONSE;
+	Status = EFI_NO_RESPONSE;  // or any other EFI Error 
              . . .  
     ASSERT_EFI_ERROR(Status);
 
@@ -1453,9 +1453,58 @@ Note:
 Note:
 Lab 5, add ASSERT
 
----?image=/assets/images/slides/Slide46.JPG
-@title[Lab 5: Nt32 Debug with VS ]
+---?image=/assets/images/slides/Slide37.JPG
+@title[Lab 5: Emulator Debug with VS ]
 <p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS </b></span></p>
+@snap[north-west span-50 ]
+<br>
+<br>
+<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+
+<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+<br>
+@snapend
+
+@snap[north-west span-60 ]
+<br>
+<br>
+<p style="line-height:80%">
+<span style="font-size:0.8em" >At the VS Command Prompt</span></p>
+<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" ><br>&nbsp;&nbsp;
+  C:/FW/edk2-ws/edk2&gt; Build<br>&nbsp;&nbsp;
+  C:/FW/edk2-ws/edk2&gt; RunEmulator
+</span></p>
+<p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Run the application from the shell</span></p>
+
+<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
+<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;<br><br></span></span></p>
+
+<p style="line-height:70%"  align="left"><span style="font-size:0.75em" >Assert in VS Command Prompt<br><br>
+</span></p>
+@snapend
+
+Note:
+
+-At the VS Command Prompt
+```
+   C:/FW/edk2-ws/edk2> Build
+   C:/FW/edk2-ws/edk2> RunEmulator 
+```
+- Run the application from the shell
+```
+Shell> SampleApp
+```
+- Assert in VS Command Prompt
+
+Exit 
+```
+  Shell> Reset
+```
+
+Lab 5, add ASSERT
+---
 <br>
 <div class="left">
 <span style="font-size:0.8em" >At the VS Command Prompt</span>
