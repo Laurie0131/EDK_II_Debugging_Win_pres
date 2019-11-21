@@ -545,9 +545,9 @@ Note:
 <br>
 <br>
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br><br><br><br>
-C:/FW/edk2-ws &gt; setenv.bat<br>
-C:/FW/edk2-ws &gt; cd edk2 <br>
-C:/FW/edk2-ws/edk2 &gt; edksetup
+C:/FW/edk2-ws&gt; setenv.bat<br>
+C:/FW/edk2-ws&gt; cd edk2 <br>
+C:/FW/edk2-ws/edk2&gt; edksetup
 <br>
 <br>
 <br>
@@ -556,7 +556,7 @@ C:/FW/edk2-ws/edk2 &gt; edksetup
 <br>
 <br>
 <br>
-<br>
+<br><br>
 &num;include &lt;Library/DebugLib.h&gt;
 </span></p>
 @snapend
