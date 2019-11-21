@@ -665,23 +665,23 @@ In this lab, you'll learn how to use PCD values to change debugging capabilities
 <br>
 <br>
 <p style="line-height:20%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" ><br>&nbsp;</span></p>)
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" ><br><br>&nbsp;</span></p>)
 @snapend
 
 @snap[north-west span-100 ]
 <br>
 <br>
-<p style="line-height:40%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" >
-@size[1.02em](Open )</font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc <br>
-<font face="Arial">@size[1.02em](Replace)</font> SampleApp/SampleApp.inf <font face="Arial">@size[1.02em](with the following:)</font><br>
-<br>
-  SampleApp/SampleApp.inf { <br>&nbsp;&nbsp;
-    &lt;PcdsFixedAtBuild&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;
-      gEfiMdePkgTokenSpaceGuid.PcdDebugPropertyMask|0xff<br>&nbsp;&nbsp;&nbsp;&nbsp;
-      gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0xffffffff<br>
+<p style="line-height:55%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" >
+<font face="Arial">@size[1.12em](Open)</font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc <br>
+<font face="Arial">@size[1.12em](Replace)</font> SampleApp/SampleApp.inf <font face="Arial">@size[1.02em](with the following:)</font><br>
+<br><br>&nbsp;&nbsp;
+  SampleApp/SampleApp.inf { <br>&nbsp;&nbsp;&nbsp;&nbsp;
+    &lt;PcdsFixedAtBuild&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      gEfiMdePkgTokenSpaceGuid.PcdDebugPropertyMask|0xff<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0xffffffff<br>&nbsp;&nbsp;
  }<br>
-<br>
-<font face="Arial">@size[1.02em](Save and close) </font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc
+<br><br><br><br>
+<font face="Arial">@size[1.12em](Save and close) </font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc
 </span></p><br>
 
 @snapend
