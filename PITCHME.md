@@ -13,7 +13,7 @@
 Note:
   PITCHME.md for UEFI / EDK II Training  EDK II Debugging Pres-lab
 
-  Copyright (c) 2018, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -49,11 +49,11 @@ Note:
 <!---  Add bullets using https://fontawesome.com/cheatsheet certificate
 -->
 <ul style="list-style-type:none">
- <li>@fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Define `DebugLib` and its attributes</span> </li>
+ <li>@fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Define <font face="Consolas">DebugLib</font> and its attributes</span> </li>
  <li>@fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;List the ways to debug</span></li>
- <li>@fa[certificate gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Using PCDs to Configure `DebugLib` -LAB </span> </li>
+ <li>@fa[certificate gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Using PCDs to Configure <font face="Consolas">DebugLib</font> -LAB </span> </li>
  <li>@fa[certificate gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;Change Compiler & Linker Flags for debugging</span></li>
- <li>@fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Change the `DebugLib` instance to modify the debug<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output - LAB</span> </li>
+ <li>@fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Change the <font face="Consolas">DebugLib</font> instance to modify the debug<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output - LAB</span> </li>
  <li>@fa[certificate gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Debug EDK II using VS Debugger - LAB</span> </li>
 </ul>
 
@@ -73,8 +73,8 @@ Note:
 
 <div class="left1">
 @ul[no-bullet]
-- <span style="font-size:0.9em" ><font color="white">`DEBUG` and `ASSERT` macros in EDK II code </font></span><br><br>
-- <span style="font-size:0.9em" ><font color="cyan">`DEBUG` instead of `Print` functions </font></span><br><br>
+- <span style="font-size:0.9em" ><font color="white"><font face="Consolas">DEBUG and ASSERT</font> macros in EDK II code </font></span><br><br>
+- <span style="font-size:0.9em" ><font color="cyan"><font face="Consolas">DEBUG</font> instead of <font face="Consolas">Print</font> functions </font></span><br><br>
 - <span style="font-size:0.9em" ><font color="white">Software/hardware debuggers </font></span><br><br>
 - <span style="font-size:0.9em" ><font color="cyan">Shell commands to test capabilities for simple debugging </font></span>
 @ulend
@@ -101,7 +101,7 @@ Note:
 
 ---
 @title[EDK II DebugLib Library]
-<p align="center"><span style="font-size:01.1em" ><font color="#e49436" ><b>EDK II `DebugLib` Library</b></font></span></p>
+<p align="center"><span style="font-size:01.1em" ><font color="#e49436" ><b>EDK II <font face="Consolas">DebugLib</font> Library</b></font></span></p>
 
 @snap[north-west span-60 fragment]
 <br>
@@ -164,7 +164,7 @@ Note:
 
 ---
 @title[Using PCDs to Configure DebugLib]
-<p align="right"><span class="gold" ><b>Using PCDs to Configure `DebugLib`</b></span></p>
+<p align="right"><span class="gold" ><b>Using PCDs to Configure <font face="Consolas">DebugLib</font></b></span></p>
 
 @snap[west span-100 ]
 <br>
@@ -176,7 +176,7 @@ Note:
 <br>
 <br>
 <br>
-<p style="line-height:70%" ><span style="font-size:01.0em; font-weight: bold;" ><font color="#87E2A9">MdePkg Debug Library Class </font><br></span></p>
+<p style="line-height:70%" ><span style="font-size:01.0em; font-weight: bold;" ><font color="#A8ff60">MdePkg Debug Library Class </font><br></span></p>
 <br>
 <p style="line-height:60%" align="left"><span style="font-size:0.60em; font-family:Consolas; " >
 &nbsp;&nbsp;
@@ -204,7 +204,7 @@ Note:
     - Types of messages produced
 	
 - PCDs set which drivers report errors and change what messages get printed
-- Example from Nt32Pkg.dsc:
+- Example from EmulatorPkg.dsc:
   - [PcdsFixedAtBuild.IA32]
     - EfiMdePkgTokenSpaceGuid.PcdDebugPropertyMask|0x1f
     - gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x80000040
@@ -224,7 +224,7 @@ Note:
 
 ---
 @title[PcdDebugPropertyMask Values]
-<p align="right"><span class="gold" ><b>@color[white](`PcdDebugPropertyMask`) Values</b></span></p>
+<p align="right"><span class="gold" ><b>@color[white](<font face="Consolas">PcdDebugPropertyMask</font>) Values</b></span></p>
 
 
 @snap[north-west span-100 ]
@@ -237,7 +237,7 @@ Note:
 @snap[north-west span-100 ]
 <br>
 <br>
-<p style="line-height:70%" ><span style="font-size:01.0em;" ><font color="#87E2A9"><b>Debugging Features Enabled </b></font><br></span></p>
+<p style="line-height:70%" ><span style="font-size:01.0em;" ><font color="#A8ff60"><b>Debugging Features Enabled </b></font><br></span></p>
 <p style="line-height:60%" align="left"><span style="font-size:0.550em; font-family:Consolas; " >
 &nbsp;&nbsp;
 &nbsp;&nbsp;&num;define DEBUG_PROPERTY_DEBUG_ASSERT_ENABLED &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            0x01<br>&nbsp;&nbsp;
@@ -248,7 +248,7 @@ Note:
 &nbsp;&nbsp;&num;define DEBUG_PROPERTY_ASSERT_DEADLOOP_ENABLED &nbsp;&nbsp;&nbsp;              0x20
 </span></p>
 
-<p style="line-height:60%" align="left"><span style="font-size:0.50em;"> <font color="yellow">Default value in `OvmfPkg` is `0x2f`<br>Default value in `Nt32Pkg` is `0x1f`</font></span></p>
+<p style="line-height:60%" align="left"><span style="font-size:0.50em;"> <font color="yellow">Default value in <font face="Consolas">OvmfPkg</font> is <font face="Consolas">0x2f</font><br>Default value in <font face="Consolas">EmulatorPkg</font> is <font face="Consolas">0x1f</font></font></span></p>
 @snapend
 
 
@@ -301,8 +301,8 @@ Note:
 
 ---
 @title[PcdDebugPrintErrorLevel Values]
-<p align="right"><span class="gold" ><b>@color[white](`PcdDebugPrintErrorLevel`) Values</b></span></p>
-<p style="line-height:70%" ><span style="font-size:01.0em;" ><font color="#87E2A9"><b>Debugging Messages Displayed</b></font><br></span></p>
+<p align="right"><span class="gold" ><b>@color[white](<font face="Consolas">PcdDebugPrintErrorLevel</font>) Values</b></span></p>
+<p style="line-height:70%" ><span style="font-size:01.0em;" ><font color="#A8ff60"><b>Debugging Messages Displayed</b></font><br></span></p>
 
 ```
  #define DEBUG_INIT      0x00000001  // Initialization
@@ -331,7 +331,7 @@ Note:
 ```
 
 <p style="line-height:60%" align="left"><span style="font-size:0.50em;"> <font color="yellow">
-Default value in `OvmfPkg` is `0x8000004f`  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Default value in `Nt32Pkg` is `0x80000040`</font></span></p>
+Default value in <font face="Consolas">OvmfPkg is 0x8000004f</font>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Default value in <font face="Consolas">EmulatorPkg is 0x80000040</font></font></span></p>
 
 
 
@@ -407,12 +407,8 @@ Note:
 @snap[north-west span-90 fragment]
 <br>
 <br>
-@box[bg-green-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`ReportStatusCodeLib` - Progress codes<br>&nbsp;</span></p>)
-<pre>
-```
-  gEfiMdePkgTokenSpaceGuid.PcdReportStatusCodePropertyMask
-```
-</pre>
+@box[bg-green-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" ><font face="Consolas">ReportStatusCodeLib</font> - Progress codes<br>&nbsp;</span></p>)
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:45%" align="left" ><span style="font-size:0.45em; font-family:Consolas;" >gEfiMdePkgTokenSpaceGuid.PcdReportStatusCodePropertyMask&nbsp;</span></p>)
 <br>
 @snapend
 
@@ -422,13 +418,8 @@ Note:
 <br>
 <br>
 <p style="line-height:50%" ><br><br><br><br>&nbsp;</p>
-@box[bg-royal text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`PostCodeLib` - Enable Post codes<br>&nbsp;</span></p>)
-<pre>
-```
-  gEfiMdePkgTokenSpaceGuid.PcdPostCodePropertyMask
-
-```
-</pre>
+@box[bg-royal text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" ><font face="Consolas">PostCodeLib</font> - Enable Post codes<br>&nbsp;</span></p>)
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:45%" align="left" ><span style="font-size:0.45em; font-family:Consolas;" >gEfiMdePkgTokenSpaceGuid.PcdPostCodePropertyMask &nbsp;</span></p>)
 <br>
 @snapend
 
@@ -442,13 +433,8 @@ Note:
 <br>
 <br>
 <p style="line-height:50%" ><br><br><br><br><br>&nbsp;</p>
-@box[bg-gold2 text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >`PerformanceLib` - Enable Measurement <br>&nbsp;</span></p>)
-<pre>
-```
-  gEfiMdePkgTokenSpaceGuid.PcdPerformanceLibraryPropertyMask
-
-```
-</pre>
+@box[bg-gold2 text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" ><font face="Consolas">PerformanceLib</font> - Enable Measurement <br>&nbsp;</span></p>)
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:45%" align="left"><span style="font-size:0.45em; font-family:Consolas;" >gEfiMdePkgTokenSpaceGuid.PcdPerformanceLibraryPropertyMask &nbsp;</span></p>)
 <br>
 @snapend
 
@@ -463,54 +449,6 @@ Note:
 	- gEfiMdePkgTokenSpaceGuid.PcdPostCodePropertyMask
 - PerformanceLib -  Enable Measurement
 	- gEfiMdePkgTokenSpaceGuid.PcdPerformanceLibraryPropertyMask
----
-@title[CpuBreakpoint vs CpuDeadLoop  ]
-<p align="right"><span class="gold" ><b>`CpuBreakpoint` Vs `CpuDeadLoop` </b></span></p>
-
-@snap[north-west span-45]
-<br>
-<br>
-@box[bg-green-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:01.1em; font-weight: bold;" >`CpuBreakPoint`<br>&nbsp;</span></p>)
-<p align="Left" style="line-height:80%"><span style="font-size:0.8em" >When using a Software debugger: </span> </p>
-<ul style="list-style-type:disc; line-height:0.7;">
-   <li><span style="font-size:0.67em" >Visual Studio</span></li>
-   <li><span style="font-size:0.67em" >GDB (`OvmfPkg` w/ qemu)</span></li>
-   <li><span style="font-size:0.67em" >Intel<sup>&reg; </sup> UDK Debugger</span></li>
-   <li><span style="font-size:0.67em" ><a href="https://www.windriver.com/">Windriver</a> Simics</span></li>
-   <li><span style="font-size:0.67em" >Debug agent - `SourceLevelDebugPkg`</span></li>
- </ul>
-<br>
-@snapend
-
-
-
-@snap[north-east span-45]
-<br>
-<br>
-@box[bg-green-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:01.1em; font-weight: bold;" >`CpuDeadLoop`<br>&nbsp;</span></p>)
-<p align="Left" style="line-height:80%"><span style="font-size:0.8em" >When using a Hardware debugger: </span> </p>
-<ul style="list-style-type:disc; line-height:0.7;">
-   <li><span style="font-size:0.67em" >In-Target Probe(ITP)</span></li>
-   <li><span style="font-size:0.67em" >Intel<sup>&reg;</sup> SVT DCI Cable</span></li>
-   <li><span style="font-size:0.67em" >Intel<sup>&reg;</sup> SVT Closed Chassis Adapter (CCA)</span></li>
-   <li><span style="font-size:0.67em" >other 3<sup>rd</sup> party Hardware (i.e. <a href="http://www.lauterbach.com">Lauterbach</a> w/ JTAG)
-</span></li>
-</ul>
-<br>
-@snapend
-
-@snap[south-west span-100]
-<p style="line-height:70%" align="left"><span style="font-size:0.7em" >
-The functions <font color="#A8ff60">`CpuBreakpoint()`</font> and  <font color="#A8ff60">`CpuDeadLoop()`</font> are part of the EDK II Base Libraries 
-and can be compiled with any UEFI or PI Module at any phase of the boot flow (SEC, PEI, DXE, BDS, TSL)
-</span> </p>
-<br>
-@snapend
-
-
-
-Note:
-
 
 ---?image=/assets/images/slides/Slide_LabSec.JPG
 @title[Lab 1: Adding Debug Statements]
@@ -532,21 +470,43 @@ This lab uses code from a previous exercise as a starting point (refer to  Writi
 ---
 @title[Lab 1: Catch Up SampleApp]
 <p align="right"><span class="gold" ><b>Lab 1: Catch up from previous lab</b></span></p>
+@snap[north-west span-50 ]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+@snapend
+
+
 <span style="font-size:0.8em" >Skip if Lab <a href="https://gitpitch.com/tianocore-training/Writing_UEFI_App_Win_Lab/master#/">Writing UEFI App Lab</a> completed</span>
 <ul style="list-style-type:disc; line-height:0.8;">
-   <li><span style="font-size:0.8em" >Perform <a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_LAB/master#/2">Lab Setup</a> from previous Labs  </span></li>
-   <li><span style="font-size:0.8em" >Create a Directory under the workspace `C:/FW/edk2  ` : "`SampleApp`"</span></li>
-   <li><span style="font-size:0.8em" >Copy contents of `C:/../FW/LabSampleCode/SampleAppDebug` to `C:/FW/edk2/SampleApp`</span></li>
-   <li><span style="font-size:0.8em" >Open `C:/FW/edk2/Nt32Pkg/Nt32Pkg.dsc`</span></li>
-   <li><span style="font-size:0.8em" >Add the following to the `[Components]` section: </span></li>
-<pre lang="php">
-```
-    # Add new modules here
-    SampleApp/SampleApp.inf
-```
-</pre>
-   <li><span style="font-size:0.8em" >Save and close the file `C:/FW/edk2/Nt32Pkg/Nt32Pkg.dsc`  </span></li>
+   <li><span style="font-size:0.8em" >Perform <a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/">Lab Setup</a> from previous Labs  </span></li>
+   <li><span style="font-size:0.8em" >Create a Directory under the workspace <font face="Consolas">C:/FW/edk2-ws/edk2 : "SampleApp"</font></span></li>
+   <li><span style="font-size:0.8em" >Copy contents of <font face="Consolas">C:/../FW/LabSampleCode/SampleAppDebug to C:/FW/edk2-ws/edk2/SampleApp</font></span></li>
+   <li><span style="font-size:0.8em" >Open <font face="Consolas">C:/FW/edk2-ws/edk2/EmulatorPkg/EmulatorPkg.dsc</font></span></li>
+   <li><span style="font-size:0.8em" >Add the following to the <font face="Consolas">[Components]</font> section: </span></li><br><br><br><br>
+   <li><span style="font-size:0.8em" >Save and close the file <font face="Consolas">C:/FW/edk2-ws/edk2/EmulatorPkg/EmulatorPkg.dsc</font>  </span></li>
 </ul>
+
+
+@snap[north-east span-98 ]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" ><br><br><br>
+&num; Add new modules here<br>&nbsb;
+SampleApp/SampleApp.inf
+</span></p>
+@snapend
+
 
 Note:
 
@@ -555,9 +515,10 @@ Note:
 <p align="right"><span class="gold" ><b>Lab 1: Add debug statments to SampleApp</b></span></p>
 <br>
 <ul>
-  <li><span style="font-size:0.8em" >Open a VS Command Prompt and type `cd C:/FW/edk2` then <br></span>&nbsp;&nbsp;&nbsp;<span style="font-size:0.6em" ><span style="background-color: #101010">&nbsp;` C:/FW/edk2> edksetup `&nbsp;</span> </span></li><br>
-  <li><span style="font-size:0.8em" >Open `C:/FW/edk/SampleApp/SampleApp.c` </span></li><br>
-  <li><span style="font-size:0.8em" >Add the following to the include statements at the top of the file after below the last "`#include`" statement: </span></li>
+  <li><span style="font-size:0.8em" >Open a VS Command Prompt and type <font face="Consolas">cd C:/FW/edk2-ws/</font> then <br></span>&nbsp;&nbsp;&nbsp;<span style="font-size:0.6em" >
+  <span style="background-color: #101010">&nbsp;<font face="Consolas"> C:/FW/edk2-ws/edk2> edksetup </font>&nbsp;</span> </span></li><br>
+  <li><span style="font-size:0.8em" >Open <font face="Consolas">C:/FW/edk/SampleApp/SampleApp.c</font> </span></li><br>
+  <li><span style="font-size:0.8em" >Add the following to the include statements at the top of the file after below the last "<font face="Consolas">#include</font>" statement: </span></li>
 <pre>
 ```
  #include <Library/DebugLib.h>
@@ -570,8 +531,8 @@ Note:
 ---
 @title[Lab 1: Add debug statements SampleApp 02]
 <p align="right"><span class="gold" ><b>Lab 1: Add debug statements to SampleApp</b></span></p>
-<p style="line-height:85%"><span style="font-size:0.7em" >Locate the `UefiMain` function. Then copy and paste the following 
-code after the <span style="background-color: #101010">&nbsp;"`EFI_INPUT_KEY  KEY;`"</span> statement: and before the first <span style="background-color: #101010">&nbsp;`Print()` </span>statement </span></p>
+<p style="line-height:85%"><span style="font-size:0.7em" >Locate the <font face="Consolas">UefiMain</font> function. Then copy and paste the following 
+code after the <span style="background-color: #101010">&nbsp;"<font face="Consolas">EFI_INPUT_KEY  KEY;</font>"</span> statement: and before the first <span style="background-color: #101010">&nbsp;<font face="Consolas">Print()</font> </span>statement </span></p>
 
 ```c
 DEBUG ((0xffffffff, "\n\nUEFI Base Training DEBUG DEMO\n") );
@@ -616,15 +577,15 @@ Note:
 <span style="font-size:0.8em" >At the VS Command Prompt</span>
 <pre>
 ```
-    C:/FW/edk2> Build
-  C:/FW/edk2> Build Run
+    C:/FW/edk2-ws/edk2> Build
+  C:/FW/edk2-ws/edk2> RunEmulator
 ```
 </pre>
 <p style="line-height:90%"><span style="font-size:0.8em" >Run the application from the shell</span><br>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font color="yellow">`Shell> `&nbsp;</font>`SampleApp`&nbsp;</span></span></p>
+<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
 <p style="line-height:90%"><span style="font-size:0.8em" >Check the VS Debug output </span></p>
 <p style="line-height:90%"><span style="font-size:0.8em" >Exit <br></span>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font color="yellow">`Shell> `&nbsp;</font>`Reset`&nbsp;</span></span></p>
+<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;Reset&nbsp;</font></span></span></p>
 </div>
 <div class="right">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -659,8 +620,8 @@ In this lab, you'll learn how to use PCD values to change debugging capabilities
 <p align="right"><span class="gold" ><b>Lab 2: Change PCDs for SampleApp</b></span></p>
 <br>
 <br>
-<span style="font-size:0.7em" >Open `C:/FW/edk/Nt32Pkg/Nt32Pkg.dsc` </span><br>
-<span style="font-size:0.7em" >Replace `SampleApp/SampleApp.inf` with the following:</span><br>
+<span style="font-size:0.7em" >Open <font face="Consolas">C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc</font> </span><br>
+<span style="font-size:0.7em" >Replace <font face="Consolas">SampleApp/SampleApp.inf</font> with the following:</span><br>
 ```c
   SampleApp/SampleApp.inf {
     <PcdsFixedAtBuild>
@@ -668,7 +629,7 @@ In this lab, you'll learn how to use PCD values to change debugging capabilities
       gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0xffffffff
  }
 ```
-<span style="font-size:0.7em" >Save and close `C:/FW/edk/Nt32Pkg/Nt32Pkg.dsc` </span><br>
+<span style="font-size:0.7em" >Save and close <font face="Consolas">C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc</font> </span><br>
 
 
 Note:
@@ -682,15 +643,15 @@ Note:
 <span style="font-size:0.8em" >At the VS Command Prompt</span>
 <pre>
 ```
- C:/FW/edk2> Build
- C:/FW/edk2> Build Run
+ C:/FW/edk2-ws/edk2> Build
+ C:/FW/edk2-ws/edk2> RunEmulator
 ```
 </pre>
 <p style="line-height:90%"><span style="font-size:0.8em" >Run the application from the shell</span><br>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font color="yellow">`Shell> `&nbsp;</font>`SampleApp`&nbsp;</span></span></p>
+<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
 <p style="line-height:90%"><span style="font-size:0.8em" >Check the VS Debug output </span></p>
 <p style="line-height:90%"><span style="font-size:0.8em" >Exit <br></span>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font color="yellow">`Shell> `&nbsp;</font>`Reset`&nbsp;</span></span></p>
+<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;Reset</font>&nbsp;</span></span></p>
 </div>
 <div class="right">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -723,7 +684,7 @@ Note:
 <br>
 <br>
 <br>
-@box[bg-navy text-white waved   ](<p style="line-height:90%" ><span style="font-size:01.0em; font-weight: bold;" >DSC `[BuildOptions]` section &lpar;platform scope&rpar;<br>&nbsp;</span></p>)
+@box[bg-navy text-white waved   ](<p style="line-height:90%" ><span style="font-size:01.0em; font-weight: bold;" >DSC <font face="Consolas">[BuildOptions]</font> section &lpar;platform scope&rpar;<br>&nbsp;</span></p>)
 @snapend
 
 @snap[north-west span-50 fragment]
@@ -733,7 +694,7 @@ Note:
 <br>
 <br>
 <br>
-@box[bg-purple-pp text-white waved  ](<p style="line-height:90%" ><span style="font-size:01.0em; font-weight: bold;" >INF `[BuildOptions]` section <br>&nbsp;</span></p>)
+@box[bg-purple-pp text-white waved  ](<p style="line-height:90%" ><span style="font-size:01.0em; font-weight: bold;" >INF <font face="Consolas">[BuildOptions]</font> section <br>&nbsp;</span></p>)
 @snapend
 
 
@@ -744,7 +705,7 @@ Note:
 <br>
 <br>
 <br>
-@box[bg-lt-blue-pp text-white waved  ](<p style="line-height:90%" ><span style="font-size:01.0em; font-weight: bold;" >DSC  &lt;`BuildOptions`&gt; under a specific module <br>&nbsp;</span></p>)
+@box[bg-lt-blue-pp text-white waved  ](<p style="line-height:90%" ><span style="font-size:01.0em; font-weight: bold;" >DSC  &lt;<font face="Consolas">BuildOptions</font>&gt; under a specific module <br>&nbsp;</span></p>)
 @snapend
 
 
@@ -781,8 +742,8 @@ Note:
 @snap[north-west span-100]
 <br>
 <br>
-<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">@color[#87E2A9](Example from Microsoft* compiler to turn off optimization)</span></p>
-<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " >&nbsp;&nbsp;"`/02` " to "`/01`" requires "`/0d /01`"</span></p>
+<p align="left" style="line-height:80%"><span style="font-size:0.9em; ">@color[#A8ff60](Example from Microsoft* compiler to turn off optimization)</span></p>
+<p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " >&nbsp;&nbsp;<font face="Consolas">"/02 " to "/01"</font> requires <font face="Consolas">"/0d /01"</font></span></p>
 <br>
 @snapend
 
@@ -833,7 +794,7 @@ Note:
 ---?image=assets/images/binary-strings-black2.jpg
 @title[DebugLib Usage Section]
 <br><br><br><br><br><br><br>
-### <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`DebugLib` Usage</span>
+### <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Consolas">DebugLib</font> Usage</span>
 <span style="font-size:0.9em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
 Note:
@@ -841,7 +802,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide25_2.JPG
 @title[DebugLib Class]
-<p align="center"><span class="gold" ><b>The `DebugLib` Class</b></span></p>
+<p align="center"><span class="gold" ><b>The <font face="Consolas">DebugLib</font> Class</b></span></p>
 
 @snap[north-west span-85]
 <p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br>&nbsp;</span></p>
@@ -855,7 +816,7 @@ Note:
 <br>
 <br>
 <br>
-<p align="left" style="line-height:60%"><span style="font-size:0.9em; "><font color="#87E2A9"><b>Macros</b><br>@size[0.65em](&lpar;where PCDs ard checked&rpar;)</font></span></p>
+<p align="left" style="line-height:60%"><span style="font-size:0.9em; "><font color="#A8ff60"><b>Macros</b><br>@size[0.65em](&lpar;where PCDs ard checked&rpar;)</font></span></p>
 @box[bg-grey-05 text-white rounded my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;ASSERT &lpar;Expression&rpar;<br>&nbsp;&nbsp;DEBUG &lpar;Expression&rpar;<br>&nbsp;&nbsp;ASSERT_EFI_ERROR &lpar;StatusParameter&rpar;<br>&nbsp;&nbsp;ASSERT_PROTOCOL_ALREADY_INSTALLED&lpar;. . .&rpar;<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
@@ -873,7 +834,7 @@ Note:
 <br>
 <br>
 <br>
-<p align="left" style="line-height:80%"><span style="font-size:0.9em; "><font color="#87E2A9"><b>Advanced Macros</b></font></span></p>
+<p align="left" style="line-height:80%"><span style="font-size:0.9em; "><font color="#A8ff60"><b>Advanced Macros</b></font></span></p>
 @box[bg-grey-05 text-white rounded my-box-pad2  ](<p style="line-height:40%" align="left"><span style="font-size:0.450em; font-family:Consolas; " >&nbsp;&nbsp;DEBUG_CODE &lpar;Expression&rpar;<br>&nbsp;&nbsp;DEBUG_CODE_BEGIN&lpar;&rpar; & DEBUG_CODE_END&lpar;&rpar;<br>&nbsp;&nbsp;DEBUG_CLEAR_MEMORY&lpar;...&rpar;<br>&nbsp;&nbsp;</span></p>)
 <br>
 @snapend
@@ -904,7 +865,7 @@ Note:
 ---?image=/assets/images/slides/Slide26_1.JPG
 @title[DebugLib Instances (1)]
 <br>
-<p align="left"><span class="gold" ><b>`DebugLib` Instances (1)</b></span></p>
+<p align="left"><span class="gold" ><b><font face="Consolas">DebugLib</font> Instances (1)</b></span></p>
 
 @snap[north-west span-75]
 <p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br><br><br>&nbsp;</span></p>
@@ -929,10 +890,10 @@ Note:
 <br>
 <p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br>&nbsp;</span></p>
 <ul>
-  <li><span style="font-size:0.8em">Instance of `DebugLib`   </span></li>
-  <li><span style="font-size:0.8em">Uses `SerialPortLib` class to send debug output to serial port</span></li>
-  <li><span style="font-size:0.8em">Default for many platforms:  `BaseDebugLibNull`  </span></li>
-  <li><span style="font-size:0.8em">OVMF uses it with Switch `DEBUG_ON_SERIAL_PORT`  </span></li>
+  <li><span style="font-size:0.8em">Instance of <font face="Consolas">DebugLib</font>   </span></li>
+  <li><span style="font-size:0.8em">Uses <font face="Consolas">SerialPortLib</font> class to send debug output to serial port</span></li>
+  <li><span style="font-size:0.8em">Default for many platforms:  <font face="Consolas">BaseDebugLibNull</font>  </span></li>
+  <li><span style="font-size:0.8em">OVMF uses it with Switch <font face="Consolas">DEBUG_ON_SERIAL_PORT</font>  </span></li>
 </ul>
 @snapend
 
@@ -962,7 +923,7 @@ Note:
 ---?image=/assets/images/slides/Slide26_1.JPG
 @title[DebugLib Instances (2)]
 <br>
-<p align="left"><span class="gold" ><b>`DebugLib` Instances (2)</b></span></p>
+<p align="left"><span class="gold" ><b><font face="Consolas">DebugLib</font> Instances (2)</b></span></p>
 
 
 
@@ -989,7 +950,7 @@ Note:
 <br>
 <p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br>&nbsp;</span></p>
 <ul>
-  <li><span style="font-size:0.8em">Instances of `DebugLib` (for apps and drivers)</span></li><br>
+  <li><span style="font-size:0.8em">Instances of <font face="Consolas">DebugLib</font> (for apps and drivers)</span></li><br>
   <li><span style="font-size:0.8em">Send all debug output to console/debug console</span></li>
 </ul>
 @snapend
@@ -1016,7 +977,7 @@ Note:
 ---?image=/assets/images/slides/Slide26_1.JPG
 @title[DebugLib Instances (3)]
 <br>
-<p align="left"><span class="gold" ><b>`DebugLib` Instances (3)</b></span></p>
+<p align="left"><span class="gold" ><b><font face="Consolas">DebugLib</font> Instances (3)</b></span></p>
 
 @snap[north-west span-75]
 <p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br><br><br>&nbsp;</span></p>
@@ -1041,9 +1002,9 @@ Note:
 <br>
 <p style="line-height:40%" align="left"><span style="font-size:0.650em; font-family:Consolas; " ><br><br><br>&nbsp;</span></p>
 <ul>
-  <li><span style="font-size:0.8em">Sends ASCII String  specified by  Description Value to the `ReportStatusCode()`  </span></li>
-  <li><span style="font-size:0.8em">May also use the `SerialPortLib` class to send debug output to serial port</span></li>
-  <li><span style="font-size:0.8em">`BaseDebugLibNull`  - Resolves references </span></li>
+  <li><span style="font-size:0.8em">Sends ASCII String  specified by  Description Value to the <font face="Consolas">ReportStatusCode()</font>  </span></li>
+  <li><span style="font-size:0.8em">May also use the <font face="Consolas">SerialPortLib</font> class to send debug output to serial port</span></li>
+  <li><span style="font-size:0.8em"><font face="Consolas">BaseDebugLibNull</font>  - Resolves references </span></li>
 </ul>
 <br>
 <br>
@@ -1151,15 +1112,15 @@ Note:
 <p align="right"><span class="gold" ><b>Lab 3: Using Library Instances for Debugging</b></span></p>
 <br>
 <br>
-<span style="font-size:0.7em" >Open `C:/FW/edk2/Nt32Pkg/Nt32Pkg.dsc` </span><br>
-<span style="font-size:0.7em" >Replace `SampleApp/SampleApp.inf { . . .}` with the following:</span><br>
+<span style="font-size:0.7em" >Open <font face="Consolas">C:/FW/edk2-ws/edk2/EmulatorPkg/EmulatorPkg.dscv </span><br>
+<span style="font-size:0.7em" >Replace <font face="Consolas">SampleApp/SampleApp.inf { . . .}</font> with the following:</span><br>
 ```c
   SampleApp/SampleApp.inf {
    <LibraryClasses>
     DebugLib|MdePkg/Library/UefiDebugLibConOut/UefiDebugLibConOut.inf
  }
 ```
-<span style="font-size:0.7em" >Save and close `C:/FW/edk2/Nt32Pkg/Nt32Pkg.dsc` </span><br>
+<span style="font-size:0.7em" >Save and close <font face="Consolas">C:/FW/edk2-ws/edk2/EmulatorPkg/EmulatorPkg.dsc</font> </span><br>
 
 Note:
 
@@ -1173,15 +1134,15 @@ Lab 3 Changing Library
 <span style="font-size:0.8em" >At the VS Command Prompt</span>
 <pre>
 ```
- C:/FW/edk2> Build
- C:/FW/edk2> Build Run
+ C:/FW/edk2-ws/edk2> Build
+ C:/FW/edk2-ws/edk2> RunEmulator
 ```
 </pre>
 <p style="line-height:90%"><span style="font-size:0.8em" >Run the application from the shell</span><br>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font color="yellow">`Shell> `&nbsp;</font>`SampleApp`&nbsp;</span></span></p>
+<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
 <p style="line-height:90%"><span style="font-size:0.8em" >See that the output from the Debug statements now goes to the Nt32 console </span></p>
 <p style="line-height:90%"><span style="font-size:0.8em" >Exit <br></span>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font color="yellow">`Shell> `&nbsp;</font>`Reset`&nbsp;</span></span></p>
+<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;Reset</font>&nbsp;</span></span></p>
 </div>
 <div class="right">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -1195,10 +1156,10 @@ Notice the Debug messages output to the console
 @title[Lab 4: Serial port Instance of DebugLib]
 <br>
 <br>
-<p align="Left"><span class="gold" ><b>Lab 4: Null Instance of `DebugLib`</b></span></p>
+<p align="Left"><span class="gold" ><b>Lab 4: Null Instance of <font face="Consolas">DebugLib</font></b></span></p>
 <br>
 <div class="left1">
-<span style="font-size:0.8em" >In this lab,  you'll change the `DebugLib` to the Null instance. </span>
+<span style="font-size:0.8em" >In this lab,  you'll change the <font face="Consolas">DebugLib</font> to the Null instance. </span>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -1213,15 +1174,15 @@ The DEBUG output for SampleApp is no debug output
 @title[Lab 4: Using Serial port Library Instances]
 <p align="right"><span class="gold" ><b>Lab 4: Using Serial port Library Instances</b></span></p>
 <br>
-<span style="font-size:0.7em" >Open `C:/FW/edk2/Nt32Pkg/Nt32Pkg.dsc` </span><br>
-<span style="font-size:0.7em" >Replace `SampleApp/SampleApp.inf { . . .}` with the following:</span><br>
+<span style="font-size:0.7em" >Open <font face="Consolas">C:/FW/edk2-ws/edk2/EmulatorPkg/EmulatorPkg.dsc</font> </span><br>
+<span style="font-size:0.7em" >Replace <font face="Consolas">SampleApp/SampleApp.inf { . . .}</font> with the following:</span><br>
 ```c
   SampleApp/SampleApp.inf {
    <LibraryClasses>      
       DebugLib|MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
  }
 ```
-<span style="font-size:0.7em" >Save and close `C:/FW/edk2/Nt32Pkg/Nt32Pkg.dsc` </span><br>
+<span style="font-size:0.7em" >Save and close <font face="Consolas">C:/FW/edk2-ws/edk2/EmulatorPkg/EmulatorPkg.dsc</font> </span><br>
 
 Note:
 
@@ -1235,15 +1196,15 @@ Lab 4
 <span style="font-size:0.8em" >At the VS Command Prompt</span>
 <pre>
 ```
- C:/FW/edk2> Build
- C:/FW/edk2> Build Run
+ C:/FW/edk2-ws/edk2> Build
+ C:/FW/edk2-ws/edk2> RunEmulator
 ```
 </pre>
 <p style="line-height:90%"><span style="font-size:0.8em" >Run the application from the shell</span><br>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font color="yellow">`Shell> `&nbsp;</font>`SampleApp`&nbsp;</span></span></p>
+<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
 <p style="line-height:90%"><span style="font-size:0.8em" >Check - now<font color="red"> <b>NO</b> </font>Debug output</span></p>
 <p style="line-height:90%"><span style="font-size:0.8em" >Exit <br></span>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font color="yellow">`Shell> `&nbsp;</font>`Reset`&nbsp;</span></span></p>
+<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;Reset</font>&nbsp;</span></span></p>
 </div>
 <div class="right">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -1275,7 +1236,7 @@ Note:
 @title[Lab 5: Nt32 Debug with VS]
 <p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS</b></span></p>
 <br>
-<span style="font-size:0.7em" >Edit the `SampleApp.c`and add the "`ASSERT_EFI_ERROR`" Statement :  </span><br>
+<span style="font-size:0.7em" >Edit the <font face="Consolas">SampleApp.c</font>and add the "<font face="Consolas">ASSERT_EFI_ERROR</font>" Statement :  </span><br>
 ```c
    ASSERT_EFI_ERROR(0x80000000);
 ```
@@ -1285,7 +1246,7 @@ Note:
 <br>
 <br>
 
-<span style="font-size:0.8em" >Save `SampleApp.c` </span><br>
+<span style="font-size:0.8em" >Save <font face="Consolas">SampleApp.c</font> </span><br>
 
 Note:
 Lab 5, add ASSERT
@@ -1298,12 +1259,12 @@ Lab 5, add ASSERT
 <span style="font-size:0.8em" >At the VS Command Prompt</span>
 <pre>
 ```
- C:/FW/edk2> Build
- C:/FW/edk2> Build Run
+ C:/FW/edk2-ws/edk2> Build
+ C:/FW/edk2-ws/edk2> RunEmulator
 ```
 </pre>
 <p style="line-height:90%"><span style="font-size:0.8em" >Run the application from the shell</span><br>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font color="yellow">`Shell> `&nbsp;</font>`SampleApp`&nbsp;</span></span></p>
+<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp; SampleApp</font>&nbsp;</span></span></p>
 <p style="line-height:90%"><span style="font-size:0.8em" >Assert in VS Command Prompt</font>Debug output</span></p>
 </div>
 <div class="right">
@@ -1326,7 +1287,7 @@ Lab 5, add ASSERT
 @title[Lab 5: Nt32 Debug with VS- CPU bp]
 <p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS</b></span></p>
 <br>
-<p style="line-height:60%"><span style="font-size:0.7em" >Edit the `SampleApp.c` and add the "`CpuBreakpoint();`" Statement and comment out the "`ASSERT`":  </span></p>
+<p style="line-height:60%"><span style="font-size:0.7em" >Edit the <font face="Consolas">SampleApp.c</font> and add the "<font face="Consolas">CpuBreakpoint();</font>" Statement and comment out the "<font face="Consolas">ASSERT</font>":  </span></p>
 ```c
     CpuBreakpoint();
 ```
@@ -1336,7 +1297,7 @@ Lab 5, add ASSERT
 <br>
 <br>
 
-<span style="font-size:0.8em" >Save `SampleApp.c` </span><br>
+<span style="font-size:0.8em" >Save <font face="Consolas">SampleApp.c</font> </span><br>
 
 Note:
 Lab 5, add CpuBreakpoint();
@@ -1350,12 +1311,12 @@ Lab 5, add CpuBreakpoint();
 <span style="font-size:0.8em" >At the VS Command Prompt</span>
 <pre>
 ```
- C:/FW/edk2> Build
- C:/FW/edk2> Build Run
+ C:/FW/edk2-ws/edk2> Build
+ C:/FW/edk2-ws/edk2> RunEmulator
 ```
 </pre>
 <p style="line-height:90%"><span style="font-size:0.8em" >Run the application from the shell</span><br>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font color="yellow">`Shell> `&nbsp;</font>`SampleApp`&nbsp;</span></span></p>
+<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
 <p style="line-height:90%"><span style="font-size:0.8em" >VS option go to the VS Debugger</span></p>
 </div>
 <div class="right">
@@ -1394,11 +1355,11 @@ Now the visual studio debugger is debugging the sampleapp function and common de
 <BR>
 ### <p align="center"><span class="gold"   >Summary </span></p><br>
 <ul style="list-style-type:none">
- <li>@fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Define `DebugLib` and its attributes</span> </li>
+ <li>@fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Define <font face="Consolas">DebugLib</font> and its attributes</span> </li>
  <li>@fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;List the ways to debug</span></li>
- <li>@fa[certificate gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Using PCDs to Configure `DebugLib` - LAB </span> </li>
+ <li>@fa[certificate gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Using PCDs to Configure <font face="Consolas">DebugLib</font> - LAB </span> </li>
  <li>@fa[certificate gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;Change Compiler & Linker Flags for debugging</span></li>
- <li>@fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Change the `DebugLib` instance to modify the debug<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output - LAB</span> </li>
+ <li>@fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Change the <font face="Consolas">DebugLib</font> instance to modify the debug<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output - LAB</span> </li>
  <li>@fa[certificate gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Debug EDK II using VS Debugger - LAB</span> </li>
 </ul>
 
@@ -1460,7 +1421,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWIS
 ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY 
 OF SUCH DAMAGE.
 
-Copyright (c) 2018, Intel Corporation. All rights reserved.
+Copyright (c) 2019, Intel Corporation. All rights reserved.
 **/
 
 ```
@@ -1479,12 +1440,12 @@ Note:
 @title[Issue: Debugging in Nt32 Emulation with Windows 7 and VS]
 <p align="right"><span class="gold" >Issue:<br>Debugging in Nt32 Emulation with Windows 7 <br>and Visual Studio does not work?</span></p>
 
-<p style="line-height:90%"><span style="font-size:0.9em" >Symptom:  With Windows 7 a CpuBreakpoint() or ASSERT  just exits with an error from the "Build Run" command.  </span></p>
+<p style="line-height:90%"><span style="font-size:0.9em" >Symptom:  With Windows 7 a CpuBreakpoint() or ASSERT  just exits with an error from the "RunEmulator" command.  </span></p>
 <p style="line-height:60%"><span style="font-size:0.7em" >Link to fix this issue: <a href="https://github.com/tianocore/tianocore.github.io/wiki/NT32#Debugging_in_Nt32_Emulation_with_Windows_7_and_Visual_Studio_does_not_work">wiki- Issue Debugging Nt32 with Windows 7 and Visual Studio </a></span></p>
 <ul>
- <li> <span style="font-size:0.7em" >Run the `RegEdt32` </span> </li>
- <li> <span style="font-size:0.7em" >Navigate to the `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug` </span> </li>
- <li> <span style="font-size:0.7em" >Add a string value entry called "`Auto`" with a value of "`1`" </span> </li>
+ <li> <span style="font-size:0.7em" >Run the <font face="Consolas">RegEdt32</font> </span> </li>
+ <li> <span style="font-size:0.7em" >Navigate to the <font face="Consolas">HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug</font> </span> </li>
+ <li> <span style="font-size:0.7em" >Add a string value entry called <font face="Consolas">"Auto" with a value of "1"</font> </span> </li>
 </ul>
 
 <span style="font-size:0.9em" >Windows 10  Visual Studio does not seem to have this issue </span>
