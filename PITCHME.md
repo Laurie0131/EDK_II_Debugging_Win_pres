@@ -604,12 +604,12 @@ Note:
 @snap[north-west span-50 ]
 <br>
 <br>
+<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br></span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+
 <p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
-<br>
-<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
-<br>
+
 <p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
 @snapend
@@ -624,10 +624,10 @@ Note:
   C:/FW/edk2-ws/edk2&gt; RunEmulator
 </span></p>
 <p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Run the application from the shell</span></p>
-<br>
+
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
 <font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
-<br>
+
 <p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Check the VS Debug output <br>
 Exit <br></span></p>
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
