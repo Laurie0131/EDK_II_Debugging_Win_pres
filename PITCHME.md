@@ -1234,7 +1234,7 @@ Note:
 <br>
 <p style="line-height:55%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" >
 <font face="Arial">@size[1.15em](Open)</font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc <br><br>
-<font face="Arial">@size[1.15em](Replace)</font> SampleApp/SampleApp.inf { . . . }<font face="Arial">@size[1.15em](with the following:)</font><br>
+<font face="Arial">@size[1.15em](Replace)</font> SampleApp/SampleApp.inf { . . . } <font face="Arial">@size[1.15em](with the following:)</font><br>
 <br><br>&nbsp;&nbsp;
   SampleApp/SampleApp.inf { <br>&nbsp;&nbsp;&nbsp;&nbsp;
     &lt;LibraryClasses &gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -1258,49 +1258,65 @@ SampleApp/SampleApp.inf {
 - Save and close EmulatorPkgPkg.dsc
 
 
----
-@title[Lab 3: Using Library Instances for Debugging]
-<p align="right"><span class="gold" ><b>Lab 3: Using Library Instances for Debugging</b></span></p>
-<br>
-<br>
-<span style="font-size:0.7em" >Open <font face="Consolas">C:/FW/edk2-ws/edk2/EmulatorPkg/EmulatorPkg.dscv </span><br>
-<span style="font-size:0.7em" >Replace <font face="Consolas">SampleApp/SampleApp.inf { . . .}</font> with the following:</span><br>
-```c
-  SampleApp/SampleApp.inf {
-   <LibraryClasses>
-    DebugLib|MdePkg/Library/UefiDebugLibConOut/UefiDebugLibConOut.inf
- }
-```
-<span style="font-size:0.7em" >Save and close <font face="Consolas">C:/FW/edk2-ws/edk2/EmulatorPkg/EmulatorPkg.dsc</font> </span><br>
-
-Note:
-
 Lab 3 Changing Library
 
 
----?image=/assets/images/slides/Slide40.JPG
+---?image=/assets/images/slides/Slide31.JPG
 @title[Lab 3: Build, Run and Test Result]
 <p align="right"><span class="gold" ><b>Lab 3: Build, Run and Test Result</b></span></p>
-<div class="left">
-<span style="font-size:0.8em" >At the VS Command Prompt</span>
-<pre>
-```
- C:/FW/edk2-ws/edk2> Build
- C:/FW/edk2-ws/edk2> RunEmulator
-```
-</pre>
-<p style="line-height:90%"><span style="font-size:0.8em" >Run the application from the shell</span><br>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
-<p style="line-height:90%"><span style="font-size:0.8em" >See that the output from the Debug statements now goes to the Nt32 console </span></p>
-<p style="line-height:90%"><span style="font-size:0.8em" >Exit <br></span>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;Reset</font>&nbsp;</span></span></p>
-</div>
-<div class="right">
-<span style="font-size:0.8em" >&nbsp;  </span>
-</div>
+@snap[north-west span-50 ]
+<br>
+<br>
+<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+
+<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+
+<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+@snapend
+
+@snap[north-west span-50 ]
+<br>
+<br>
+<p style="line-height:80%">
+<span style="font-size:0.8em" >At the VS Command Prompt</span></p>
+<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" ><br>&nbsp;&nbsp;
+  C:/FW/edk2-ws/edk2&gt; Build<br>&nbsp;&nbsp;
+  C:/FW/edk2-ws/edk2&gt; RunEmulator
+</span></p>
+<p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Run the application from the shell</span></p>
+
+<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
+<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
+
+<p style="line-height:80%"  align="left"><span style="font-size:0.8em" >See that the output from the Debug 
+statements now goes to the console  <br><br>
+Exit <br></span></p>
+<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
+@color[yellow](Shell&gt;) &nbsp;Reset&nbsp;</font></span></span></p>
+@snapend
 
 Note:
+
+-At the VS Command Prompt
+```
+$> Build
+$> RunEmulator.bat
+```
+- Run the application from the shell
+```
+Shell> SampleApp
+```
+- See that the output from the Debug 
+statements now goes to the console 
+- Exit 
+```
+Shell> Reset
+```
 Notice the Debug messages output to the console 
+
 
 
 ---?image=/assets/images/slides/Slide_LabSec.JPG
