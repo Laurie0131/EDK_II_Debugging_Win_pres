@@ -1430,13 +1430,17 @@ Notice NO Debug messages output to the console or cmd Prompt
 Note:
 
 
----?image=/assets/images/slides/Slide45.JPG
+---?image=/assets/images/slides/Slide36.JPG
 @title[Lab 5: Nt32 Debug with VS]
 <p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS</b></span></p>
 <br>
 <span style="font-size:0.7em" >Edit the <font face="Consolas">SampleApp.c</font>and add the "<font face="Consolas">ASSERT_EFI_ERROR</font>" Statement :  </span><br>
 ```c
-   ASSERT_EFI_ERROR(0x80000000);
+    EFI_STATUS      Status;
+	Status = EFI_NO_RESPONSE;
+             . . .  
+    ASSERT_EFI_ERROR(Status);
+
 ```
 <br>
 <br>
