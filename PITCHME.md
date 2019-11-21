@@ -408,7 +408,7 @@ Note:
 <br>
 <br>
 @box[bg-green-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" ><font face="Consolas">ReportStatusCodeLib</font> - Progress codes<br>&nbsp;</span></p>)
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:45%" align="left" ><span style="font-size:0.45em; font-family:Consolas;" >gEfiMdePkgTokenSpaceGuid.PcdReportStatusCodePropertyMask&nbsp;</span></p>)
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:45%" align="left" ><span style="font-size:0.45em; font-family:Consolas;" >&nbsp;&nbsp;gEfiMdePkgTokenSpaceGuid.PcdReportStatusCodePropertyMask&nbsp;</span></p>)
 <br>
 @snapend
 
@@ -419,7 +419,7 @@ Note:
 <br>
 <p style="line-height:50%" ><br><br><br><br>&nbsp;</p>
 @box[bg-royal text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" ><font face="Consolas">PostCodeLib</font> - Enable Post codes<br>&nbsp;</span></p>)
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:45%" align="left" ><span style="font-size:0.45em; font-family:Consolas;" >gEfiMdePkgTokenSpaceGuid.PcdPostCodePropertyMask &nbsp;</span></p>)
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:45%" align="left" ><span style="font-size:0.45em; font-family:Consolas;" >&nbsp;&nbsp;gEfiMdePkgTokenSpaceGuid.PcdPostCodePropertyMask &nbsp;</span></p>)
 <br>
 @snapend
 
@@ -434,7 +434,7 @@ Note:
 <br>
 <p style="line-height:50%" ><br><br><br><br><br>&nbsp;</p>
 @box[bg-gold2 text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" ><font face="Consolas">PerformanceLib</font> - Enable Measurement <br>&nbsp;</span></p>)
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:45%" align="left"><span style="font-size:0.45em; font-family:Consolas;" >gEfiMdePkgTokenSpaceGuid.PcdPerformanceLibraryPropertyMask &nbsp;</span></p>)
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:45%" align="left"><span style="font-size:0.45em; font-family:Consolas;" >&nbsp;&nbsp;gEfiMdePkgTokenSpaceGuid.PcdPerformanceLibraryPropertyMask &nbsp;</span></p>)
 <br>
 @snapend
 
@@ -470,7 +470,7 @@ This lab uses code from a previous exercise as a starting point (refer to  Writi
 ---
 @title[Lab 1: Catch Up SampleApp]
 <p align="right"><span class="gold" ><b>Lab 1: Catch up from previous lab</b></span></p>
-@snap[north-west span-50 ]
+@snap[north-west span-60 ]
 <br>
 <br>
 <br>
@@ -479,7 +479,9 @@ This lab uses code from a previous exercise as a starting point (refer to  Writi
 <br>
 <br>
 <br>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+<br>
+<br>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" ><br>&nbsp;</span></p>)
 @snapend
 
 
@@ -501,8 +503,10 @@ This lab uses code from a previous exercise as a starting point (refer to  Writi
 <br>
 <br>
 <br>
+<br>
+<br>
 <p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" ><br><br><br>
-&num; Add new modules here<br>&nbsb;
+&num; Add new modules here<br> &nbsp;
 SampleApp/SampleApp.inf
 </span></p>
 @snapend
