@@ -671,9 +671,9 @@ In this lab, you'll learn how to use PCD values to change debugging capabilities
 @snap[north-west span-100 ]
 <br>
 <br>
-<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" ><br>
-<font face="Arial">@size[1.2em](Open )</font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc <br>
-<font face="Arial">@size[1.2em](Replace)</font> SampleApp/SampleApp.inf <font face="Arial">@size[1.2em](with the following:)</font><br>
+<p style="line-height:40%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" >
+@size[1.02em](Open )</font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc <br>
+<font face="Arial">@size[1.02em](Replace)</font> SampleApp/SampleApp.inf <font face="Arial">@size[1.02em](with the following:)</font><br>
 <br>
   SampleApp/SampleApp.inf { <br>&nbsp;&nbsp;
     &lt;PcdsFixedAtBuild&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -681,7 +681,7 @@ In this lab, you'll learn how to use PCD values to change debugging capabilities
       gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0xffffffff<br>
  }<br>
 <br>
-<font face="Arial">@size[1.2em](Save and close) </font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc
+<font face="Arial">@size[1.02em](Save and close) </font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc
 </span></p><br>
 
 
