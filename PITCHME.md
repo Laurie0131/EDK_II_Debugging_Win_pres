@@ -1273,11 +1273,11 @@ Lab 3 Changing Library
 <p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
 <br>
-<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
+<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br></span></p>
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
 @snapend
 
-@snap[north-west span-65 ]
+@snap[north-west span-60 ]
 <br>
 <br>
 <p style="line-height:80%">
@@ -1302,8 +1302,8 @@ Note:
 
 -At the VS Command Prompt
 ```
-$> Build
-$> RunEmulator.bat
+   C:/FW/edk2-ws/edk2> Build
+   C:/FW/edk2-ws/edk2> RunEmulator 
 ```
 - Run the application from the shell
 ```
