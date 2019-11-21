@@ -684,7 +684,7 @@ In this lab, you'll learn how to use PCD values to change debugging capabilities
 <font face="Arial">@size[1.02em](Save and close) </font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc
 </span></p><br>
 
-
+@snapend
 
 Note:
 
