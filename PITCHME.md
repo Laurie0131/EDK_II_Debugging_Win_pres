@@ -481,7 +481,6 @@ This lab uses code from a previous exercise as a starting point (refer to  Writi
 <br>
 <br>
 <br>
-<br>
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" ><br>&nbsp;</span></p>)
 @snapend
 
@@ -492,13 +491,12 @@ This lab uses code from a previous exercise as a starting point (refer to  Writi
    <li><span style="font-size:0.78em" >Create a Directory under the workspace <font face="Consolas">@size[.8em](C:/FW/edk2-ws/edk2 : "SampleApp")</font></span></li>
    <li><span style="font-size:0.78em" >Copy contents of <font face="Consolas">@size[.8em](C:/../FW/LabSampleCode/SampleAppDebug to C:/FW/edk2-ws/edk2/SampleApp)</font></span></li>
    <li><span style="font-size:0.78em" >Open <font face="Consolas">@size[.8em](C:/FW/edk2-ws/edk2/EmulatorPkg/EmulatorPkg.dsc)</font></span></li>
-   <li><span style="font-size:0.78em" >Add the following to the <font face="Consolas">[Components]</font> section: </span></li><br><br><br><br>
+   <li><span style="font-size:0.78em" >Add the following to the <font face="Consolas">[Components]</font> section: </span></li><br><br><br><br><br>
    <li><span style="font-size:0.78em" >Save and close the file <font face="Consolas">@size[.8em](C:/FW/edk2-ws/edk2/EmulatorPkg/EmulatorPkg.dsc)</font>  </span></li>
 </ul>
 
 
 @snap[north-east span-98 ]
-<br>
 <br>
 <br>
 <br>
