@@ -520,9 +520,11 @@ Note:
 @snap[north-west span-60 ]
 <br>
 <br>
-<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br></span></p>
+<br>
+<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br><br></span></p>
 
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" ><br>&nbsp;</span></p>)
+<br>
 <br>
 <br>
 <br>
