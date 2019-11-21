@@ -521,12 +521,13 @@ Note:
 <br>
 <br>
 <br>
-<p style="line-height:5%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br><br></span></p>
+<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
 
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" ><br>&nbsp;</span></p>)
 <br>
 <br>
-<p style="line-height:5%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br></span></p>
+<br>
+<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br></span></p>
 
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
 
