@@ -661,23 +661,40 @@ In this lab, you'll learn how to use PCD values to change debugging capabilities
 ---
 @title[Lab 2: Change PCDs for SampleApp]
 <p align="right"><span class="gold" ><b>Lab 2: Change PCDs for SampleApp</b></span></p>
+@snap[north-west span-100 ]
 <br>
 <br>
-<span style="font-size:0.7em" >Open <font face="Consolas">C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc</font> </span><br>
-<span style="font-size:0.7em" >Replace <font face="Consolas">SampleApp/SampleApp.inf</font> with the following:</span><br>
-```c
-  SampleApp/SampleApp.inf {
-    <PcdsFixedAtBuild>
-      gEfiMdePkgTokenSpaceGuid.PcdDebugPropertyMask|0xff
-      gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0xffffffff
- }
-```
-<span style="font-size:0.7em" >Save and close <font face="Consolas">C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc</font> </span><br>
+<p style="line-height:20%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" ><br>&nbsp;</span></p>)
+@snapend
+
+@snap[north-west span-100 ]
+<br>
+<br>
+<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" ><br>
+<font face="Arial">@size[1.2em](Open )</font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc <br>
+<font face="Arial">@size[1.2em](Replace)</font> SampleApp/SampleApp.inf <font face="Arial">@size[1.2em](with the following:)</font><br>
+<br>
+  SampleApp/SampleApp.inf { <br>&nbsp;&nbsp;
+    &lt;PcdsFixedAtBuild&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+      gEfiMdePkgTokenSpaceGuid.PcdDebugPropertyMask|0xff<br>&nbsp;&nbsp;&nbsp;&nbsp;
+      gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0xffffffff<br>
+ }<br>
+<br>
+<font face="Arial">@size[1.2em](Save and close) </font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc
+</span></p><br>
+
 
 
 Note:
 
-
+```
+SampleApp/SampleApp.inf {
+   <PcdsFixedAtBuild>
+    gEfiMdePkgTokenSpaceGuid.PcdDebugPropertyMask|0xff
+    gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0xffffffff
+ }
+```
 ---?image=/assets/images/slides/Slide21.JPG
 @title[Lab 2: Build,Run and Test Result ]
 <p align="right"><span class="gold" ><b>Lab 2: Build, Run and Test Result</b></span></p>
