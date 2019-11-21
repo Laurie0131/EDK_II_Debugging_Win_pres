@@ -1355,30 +1355,61 @@ Note:
 
 Lab 4
 
----?image=/assets/images/slides/Slide43.JPG
+---?image=/assets/images/slides/Slide34.JPG
 @title[Lab 4: Build, Run and Test Result]
 <p align="right"><span class="gold" ><b>Lab 4: Build, Run and Test Result</b></span></p>
+@snap[north-west span-50 ]
 <br>
-<div class="left">
-<span style="font-size:0.8em" >At the VS Command Prompt</span>
-<pre>
-```
- C:/FW/edk2-ws/edk2> Build
- C:/FW/edk2-ws/edk2> RunEmulator
-```
-</pre>
-<p style="line-height:90%"><span style="font-size:0.8em" >Run the application from the shell</span><br>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
-<p style="line-height:90%"><span style="font-size:0.8em" >Check - now<font color="red"> <b>NO</b> </font>Debug output</span></p>
-<p style="line-height:90%"><span style="font-size:0.8em" >Exit <br></span>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;Reset</font>&nbsp;</span></span></p>
-</div>
-<div class="right">
-<span style="font-size:0.8em" >&nbsp;  </span>
-</div>
+<br>
+<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+
+<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+<br>
+<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br></span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+@snapend
+
+@snap[north-west span-60 ]
+<br>
+<br>
+<p style="line-height:80%">
+<span style="font-size:0.8em" >At the VS Command Prompt</span></p>
+<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" ><br>&nbsp;&nbsp;
+  C:/FW/edk2-ws/edk2&gt; Build<br>&nbsp;&nbsp;
+  C:/FW/edk2-ws/edk2&gt; RunEmulator
+</span></p>
+<p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Run the application from the shell</span></p>
+
+<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
+<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;<br></span></span></p>
+
+<p style="line-height:70%"  align="left"><span style="font-size:0.75em" >Check - now @color[red](<b>NO</b>) Debug output <br><br>
+Exit</span></p>
+<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" >&nbsp;&nbsp;
+@color[yellow](Shell&gt;) &nbsp;Reset&nbsp;</font></span></span></p>
+@snapend
 
 Note:
-Notice the Debug messages output to the console 
+
+-At the VS Command Prompt
+```
+   C:/FW/edk2-ws/edk2> Build
+   C:/FW/edk2-ws/edk2> RunEmulator 
+```
+- Run the application from the shell
+```
+Shell> SampleApp
+```
+- Check – now NO Debug output
+
+Exit 
+```
+  Shell> Reset
+```
+
+Notice NO Debug messages output to the console or cmd Prompt
 
 
 
