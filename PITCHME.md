@@ -1454,8 +1454,8 @@ Note:
 Lab 5, add ASSERT
 
 ---?image=/assets/images/slides/Slide37.JPG
-@title[Lab 5: Emulator Debug with VS ]
-<p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS </b></span></p>
+@title[Lab 5: Emulator Debug with VS - ASSERT ]
+<p align="right"><span class="gold" ><b>Lab 5: Debug with VS - ASSERT  </b></span></p>
 @snap[north-west span-50 ]
 <br>
 <br>
@@ -1504,39 +1504,22 @@ Exit
 ```
 
 Lab 5, add ASSERT
----
-<br>
-<div class="left">
-<span style="font-size:0.8em" >At the VS Command Prompt</span>
-<pre>
-```
- C:/FW/edk2-ws/edk2> Build
- C:/FW/edk2-ws/edk2> RunEmulator
-```
-</pre>
-<p style="line-height:90%"><span style="font-size:0.8em" >Run the application from the shell</span><br>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp; SampleApp</font>&nbsp;</span></span></p>
-<p style="line-height:90%"><span style="font-size:0.8em" >Assert in VS Command Prompt</font>Debug output</span></p>
-</div>
-<div class="right">
-<span style="font-size:0.8em" >&nbsp;  </span>
-</div>
 
-Note:
-Lab 5, add ASSERT
-
----?image=/assets/images/slides/Slide47.JPG
-@title[Lab 5: Nt32 Debug with VS 02]
-<p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS </b></span></p>
-
+---?image=/assets/images/slides/Slide38.JPG
+@title[Lab 5: Debug with VS ASSERT 02]
+<p align="right"><span class="gold" ><b>Lab 5: Debug with VS - ASSERT  </b></span></p>
+<p style="line-height:60%"><span style="font-size:0.7em" >
+Windows* VS Debugger
+Will Pop UP
+</span></p>
 
 Note:
 Lab 5, add ASSERT
 
 
----?image=/assets/images/slides/Slide48.JPG
-@title[Lab 5: Nt32 Debug with VS- CPU bp]
-<p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS</b></span></p>
+---?image=/assets/images/slides/Slide39.JPG
+@title[Lab 5: Debug with VS- CPU bp]
+<p align="right"><span class="gold" ><b>Lab 5: Debug with VS - <font face="Consolas">CpuBreakpoint</font></b></span></p>
 <br>
 <p style="line-height:60%"><span style="font-size:0.7em" >Edit the <font face="Consolas">SampleApp.c</font> and add the "<font face="Consolas">CpuBreakpoint();</font>" Statement and comment out the "<font face="Consolas">ASSERT</font>":  </span></p>
 ```c
@@ -1554,31 +1537,54 @@ Note:
 Lab 5, add CpuBreakpoint();
 
 
----?image=/assets/images/slides/Slide49.JPG
-@title[Lab 5: Nt32 Debug with VS ]
-<p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS </b></span></p>
+---?image=/assets/images/slides/Slide40.JPG
+@title[Lab 5:  Debug with VS - CPU bp 02]
+<p align="right"><span class="gold" ><b>Lab 5: Debug with VS - <font face="Consolas">CpuBreakpoint</font></b></span></p>
+@snap[north-west span-50 ]
 <br>
-<div class="left">
-<span style="font-size:0.8em" >At the VS Command Prompt</span>
-<pre>
-```
- C:/FW/edk2-ws/edk2> Build
- C:/FW/edk2-ws/edk2> RunEmulator
-```
-</pre>
-<p style="line-height:90%"><span style="font-size:0.8em" >Run the application from the shell</span><br>
-<span style="font-size:0.5em" ><span style="background-color: #101010">&nbsp;<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
-<p style="line-height:90%"><span style="font-size:0.8em" >VS option go to the VS Debugger</span></p>
-</div>
-<div class="right">
-<span style="font-size:0.8em" >&nbsp;  </span>
-</div>
+<br>
+<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+
+<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+<br>
+@snapend
+
+@snap[north-west span-60 ]
+<br>
+<br>
+<p style="line-height:80%">
+<span style="font-size:0.8em" >At the VS Command Prompt</span></p>
+<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" ><br>&nbsp;&nbsp;
+  C:/FW/edk2-ws/edk2&gt; Build<br>&nbsp;&nbsp;
+  C:/FW/edk2-ws/edk2&gt; RunEmulator
+</span></p>
+<p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Run the application from the shell</span></p>
+
+<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
+<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;<br><br></span></span></p>
+
+<p style="line-height:70%"  align="left"><span style="font-size:0.75em" >VS option to go to VS Debugger<br><br>
+</span></p>
+@snapend
 
 Note:
-Lab 5  add CpuBreakpoint();
+
+-At the VS Command Prompt
+```
+   C:/FW/edk2-ws/edk2> Build
+   C:/FW/edk2-ws/edk2> RunEmulator 
+```
+- Run the application from the shell
+```
+Shell> SampleApp
+```
+- VS Debugger pops up
 
 
----?image=/assets/images/slides/Slide50.JPG
+
+---?image=/assets/images/slides/Slide41.JPG
 @title[Invoke Windows Visual Studio Debugger ]
 <p align="right"><span class="gold" ><b>Invoke Windows Visual Studio Debugger</b></span></p>
 
@@ -1589,8 +1595,8 @@ Note:
 - Notice that the VS debugger is inside the CpuBreakpoint function. 
 - Continue by stepping and 
 
----?image=/assets/images/slides/Slide51.JPG
-@title[Invoke Windows Visual Studio Debugger ]
+---?image=/assets/images/slides/Slide42.JPG
+@title[Invoke Windows Visual Studio Debugger 02]
 <p align="right"><span class="gold" ><b>Invoke Windows Visual Studio Debugger</b></span></p>
 
 Note:
