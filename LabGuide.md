@@ -964,7 +964,7 @@ Return to Training Table of contents for next presentation <a href="https://gith
 ---
 ## Slide 46 Logo Slide]
 <br><br><br>
-![Logo Slide](/assets/images/TianocoreLogo.png =10x)
+![Logo Slide](/assets/images/TianocoreLogo.png)
 
 
 ---
