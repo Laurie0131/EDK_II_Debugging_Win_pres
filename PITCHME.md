@@ -276,7 +276,7 @@ Note:
  #define DEBUG_PROPERTY_ASSERT_BREAKPOINT_ENABLED  0x10
  #define DEBUG_PROPERTY_ASSERT_DEADLOOP_ENABLED    0x20
 </pre>
-- another Note: Default value in Nt32 is 0x1f
+- another Note: Default value in EmulatorPkg is 0x1f
 
 - Determines which debugging features are enabled.
 
@@ -636,7 +636,7 @@ Exit <br></span></p>
 
 Note:
 
-Notice the changes in DEBUG output for SampleApp in the Visual Studio Command Prompt.  Since the new PCD definitions were only applied to SampleApp, the DEBUG output properties are not changed for other parts of the NT32 project.
+Notice the changes in DEBUG output for SampleApp in the Visual Studio Command Prompt.  Since the new PCD definitions were only applied to SampleApp, the DEBUG output properties are not changed for other parts of the EmulatorPkg project.
 At the VS Command Prompt
 ```
 C:/FW/edk2-ws/edk2> Build
@@ -755,7 +755,7 @@ Exit <br></span></p>
 
 
 Note:
-Notice the changes in DEBUG output for SampleApp in the Visual Studio Command Prompt.  Since the new PCD definitions were only applied to SampleApp, the DEBUG output properties are not changed for other parts of the NT32 project.
+Notice the changes in DEBUG output for SampleApp in the Visual Studio Command Prompt.  Since the new PCD definitions were only applied to SampleApp, the DEBUG output properties are not changed for other parts of the EmulatorPkg project.
 
 At the VS Command Prompt
 ```
@@ -1421,7 +1421,7 @@ Notice NO Debug messages output to the console or cmd Prompt
 <p align="Left"><span class="gold" ><b>Lab 5: Debugging EDK II with VS Debugger</b></span></p>
 <br>
 <div class="left1">
-<span style="font-size:0.8em" >In this lab,  you'll learn how setup the VS to debug the EDK II Nt32 emulation</span>
+<span style="font-size:0.8em" >In this lab,  you'll learn how setup the VS to debug the EDK II emulation</span>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -1432,7 +1432,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide36.JPG
 @title[Lab 5: Emulator Debug with VS]
-<p align="right"><span class="gold" ><b>Lab 5: Nt32 Debug with VS</b></span></p>
+<p align="right"><span class="gold" ><b>Lab 5: Debug with VS</b></span></p>
 <br>
 <span style="font-size:0.7em" >Edit the <font face="Consolas">SampleApp.c</font>and add the "<font face="Consolas">ASSERT_EFI_ERROR</font>" Statement :  </span><br>
 ```c
@@ -1694,11 +1694,11 @@ Note:
 
 
 ---
-@title[Issue: Debugging in Nt32 Emulation with Windows 7 and VS]
-<p align="right"><span class="gold" >Issue:<br>Debugging in Nt32 Emulation with Windows 7 <br>and Visual Studio does not work?</span></p>
+@title[Issue: Debugging in EmulatorPkg with Windows 7 and VS]
+<p align="right"><span class="gold" >Issue:<br>Debugging in EmulatorPkg  with Windows 7 <br>and Visual Studio does not work?</span></p>
 
 <p style="line-height:90%"><span style="font-size:0.9em" >Symptom:  With Windows 7 a CpuBreakpoint() or ASSERT  just exits with an error from the "RunEmulator" command.  </span></p>
-<p style="line-height:60%"><span style="font-size:0.7em" >Link to fix this issue: <a href="https://github.com/tianocore/tianocore.github.io/wiki/NT32#Debugging_in_Nt32_Emulation_with_Windows_7_and_Visual_Studio_does_not_work">wiki- Issue Debugging Nt32 with Windows 7 and Visual Studio </a></span></p>
+<p style="line-height:60%"><span style="font-size:0.7em" >Link to fix this issue: <a href="https://github.com/tianocore/tianocore.github.io/wiki/NT32#Debugging_in_Nt32_Emulation_with_Windows_7_and_Visual_Studio_does_not_work">wiki- Issue Debugging with Windows 7 and Visual Studio </a></span></p>
 <ul>
  <li> <span style="font-size:0.7em" >Run the <font face="Consolas">RegEdt32</font> </span> </li>
  <li> <span style="font-size:0.7em" >Navigate to the <font face="Consolas">HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug</font> </span> </li>
