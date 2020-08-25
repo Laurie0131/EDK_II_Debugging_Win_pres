@@ -526,8 +526,8 @@ Note:
 <br>
 <br>
 <br>
-<br>
-<p style="line-height:10%"  align="left">&nbsp;<br></span></p>
+
+<p style="line-height:10%"  align="left"><br><br>&nbsp;<br></span></p>
 <p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Run the application from the shell</span></p>
 
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
