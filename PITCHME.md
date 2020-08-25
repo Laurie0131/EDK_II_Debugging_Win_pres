@@ -453,17 +453,19 @@ Note:
 - PerformanceLib -  Enable Measurement
 	- gEfiMdePkgTokenSpaceGuid.PcdPerformanceLibraryPropertyMask
 
----?image=/assets/images/slides/binary-strings-black2.jpg
+---?image=/assets/images/binary-strings-black2.jpg
 @title[Demo 1: Adding Debug Statements]
 
-<br><br><br><br><br><br><br>
-### <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Demo</span>
-<span style="font-size:0.9em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adding  debug statements 
-</span>
+@snap[north-east span-70 ]
 <br>
-
-<span style="font-size:0.9em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adding  debug statements to the previous lab's `SampleApp` UEFI Shell application
+<br>
+<br><br><br>
+p align="left"><span class="gold" >@size[1.1em](<b>DEMO  </b>)</span><br>
+<span style="font-size:0.85em;" > Adding  debug statements  </span></p>
+<span style="font-size:0.7em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adding  debug statements to the previous lab's `SampleApp` UEFI Shell application
 </span>
+@snapend
+
 
 Note:
 In this demo, you'll learn how to add debug statements.  
@@ -471,7 +473,7 @@ This lab uses code from a previous exercise as a starting point (refer to  Writi
 
 
 ---
-@title[Lab 1: Add debug statements SampleApp 02]
+@title[Demo 1: Add debug statements SampleApp 02]
 <p align="right"><span class="gold" ><b>Demo Add debug statements to SampleApp</b></span></p>
 <p style="line-height:85%"><span style="font-size:0.7em" >The following 
 code was added after the <span style="background-color: #101010">&nbsp;"<font face="Consolas">EFI_INPUT_KEY  KEY;</font>"</span> statement: and before the first <span style="background-color: #101010">&nbsp;<font face="Consolas">Print()</font> </span>statement </span></p>
@@ -507,7 +509,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide16.JPG
 @title[Lab 1: Build,Run and Test Result ]
-<p align="right"><span class="gold" ><b>Lab 1: Build, Run and Test Result</b></span></p>
+<p align="right"><span class="gold" ><b>Demo 1: Run and Test Result</b></span></p>
 @snap[north-west span-50 ]
 <br>
 <br>
@@ -524,21 +526,14 @@ Note:
 @snap[north-west span-50 ]
 <br>
 <br>
-<p style="line-height:80%">
-<span style="font-size:0.8em" >At the VS Command Prompt</span></p>
-<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" ><br>&nbsp;&nbsp;
-  C:/FW/edk2-ws/edk2&gt; Build<br>&nbsp;&nbsp;
-  C:/FW/edk2-ws/edk2&gt; RunEmulator
-</span></p>
+
 <p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Run the application from the shell</span></p>
 
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
 <font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
 
 <p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Check the VS Debug output <br>
-Exit <br></span></p>
-<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
-@color[yellow](Shell&gt;) &nbsp;Reset&nbsp;</font></span></span></p>
+<br></span></p>
 @snapend
 
 Note:
