@@ -620,11 +620,12 @@ SampleApp/SampleApp.inf {
 <br></span></p>
 @snapend
 
+
+
+
+
 Note:
 
-
-
-Note:
 Notice the changes in DEBUG output for SampleApp in the Visual Studio Command Prompt.  Since the new PCD definitions were only applied to SampleApp, the DEBUG output properties are not changed for other parts of the EmulatorPkg project.
 
 Run the application from the shell
