@@ -508,8 +508,8 @@ Note:
 
 
 ---?image=/assets/images/slides/Slide16.JPG
-@title[Lab 1: Build,Run and Test Result ]
-<p align="right"><span class="gold" ><b>Demo 1: Run and Test Result</b></span></p>
+@title[Demo 1: Run and Test Result ]
+<p align="right"><span class="gold" ><b>Demo : Run and Test Result</b></span></p>
 @snap[north-west span-50 ]
 <br>
 <br>
@@ -593,17 +593,14 @@ SampleApp/SampleApp.inf {
 - save
 
 ---?image=/assets/images/slides/Slide19.JPG
-@title[Lab 2: Build,Run and Test Result ]
-<p align="right"><span class="gold" ><b>Lab 2: Build, Run and Test Result</b></span></p>
+@title[Demo 2: Run and Test Result ]
+
+<p align="right"><span class="gold" ><b>Demo : Run and Test Result</b></span></p>
 @snap[north-west span-50 ]
 <br>
 <br>
-<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
-
-<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
-
+<br>
+<br>
 <p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
 @snapend
@@ -611,44 +608,31 @@ SampleApp/SampleApp.inf {
 @snap[north-west span-50 ]
 <br>
 <br>
-<p style="line-height:80%">
-<span style="font-size:0.8em" >At the VS Command Prompt</span></p>
-<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" ><br>&nbsp;&nbsp;
-  C:/FW/edk2-ws/edk2&gt; Build<br>&nbsp;&nbsp;
-  C:/FW/edk2-ws/edk2&gt; RunEmulator
-</span></p>
+<br>
+
+<p style="line-height:20%"  align="left"><br><br>&nbsp;<br></span></p>
 <p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Run the application from the shell</span></p>
 
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
 <font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
-
+<br><br>
 <p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Check the VS Debug output <br>
-Exit <br></span></p>
-<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
-@color[yellow](Shell&gt;) &nbsp;Reset&nbsp;</font></span></span></p>
+<br></span></p>
 @snapend
+
+Note:
 
 
 
 Note:
 Notice the changes in DEBUG output for SampleApp in the Visual Studio Command Prompt.  Since the new PCD definitions were only applied to SampleApp, the DEBUG output properties are not changed for other parts of the EmulatorPkg project.
 
-At the VS Command Prompt
-```
-C:/FW/edk2-ws/edk2> Build
-   C:/FW/edk2-ws/edk2> RunEmulator
-```
 Run the application from the shell
 ```
 
    Shell>  SampleApp 
 ```
 Check the VS Debug output
-Exit
-
-```
-   Shell>  Reset 
-```
 
 ---?image=assets/images/binary-strings-black2.jpg
 @title[Changing Compiler & Linker Flags Section]
@@ -1079,25 +1063,25 @@ Note:
 - another Note: Use a different debugging library instance only on the module in question (managing size changes)
 
 
+---?image=/assets/images/binary-strings-black2.jpg
+@title[Demo 3: Adding Debug Statements]
 
----?image=/assets/images/slides/Slide_LabSec.JPG
-@title[Lab 3: Library Instances for Debugging]
+@snap[north-east span-90 ]
 <br>
 <br>
-<p align="Left"><span class="gold" ><b>Lab 3: Library Instances for Debugging</b></span></p>
-<br>
-<div class="left1">
-<span style="font-size:0.8em" >In this lab,  you'll learn how to add specific debug library instances. </span><br>
-</div>
-<div class="right1">
-<span style="font-size:0.8em" >&nbsp;  </span>
-</div>
+<br><br><br><br>
+<p align="left"><span class="gold" >@size[1.2em](<b>DEMO  </b>)</span><br>
+<span style="font-size:0.85em;" >  Library Instances for Debugging </span></p>
+<p style="line-height:70%" align="left" ><span style="font-size:0.7em" >Changing specific debug library instances
+</span>
+@snapend
+
 
 Note:
 
 ---
-@title[Lab 3: Using Library Instances for Debugging]
-<p align="right"><span class="gold" ><b>Lab 3: Using Library Instances for Debugging</b></span></p>
+@title[Demo 3: Using Library Instances for Debugging]
+<p align="right"><span class="gold" ><b>Demo: Using Library Instances for Debugging</b></span></p>
 @snap[north-west span-100 ]
 <br>
 <br>
@@ -1109,15 +1093,14 @@ Note:
 <br>
 <br>
 <p style="line-height:55%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" >
-<font face="Arial">@size[1.15em](Open)</font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc <br><br>
-<font face="Arial">@size[1.15em](Replace)</font> SampleApp/SampleApp.inf { . . . } <font face="Arial">@size[1.15em](with the following:)</font><br>
+<br><br>
+<font face="Arial">@size[1.15em](The following was added to )</font> EmulatorPkg.dsc { . . . } <font face="Arial">@size[1.15em](for changine the library instances)</font><br>
 <br><br>&nbsp;&nbsp;
   SampleApp/SampleApp.inf { <br>&nbsp;&nbsp;&nbsp;&nbsp;
     &lt;LibraryClasses &gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       DebugLib|MdePkg/Library/UefiDebugLibConOut/UefiDebugLibConOut.inf<br>&nbsp;&nbsp;
  }<br>
 <br><br><br><br>
-<font face="Arial">@size[1.15em](Save and close) </font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc
 </span></p><br>
 
 @snapend
@@ -1134,47 +1117,42 @@ SampleApp/SampleApp.inf {
 - Save and close EmulatorPkgPkg.dsc
 
 
-Lab 3 Changing Library
+Demo 3 Changing Library
 
 
 ---?image=/assets/images/slides/Slide31.JPG
-@title[Lab 3: Build, Run and Test Result]
-<p align="right"><span class="gold" ><b>Lab 3: Build, Run and Test Result</b></span></p>
+@title[Demo 3: Run and Test Result]
+<p align="right"><span class="gold" ><b>Demo : Run and Test Result</b></span></p>
 @snap[north-west span-50 ]
 <br>
 <br>
+<br>
+<br>
+
 <p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
 
-<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
-<br>
-<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br></span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+
 @snapend
 
-@snap[north-west span-60 ]
+@snap[north-west span-50 ]
 <br>
 <br>
-<p style="line-height:80%">
-<span style="font-size:0.8em" >At the VS Command Prompt</span></p>
-<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" ><br>&nbsp;&nbsp;
-  C:/FW/edk2-ws/edk2&gt; Build<br>&nbsp;&nbsp;
-  C:/FW/edk2-ws/edk2&gt; RunEmulator
-</span></p>
+<br>
+
+<p style="line-height:20%"  align="left"><br><br>&nbsp;<br></span></p>
 <p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Run the application from the shell</span></p>
 
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
-<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;<br></span></span></p>
-
-<p style="line-height:70%"  align="left"><span style="font-size:0.75em" >See that the output from the Debug 
-statements now goes to the console  <br><br>
-Exit</span></p>
-<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" >&nbsp;&nbsp;
-@color[yellow](Shell&gt;) &nbsp;Reset&nbsp;</font></span></span></p>
+<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
+<br><br>
+<p style="line-height:80%"  align="left"><span style="font-size:0.8em" >See that the output from the Debug statemens now goes to the console<br>
+<br></span></p>
 @snapend
 
 Note:
+
+
 
 -At the VS Command Prompt
 ```
@@ -1195,122 +1173,29 @@ Notice the Debug messages output to the console
 
 
 
----?image=/assets/images/slides/Slide_LabSec.JPG
-@title[Lab 4: Serial port Instance of DebugLib]
+
+---?image=/assets/images/binary-strings-black2.jpg
+@title[Demo 4: Debug with VS]
+
+@snap[north-east span-90 ]
 <br>
 <br>
-<p align="Left"><span class="gold" ><b>Lab 4: Null Instance of <font face="Consolas">DebugLib</font></b></span></p>
-<br>
-<div class="left1">
-<span style="font-size:0.8em" >In this lab,  you'll change the <font face="Consolas">DebugLib</font> to the Null instance. </span>
-</div>
-<div class="right1">
-<span style="font-size:0.8em" >&nbsp;  </span>
-</div>
-
-Note:
-
-The DEBUG output for SampleApp is no debug output
-
-
----
-@title[Lab 4: Using Serial port Library Instances]
-<p align="right"><span class="gold" ><b>Lab 4: Using Serial port Library Instances</b></span></p>
-<br>
-<span style="font-size:0.7em" >Open <font face="Consolas">C:/FW/edk2-ws/edk2/EmulatorPkg/EmulatorPkg.dsc</font> </span><br>
-<span style="font-size:0.7em" >Replace <font face="Consolas">SampleApp/SampleApp.inf { . . .}</font> with the following:</span><br>
-```c
-  SampleApp/SampleApp.inf {
-   <LibraryClasses>      
-      DebugLib|MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
- }
-```
-<span style="font-size:0.7em" >Save and close <font face="Consolas">C:/FW/edk2-ws/edk2/EmulatorPkg/EmulatorPkg.dsc</font> </span><br>
-
-Note:
-
-Lab 4
-
----?image=/assets/images/slides/Slide34.JPG
-@title[Lab 4: Build, Run and Test Result]
-<p align="right"><span class="gold" ><b>Lab 4: Build, Run and Test Result</b></span></p>
-@snap[north-west span-50 ]
-<br>
-<br>
-<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
-
-<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
-<br>
-<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+<br><br><br><br>
+<p align="left"><span class="gold" >@size[1.2em](<b>DEMO  </b>)</span><br>
+<span style="font-size:0.85em;" >  Debugging EDK II with VS Debugger </span></p>
+<p style="line-height:70%" align="left" ><span style="font-size:0.7em" >Setup the VS to debug the EDK II emulation
+</span>
 @snapend
 
-@snap[north-west span-60 ]
-<br>
-<br>
-<p style="line-height:80%">
-<span style="font-size:0.8em" >At the VS Command Prompt</span></p>
-<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" ><br>&nbsp;&nbsp;
-  C:/FW/edk2-ws/edk2&gt; Build<br>&nbsp;&nbsp;
-  C:/FW/edk2-ws/edk2&gt; RunEmulator
-</span></p>
-<p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Run the application from the shell</span></p>
-
-<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
-<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;<br><br></span></span></p>
-
-<p style="line-height:70%"  align="left"><span style="font-size:0.75em" >Check - now @color[red](<b>NO</b>) Debug output <br><br>
-Exit</span></p>
-<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" >&nbsp;&nbsp;
-@color[yellow](Shell&gt;) &nbsp;Reset&nbsp;</font></span></span></p>
-@snapend
-
-Note:
-
--At the VS Command Prompt
-```
-   C:/FW/edk2-ws/edk2> Build
-   C:/FW/edk2-ws/edk2> RunEmulator 
-```
-- Run the application from the shell
-```
-Shell> SampleApp
-```
-- Check – now NO Debug output
-
-Exit 
-```
-  Shell> Reset
-```
-
-Notice NO Debug messages output to the console or cmd Prompt
-
-
-
-
----?image=/assets/images/slides/Slide_LabSec.JPG
-@title[Lab 5: Debugging EDK II with VS Debugger]
-<br>
-<br>
-<p align="Left"><span class="gold" ><b>Lab 5: Debugging EDK II with VS Debugger</b></span></p>
-<br>
-<div class="left1">
-<span style="font-size:0.8em" >In this lab,  you'll learn how setup the VS to debug the EDK II emulation</span>
-</div>
-<div class="right1">
-<span style="font-size:0.8em" >&nbsp;  </span>
-</div>
 
 Note:
 
 
 ---?image=/assets/images/slides/Slide36.JPG
-@title[Lab 5: Emulator Debug with VS]
-<p align="right"><span class="gold" ><b>Lab 5: Debug with VS</b></span></p>
+@title[Demo 4: Emulator Debug with VS]
+<p align="right"><span class="gold" ><b>Demeo: Debug with VS</b></span></p>
 <br>
-<span style="font-size:0.7em" >Edit the <font face="Consolas">SampleApp.c</font>and add the "<font face="Consolas">ASSERT_EFI_ERROR</font>" Statement :  </span><br>
+<span style="font-size:0.7em" >   <font face="Consolas">SampleApp.c</font> has an "<font face="Consolas">ASSERT_EFI_ERROR</font>" Statement added  </span><br>
 ```c
     EFI_STATUS      Status;
 	Status = EFI_NO_RESPONSE;  // or any other EFI Error 
@@ -1324,42 +1209,41 @@ Note:
 <br>
 <br>
 
-<span style="font-size:0.8em" >Save <font face="Consolas">SampleApp.c</font> </span><br>
 
 Note:
-Lab 5, add ASSERT
+demo 5, add ASSERT
 
 ---?image=/assets/images/slides/Slide37.JPG
-@title[Lab 5: Emulator Debug with VS - ASSERT ]
-<p align="right"><span class="gold" ><b>Lab 5: Debug with VS - ASSERT  </b></span></p>
+@title[Demo 4: Emulator Debug with VS - ASSERT ]
+<p align="right"><span class="gold" ><b>Demo : Debug with VS - ASSERT</b></span></p>
+
 @snap[north-west span-50 ]
 <br>
 <br>
+<br>
+<br>
+
 <p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
 
-<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
-<br>
+
 @snapend
 
-@snap[north-west span-60 ]
+@snap[north-west span-50 ]
 <br>
 <br>
-<p style="line-height:80%">
-<span style="font-size:0.8em" >At the VS Command Prompt</span></p>
-<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" ><br>&nbsp;&nbsp;
-  C:/FW/edk2-ws/edk2&gt; Build<br>&nbsp;&nbsp;
-  C:/FW/edk2-ws/edk2&gt; RunEmulator
-</span></p>
+<br>
+
+<p style="line-height:20%"  align="left"><br><br>&nbsp;<br></span></p>
 <p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Run the application from the shell</span></p>
 
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
-<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;<br><br></span></span></p>
-
-<p style="line-height:70%"  align="left"><span style="font-size:0.75em" >Assert in VS Command Prompt<br><br>
-</span></p>
+<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
+<br><br>
+<p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Assert in VS Command will occure<br>
+<br></span></p>
 @snapend
+
 
 Note:
 
@@ -1382,22 +1266,22 @@ Exit
 Lab 5, add ASSERT
 
 ---?image=/assets/images/slides/Slide38.JPG
-@title[Lab 5: Debug with VS ASSERT 02]
-<p align="right"><span class="gold" ><b>Lab 5: Debug with VS - ASSERT  </b></span></p>
+@title[Demo 4: Debug with VS ASSERT 02]
+<p align="right"><span class="gold" ><b>Demo: Debug with VS - ASSERT  </b></span></p>
 <p style="line-height:60%"><span style="font-size:0.7em" >
 Windows* VS Debugger
 Will Pop UP
 </span></p>
 
 Note:
-Lab 5, add ASSERT
+Demo, add ASSERT
 
 
 ---?image=/assets/images/slides/Slide39.JPG
-@title[Lab 5: Debug with VS- CPU bp]
-<p align="right"><span class="gold" ><b>Lab 5: Debug with VS - <font face="Consolas">CpuBreakpoint</font></b></span></p>
+@title[Demo 5: Debug with VS- CPU bp]
+<p align="right"><span class="gold" ><b>Demo: Debug with VS - <font face="Consolas">CpuBreakpoint</font></b></span></p>
 <br>
-<p style="line-height:60%"><span style="font-size:0.7em" >Edit the <font face="Consolas">SampleApp.c</font> and add the "<font face="Consolas">CpuBreakpoint();</font>" Statement and comment out the "<font face="Consolas">ASSERT</font>":  </span></p>
+<p style="line-height:60%"><span style="font-size:0.7em" ><font face="Consolas">SampleApp.c</font> with a  "<font face="Consolas">CpuBreakpoint();</font>" Statement and commented out the "<font face="Consolas">ASSERT</font>" </span></p>
 ```c
     CpuBreakpoint();
 ```
@@ -1407,43 +1291,40 @@ Lab 5, add ASSERT
 <br>
 <br>
 
-<span style="font-size:0.8em" >Save <font face="Consolas">SampleApp.c</font> </span><br>
-
 Note:
 Lab 5, add CpuBreakpoint();
 
 
 ---?image=/assets/images/slides/Slide40.JPG
-@title[Lab 5:  Debug with VS - CPU bp 02]
-<p align="right"><span class="gold" ><b>Lab 5: Debug with VS - <font face="Consolas">CpuBreakpoint</font></b></span></p>
+@title[Demo 5:  Debug with VS - CPU bp 02]
+<p align="right"><span class="gold" ><b>Demo: Debug with VS - <font face="Consolas">CpuBreakpoint</font></b></span></p>
 @snap[north-west span-50 ]
 <br>
 <br>
+<br>
+<br>
+
 <p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
 
-<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
-<br>
+
 @snapend
 
-@snap[north-west span-60 ]
+@snap[north-west span-50 ]
 <br>
 <br>
-<p style="line-height:80%">
-<span style="font-size:0.8em" >At the VS Command Prompt</span></p>
-<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" ><br>&nbsp;&nbsp;
-  C:/FW/edk2-ws/edk2&gt; Build<br>&nbsp;&nbsp;
-  C:/FW/edk2-ws/edk2&gt; RunEmulator
-</span></p>
+<br>
+
+<p style="line-height:20%"  align="left"><br><br>&nbsp;<br></span></p>
 <p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Run the application from the shell</span></p>
 
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
-<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;<br><br></span></span></p>
-
-<p style="line-height:70%"  align="left"><span style="font-size:0.75em" >VS option to go to VS Debugger<br><br>
-</span></p>
+<font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
+<br><br>
+<p style="line-height:80%"  align="left"><span style="font-size:0.8em" >VS option to go to VS Debugger<br>
+<br></span></p>
 @snapend
+
 
 Note:
 
@@ -1461,8 +1342,8 @@ Shell> SampleApp
 
 
 ---?image=/assets/images/slides/Slide41.JPG
-@title[Invoke Windows Visual Studio Debugger ]
-<p align="right"><span class="gold" ><b>Invoke Windows Visual Studio Debugger</b></span></p>
+@title[Demo 5 Invoke Windows Visual Studio Debugger ]
+<p align="right"><span class="gold" ><b>Demo: Invoke Windows Visual Studio Debugger</b></span></p>
 
 
 Note:
@@ -1472,8 +1353,8 @@ Note:
 - Continue by stepping and 
 
 ---?image=/assets/images/slides/Slide42.JPG
-@title[Invoke Windows Visual Studio Debugger 02]
-<p align="right"><span class="gold" ><b>Invoke Windows Visual Studio Debugger</b></span></p>
+@title[Demo 5 Invoke Windows Visual Studio Debugger 02]
+<p align="right"><span class="gold" ><b>Demo: Invoke Windows Visual Studio Debugger</b></span></p>
 
 Note:
 Now the visual studio debugger is debugging the sampleapp function and common debug tasks can be done:
@@ -1490,10 +1371,10 @@ Now the visual studio debugger is debugging the sampleapp function and common de
 <ul style="list-style-type:none">
  <li>@fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Define <font face="Consolas">DebugLib</font> and its attributes</span> </li>
  <li>@fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;List the ways to debug</span></li>
- <li>@fa[certificate gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Using PCDs to Configure <font face="Consolas">DebugLib</font> - LAB </span> </li>
+ <li>@fa[certificate gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Using PCDs to Configure <font face="Consolas">DebugLib</font></span> </li>
  <li>@fa[certificate gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;Change Compiler & Linker Flags for debugging</span></li>
- <li>@fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Change the <font face="Consolas">DebugLib</font> instance to modify the debug<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output - LAB</span> </li>
- <li>@fa[certificate gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Debug EDK II using VS Debugger - LAB</span> </li>
+ <li>@fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Change the <font face="Consolas">DebugLib</font> instance to modify the debug<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output</span> </li>
+ <li>@fa[certificate gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Debug EDK II using VS Debugger - Demo</span> </li>
 </ul>
 
 ---?image=assets/images/gitpitch-audience.jpg
