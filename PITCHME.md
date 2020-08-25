@@ -540,45 +540,18 @@ Note:
 Note:
 
 Notice the changes in DEBUG output for SampleApp in the Visual Studio Command Prompt.  Since the new PCD definitions were only applied to SampleApp, the DEBUG output properties are not changed for other parts of the EmulatorPkg project.
-At the VS Command Prompt
-```
-C:/FW/edk2-ws/edk2> Build
-   C:/FW/edk2-ws/edk2> RunEmulator
-```
+
 Run the application from the shell
 ```
 
    Shell>  SampleApp 
 ```
 Check the VS Debug output
-Exit
-
-```
-   Shell>  Reset 
-```
-
----?image=/assets/images/slides/Slide_LabSec.JPG
-@title[Lab 2: Changing PCD Value]
-<br>
-<br>
-<p align="Left"><span class="gold" ><b>Lab 2: Changing PCD Value</b></span></p>
-<br>
-<div class="left1">
-<span style="font-size:0.8em" >In this lab, you'll  learn how to use PCD values to change debugging capabilities. </span>
-</div>
-<div class="right1">
-<span style="font-size:0.8em" >&nbsp;  </span>
-</div>
-
-Note:
-In this lab, you'll learn how to use PCD values to change debugging capabilities.  The previous lab,  Adding Debug Statements, did not display all the DEBUG messages added to SampleApp.c.  This lab shows how to change this behavior.
-
-
 
 
 ---
-@title[Lab 2: Change PCDs for SampleApp]
-<p align="right"><span class="gold" ><b>Lab 2: Change PCDs for SampleApp</b></span></p>
+@title[Demo 2: Change PCDs for SampleApp]
+<p align="right"><span class="gold" ><b>Demo: Change PCDs for SampleApp</b></span></p>
 @snap[north-west span-100 ]
 <br>
 <br>
@@ -590,8 +563,8 @@ In this lab, you'll learn how to use PCD values to change debugging capabilities
 <br>
 <br>
 <p style="line-height:55%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" >
-<font face="Arial">@size[1.15em](Open)</font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc <br><br>
-<font face="Arial">@size[1.15em](Replace)</font> SampleApp/SampleApp.inf <font face="Arial">@size[1.15em](with the following:)</font><br>
+ <br><br>
+<font face="Arial">@size[1.15em](The following was added to) </font> SampleApp/SampleApp.inf <font face="Arial">@size[1.15em](in the file) EmulatorPkg.dsc <br>
 <br><br>&nbsp;&nbsp;
   SampleApp/SampleApp.inf { <br>&nbsp;&nbsp;&nbsp;&nbsp;
     &lt;PcdsFixedAtBuild&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -599,7 +572,7 @@ In this lab, you'll learn how to use PCD values to change debugging capabilities
       gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0xffffffff<br>&nbsp;&nbsp;
  }<br>
 <br><br><br><br>
-<font face="Arial">@size[1.15em](Save and close) </font> C:/FW/edk/EmulatorPkg/EmulatorPkg.dsc
+
 </span></p><br>
 
 @snapend
