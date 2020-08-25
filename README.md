@@ -1,7 +1,7 @@
 <!--- @file
-  Readme.md for UEFI / EDK II Training EDK II Deugging Pres- /w Windows Lab
+  Readme.md for UEFI / EDK II Training EDK II Deugging Pres-
 
-  Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2020, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -30,6 +30,6 @@
 -->
 
 # EDK_II_Debugging_Win_pres
-Tips and Tricks for Debugging using EDK II w/ Windows Labs
+Tips and Tricks for Debugging using EDK II 
 
-To see the Slides goto https://gitpitch.com/Laurie0131/EDK_II_Debugging_Win_pres/master#/
+To see the Slides goto https://gitpitch.com/Laurie0131/EDK_II_Debugging_pres/master#/

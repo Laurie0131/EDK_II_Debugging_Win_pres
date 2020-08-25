@@ -1,19 +1,22 @@
 ---?image=assets/images/gitpitch-audience.jpg
 @title[EDK II Debugging]
 <br><br><br>
-<span style="font-size:0.75em" >This slide deck has moved to:  https://gitpitch.com/tianocore-training/EDK_II_Debugging_Pres_Win_Lab/master#/
+<span style="font-size:0.75em" >This slide deck has moved to:  https://gitpitch.com/tianocore-training/EDK_II_Debugging_Pres/master#/
 </span>
 <br><br>
 ## <span class="gold"   >UEFI & EDK II Training</span>
 
-#### EDK II Debugging w/ Windows Lab
+#### EDK II Debugging 
 
 <br>
 <span style="font-size:0.75em" ><a href='http://www.tianocore.org'>tianocore.org</a></span>
-Note:
-  PITCHME.md for UEFI / EDK II Training  EDK II Debugging Pres-lab
 
-  Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
+
+
+Note:
+  PITCHME.md for UEFI / EDK II Training  EDK II Debugging Pres
+
+  Copyright (c) 2020, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -51,10 +54,10 @@ Note:
 <ul style="list-style-type:none">
  <li>@fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Define <font face="Consolas">DebugLib</font> and its attributes</span> </li>
  <li>@fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;List the ways to debug</span></li>
- <li>@fa[certificate gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Using PCDs to Configure <font face="Consolas">DebugLib</font> -LAB </span> </li>
+ <li>@fa[certificate gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Using PCDs to Configure <font face="Consolas">DebugLib</font> </span> </li>
  <li>@fa[certificate gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;Change Compiler & Linker Flags for debugging</span></li>
- <li>@fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Change the <font face="Consolas">DebugLib</font> instance to modify the debug<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output - LAB</span> </li>
- <li>@fa[certificate gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Debug EDK II using VS Debugger - LAB</span> </li>
+ <li>@fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Change the <font face="Consolas">DebugLib</font> instance to modify the debug<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output </span> </li>
+ <li>@fa[certificate gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Debug EDK II using VS Debugger - Demo</span> </li>
 </ul>
 
 ---?image=assets/images/binary-strings-black2.jpg
@@ -450,124 +453,28 @@ Note:
 - PerformanceLib -  Enable Measurement
 	- gEfiMdePkgTokenSpaceGuid.PcdPerformanceLibraryPropertyMask
 
----?image=/assets/images/slides/Slide_LabSec.JPG
-@title[Lab 1: Adding Debug Statements]
+---?image=/assets/images/slides/binary-strings-black2.jpg
+@title[Demo 1: Adding Debug Statements]
+
+<br><br><br><br><br><br><br>
+### <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Demo</span>
+<span style="font-size:0.9em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adding  debug statements 
+</span>
 <br>
-<br>
-<p align="Left"><span class="gold" ><b>Lab 1: Adding Debug Statements</b></span></p>
-<br>
-<div class="left1">
-<span style="font-size:0.8em" >In this lab, you'll add debug statements to the previous lab's SampleApp UEFI Shell application</span>
-</div>
-<div class="right1">
-<span style="font-size:0.8em" >&nbsp;  </span>
-</div>
+
+<span style="font-size:0.9em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adding  debug statements to the previous lab's `SampleApp` UEFI Shell application
+</span>
 
 Note:
-In this lab, you'll learn how to add debug statements.  
+In this demo, you'll learn how to add debug statements.  
 This lab uses code from a previous exercise as a starting point (refer to  Writing Simple UEFI Applications).  Before proceeding, verify that the SampleApp code is present in your workspace and that the code references the OvmfPkgX64.dsc file.
 
----
-@title[Lab 1: Catch Up SampleApp]
-<p align="right"><span class="gold" ><b>Lab 1: Catch up from previous lab</b></span></p>
-@snap[north-west span-60 ]
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" ><br>&nbsp;</span></p>)
-@snapend
-
-
-<span style="font-size:0.8em" >Skip if Lab <a href="https://gitpitch.com/tianocore-training/Writing_UEFI_App_Win_Lab/master#/">Writing UEFI App Lab</a> completed</span>
-<ul style="list-style-type:disc; line-height:0.8;">
-   <li><span style="font-size:0.78em" >Perform <a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/">Lab Setup</a> from previous Labs  </span></li>
-   <li><span style="font-size:0.78em" >Create a Directory under the workspace <font face="Consolas">@size[.8em](C:/FW/edk2-ws/edk2 : "SampleApp")</font></span></li>
-   <li><span style="font-size:0.78em" >Copy contents of <font face="Consolas">@size[.8em](C:/../FW/LabSampleCode/SampleAppDebug to C:/FW/edk2-ws/edk2/SampleApp)</font></span></li>
-   <li><span style="font-size:0.78em" >Open <font face="Consolas">@size[.8em](C:/FW/edk2-ws/edk2/EmulatorPkg/EmulatorPkg.dsc)</font></span></li>
-   <li><span style="font-size:0.78em" >Add the following to the <font face="Consolas">[Components]</font> section: </span></li><br><br><br><br><br>
-   <li><span style="font-size:0.78em" >Save and close the file <font face="Consolas">@size[.8em](C:/FW/edk2-ws/edk2/EmulatorPkg/EmulatorPkg.dsc)</font>  </span></li>
-</ul>
-
-
-@snap[north-east span-98 ]
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br><br><br>
-&num; Add new modules here<br> &nbsp;
-SampleApp/SampleApp.inf
-</span></p>
-@snapend
-
-
-Note:
-
----
-@title[Lab 1: Add debug statements SampleApp]
-<p align="right"><span class="gold" ><b>Lab 1: Add debug statments to SampleApp</b></span></p>
-@snap[north-west span-60 ]
-<br>
-<br>
-<br>
-<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
-
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" ><br>&nbsp;</span></p>)
-<br>
-<br>
-<br>
-<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br></span></p>
-
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
-
-@snapend
-
-<br>
-<ul>
-  <li><span style="font-size:0.8em" >Open a VS Command Prompt and type <font face="Consolas">@size[.8em](cd C:/FW/edk2-ws/)</font></li><br><br><br>
-  <li><span style="font-size:0.78em" >Open <font face="Consolas">@size[.8em](C:/FW/edk/SampleApp/SampleApp.c)</font> </span></li><br>
-  <li><span style="font-size:0.78em" >Add the following to the include statements at the top of the file after below the last "<font face="Consolas">#include</font>" statement: </span></li>
-</ul>
-
-
-@snap[north-east span-98 ]
-<br>
-<br>
-<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br><br><br><br>
-C:/FW/edk2-ws&gt; setenv.bat<br>
-C:/FW/edk2-ws&gt; cd edk2 <br>
-C:/FW/edk2-ws/edk2&gt; edksetup
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br>
-&num;include &lt;Library/DebugLib.h&gt;
-</span></p>
-@snapend
-
-Note:
 
 ---
 @title[Lab 1: Add debug statements SampleApp 02]
-<p align="right"><span class="gold" ><b>Lab 1: Add debug statements to SampleApp</b></span></p>
-<p style="line-height:85%"><span style="font-size:0.7em" >Locate the <font face="Consolas">UefiMain</font> function. Then copy and paste the following 
-code after the <span style="background-color: #101010">&nbsp;"<font face="Consolas">EFI_INPUT_KEY  KEY;</font>"</span> statement: and before the first <span style="background-color: #101010">&nbsp;<font face="Consolas">Print()</font> </span>statement </span></p>
+<p align="right"><span class="gold" ><b>Demo Add debug statements to SampleApp</b></span></p>
+<p style="line-height:85%"><span style="font-size:0.7em" >The following 
+code was added after the <span style="background-color: #101010">&nbsp;"<font face="Consolas">EFI_INPUT_KEY  KEY;</font>"</span> statement: and before the first <span style="background-color: #101010">&nbsp;<font face="Consolas">Print()</font> </span>statement </span></p>
 
 ```c
 DEBUG ((0xffffffff, "\n\nUEFI Base Training DEBUG DEMO\n") );
