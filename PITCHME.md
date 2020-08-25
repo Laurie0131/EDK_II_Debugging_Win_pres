@@ -532,7 +532,7 @@ Note:
 
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
 <font face="Consolas">@color[yellow](Shell&gt;) &nbsp;SampleApp</font>&nbsp;</span></span></p>
-
+<br><br>
 <p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Check the VS Debug output <br>
 <br></span></p>
 @snapend
