@@ -459,10 +459,10 @@ Note:
 @snap[north-east span-90 ]
 <br>
 <br>
-<br><br><br><br><br>
-<p align="left"><span class="gold" >@size[1.1em](<b>DEMO  </b>)</span><br>
+<br><br><br><br>
+<p align="left"><span class="gold" >@size[1.2em](<b>DEMO  </b>)</span><br>
 <span style="font-size:0.85em;" > Adding  debug statements  </span></p>
-<p style="line-height:70%" align="left" ><span style="font-size:0.7em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adding  debug statements to the previous lab's `SampleApp` UEFI Shell application
+<p style="line-height:70%" align="left" ><span style="font-size:0.7em" >This demo shows adding  debug statements to the previous lab's `SampleApp` UEFI Shell application
 </span>
 @snapend
 
@@ -515,7 +515,7 @@ Note:
 <br>
 <br>
 <br>
-<br>
+
 <p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
 
