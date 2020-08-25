@@ -456,13 +456,13 @@ Note:
 ---?image=/assets/images/binary-strings-black2.jpg
 @title[Demo 1: Adding Debug Statements]
 
-@snap[north-east span-70 ]
+@snap[north-east span-90 ]
 <br>
 <br>
-<br><br><br>
-p align="left"><span class="gold" >@size[1.1em](<b>DEMO  </b>)</span><br>
+<br><br><br><br><br>
+<p align="left"><span class="gold" >@size[1.1em](<b>DEMO  </b>)</span><br>
 <span style="font-size:0.85em;" > Adding  debug statements  </span></p>
-<span style="font-size:0.7em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adding  debug statements to the previous lab's `SampleApp` UEFI Shell application
+<p style="line-height:70%" align="left" ><span style="font-size:0.7em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adding  debug statements to the previous lab's `SampleApp` UEFI Shell application
 </span>
 @snapend
 
@@ -513,20 +513,21 @@ Note:
 @snap[north-west span-50 ]
 <br>
 <br>
+<br>
+<br>
+<br>
 <p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
 
-<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br></span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
 
-<p style="line-height:5%" align="left" ><span style="font-size:0.15em; font-family:Consolas;" ><br><br><br><br><br></span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
 @snapend
 
 @snap[north-west span-50 ]
 <br>
 <br>
-
+<br>
+<br>
+<p style="line-height:10%"  align="left">&nbsp;<br></span></p>
 <p style="line-height:80%"  align="left"><span style="font-size:0.8em" >Run the application from the shell</span></p>
 
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;" ><br>&nbsp;&nbsp;
